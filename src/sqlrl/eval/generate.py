@@ -11,7 +11,7 @@ import time
 import urllib.error
 import urllib.request
 
-from sqlrl.common import seed_everything, sha256, start_run, write_json, write_jsonl
+from sqlrl.common import seed_everything, sha256, start_run, resume_run, write_json, write_jsonl
 from sqlrl.data.guard import load_records
 from sqlrl.eval.prompts import messages
 
@@ -33,7 +33,7 @@ def select_examples(rows, n, seed):
     return selected
 
 
-def generate(config, directory):
+def generate(config, directory, *, resume=False):
     if config["backend"] == "transformers" and not shutil.which("nvidia-smi"):
         raise RuntimeError("No NVIDIA CUDA runtime detected; benchmark generation was not started")
     if config["backend"] == "http" and (not config.get("model") or not config.get("endpoint")):
@@ -58,7 +58,8 @@ def generate(config, directory):
         if not config.get("revision"):
             raise RuntimeError("Pin an immutable model revision first")
         tokenizer = AutoTokenizer.from_pretrained(config["model"], revision=config["revision"])
-        model = AutoModelForCausalLM.from_pretrained(config["model"], revision=config["revision"], dtype=torch.bfloat16, device_map="auto")
+        from sqlrl.model_loading import model_kwargs
+        model = AutoModelForCausalLM.from_pretrained(config["model"], revision=config["revision"], **model_kwargs(config))
         if config.get("adapter"):
             from peft import PeftModel
             model = PeftModel.from_pretrained(model, config["adapter"])
@@ -75,7 +76,16 @@ def generate(config, directory):
     else:
         raise ValueError("Unknown backend")
     outputs, spent = [], 0.0
+    if resume and (directory / "predictions.jsonl").exists():
+        if backend != "transformers":
+            raise ValueError("Paid HTTP runs cannot be automatically resumed")
+        outputs = [json.loads(line) for line in (directory / "predictions.jsonl").read_text().splitlines() if line]
+        if [p["id"] for p in outputs] != [r["id"] for r in rows[:len(outputs)]]:
+            raise ValueError("Saved predictions do not match the evaluation prefix")
+    completed_ids = {p["id"] for p in outputs}
     for row in rows:
+        if row["id"] in completed_ids:
+            continue
         prompt = messages(row, examples)
         begin = time.monotonic()
         output = {"id":row["id"], "messages":prompt, "answer":"", "input_tokens":None,
@@ -128,15 +138,16 @@ def generate(config, directory):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
     config = json.load(open(args.config))
     config["data_sha256"] = sha256(config["data"]) if os.path.isfile(config["data"]) else None
     if config.get("train_data"):
         config["train_data_sha256"] = sha256(config["train_data"]) if os.path.isfile(config["train_data"]) else None
-    directory = start_run(config["output"], config)
+    directory = resume_run(config["output"], config) if args.resume else start_run(config["output"], config)
     seed_everything(config["seed"])
     try:
-        generate(config, directory)
+        generate(config, directory, resume=args.resume)
     except Exception as error:
         write_json(directory / "status.json", {"status":"blocked_or_failed", "error_type":type(error).__name__, "reason":str(error)[:500]})
         raise SystemExit(str(error))

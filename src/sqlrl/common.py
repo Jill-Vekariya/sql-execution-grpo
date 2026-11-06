@@ -2,11 +2,27 @@
 import hashlib
 import importlib.metadata
 import json
+import os
 import platform
 import random
 import subprocess
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
+
+
+def resume_run(directory, config):
+    """Resume only the same data, configuration and source; preserve originals."""
+    directory = Path(directory)
+    if json.loads((directory / "config.json").read_text()) != config:
+        raise ValueError("Resume configuration or dataset hashes changed")
+    original = json.loads((directory / "environment.json").read_text())
+    current = {str(p):sha256(p) for p in sorted(Path("src").rglob("*.py"))}
+    if original["source_sha256"] != current:
+        raise ValueError("Resume source files changed")
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    write_json(directory / ("resume_" + stamp + ".json"), {"config_sha256":sha256(directory / "config.json"), "source_verified":True})
+    return directory
 
 
 def sha256(path):
@@ -26,9 +42,18 @@ def write_json(path, value):
 def write_jsonl(path, rows):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as stream:
-        for row in rows:
-            stream.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as stream:
+            temporary = Path(stream.name)
+            for row in rows:
+                stream.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def seed_everything(seed):

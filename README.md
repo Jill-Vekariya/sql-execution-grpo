@@ -4,7 +4,7 @@ Study whether execution rewards improve a small Qwen model beyond base prompting
 
 **Work in progress: Phases 0–3 implementation is present; model benchmark runs and full SFT are blocked. No RL performance or released adapter is claimed.**
 
-Evidence: [project status](results/project_status.json), [tests](results/tests-completion-device.xml), [data audit](results/data_audit.json), [gold-query audit](results/gold_audit/summary.json).
+Evidence: [project status](results/project_status.json), [tests](results/tests-free-profile-device.xml), [data audit](results/data_audit.json), [gold-query audit](results/gold_audit/summary.json).
 
 | System | Validation accuracy / 95% CI | Training / API cost | Run status |
 |---|---|---|---|
@@ -16,7 +16,7 @@ Evidence: [project status](results/project_status.json), [tests](results/tests-c
 
 Missing costs are unknown, not zero. Failure/preflight reasons and configs are saved under [results/runs](results/runs).
 
-Verifier suite: **85 passed**, 0 failures, 0 errors ([saved XML](results/tests-completion-device.xml)).
+Verifier suite: **91 passed**, 0 failures, 0 errors ([saved XML](results/tests-free-profile-device.xml)).
 Training annotation audit: **16,428 source questions**; **57 duplicates removed** across project train/val ([audit](results/data_audit.json)).
 Gold execution on available databases: **15,651/16,371 (95.60%)**. **0** declared examples lack downloaded databases; all statuses remain in the [audit](results/gold_audit/summary.json).
 CPU SFT API integration: **passed** on a random tiny Qwen3 fixture. This is not a benchmark model or accuracy result ([evidence](results/cpu_sft_smoke/status.json)).
@@ -40,6 +40,8 @@ uv run --no-sync python scripts/synthetic_checks.py --output results/reproductio
 The synthetic check is a verifier demonstration, not model accuracy. [Full data/baseline/SFT reproduction](docs/REPRODUCE.md).
 
 [Run the remaining Phase 2–3 experiment in one command](docs/COMPLETE_PHASE03.md). The runner verifies the frozen data, reports hardware/API blockers before execution, and writes paired comparisons and measured costs only after real model runs succeed.
+
+**Free student route:** [Kaggle notebook](notebooks/Free_Phase03_Kaggle.ipynb) and [setup/limitations](docs/FREE_STUDENT_RUN.md). The separately named free profile uses matching NF4/FP16 base and QLoRA systems, plus a quota-resumable Gemini 3.8 Flash baseline. Actual free GPU/API runs still require authenticated accounts; no benchmark accuracy is claimed.
 
 What failed: [FAILURES.md](docs/FAILURES.md) preserves the initial memory-cap test failure and infrastructure blockers. [Cheating analysis](docs/WHAT_THE_MODEL_LEARNED_TO_CHEAT.md) distinguishes anticipated exploits from learned behavior. [Decisions](docs/DECISIONS.md) explains the stricter comparator and pending final-set audit.
 

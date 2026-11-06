@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0
+rootdir: /mnt/c/Users/jillv/Projects/sql-execution-grpo
+configfile: pyproject.toml
+testpaths: tests
+collected 91 items
+
+tests/test_additional_edges.py .......                                   [  7%]
+tests/test_completion.py ........                                        [ 16%]
+tests/test_download.py ....                                              [ 20%]
+tests/test_evaluation.py ....                                            [ 25%]
+tests/test_executor.py ......................................            [ 67%]
+tests/test_free_profile.py ......                                        [ 73%]
+tests/test_protocol.py .............                                     [ 87%]
+tests/test_reward.py ...........                                         [100%]
+
+- generated xml file: /mnt/c/Users/jillv/Projects/sql-execution-grpo/results/tests-free-profile-device.xml -
+============================= 91 passed in 19.60s ==============================

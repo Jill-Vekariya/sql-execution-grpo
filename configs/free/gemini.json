@@ -1,0 +1,17 @@
+{
+  "profile_id": "student_free_nf4_fp16_v1",
+  "model": "gemini-3.8-flash",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+  "data": "data/processed/val.jsonl",
+  "seed": 42,
+  "max_prompt_tokens": 4096,
+  "max_new_tokens": 512,
+  "min_interval_s": 15,
+  "output": "results/free_runs/frontier",
+  "budget_usd": 0,
+  "input_usd_per_million": 0,
+  "output_usd_per_million": 0,
+  "billing_requirement": "owner-confirmed Free tier with billing disabled",
+  "thinking_level": "LOW",
+  "completion_limit_includes_thinking": true
+}

@@ -10,12 +10,12 @@ import shutil
 import time
 from pathlib import Path
 
-from sqlrl.common import seed_everything, sha256, start_run, write_json
+from sqlrl.common import seed_everything, sha256, start_run, resume_run, write_json
 from sqlrl.data.guard import load_records
 from sqlrl.eval.prompts import messages, count_chat_tokens
 
 
-def train(config, directory):
+def train(config, directory, *, resume_from_checkpoint=None):
     if not shutil.which("nvidia-smi"):
         raise RuntimeError("No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists")
     import torch
@@ -57,7 +57,12 @@ def train(config, directory):
 
     train_dataset, val_dataset = convert(rows), convert(validation)
     write_json(directory / "preprocessing.json", {"train_examples":len(train_dataset), "val_examples":len(val_dataset), "excluded":excluded})
-    model = AutoModelForCausalLM.from_pretrained(config["model"], revision=config["revision"], dtype=torch.bfloat16, attn_implementation="sdpa")
+    from sqlrl.model_loading import model_kwargs
+    model = AutoModelForCausalLM.from_pretrained(config["model"], revision=config["revision"], attn_implementation="sdpa", **model_kwargs(config, training=True))
+    if config.get("quantization") == "nf4":
+        from peft import prepare_model_for_kbit_training
+        model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True,
+            gradient_checkpointing_kwargs={"use_reentrant":False})
     model.config.use_cache = False
     lora = LoraConfig(r=16, lora_alpha=32, lora_dropout=0.05, bias="none", task_type="CAUSAL_LM",
                       target_modules=["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"])
@@ -66,7 +71,8 @@ def train(config, directory):
         learning_rate=config["learning_rate"], per_device_train_batch_size=1,
         per_device_eval_batch_size=1, gradient_accumulation_steps=config["gradient_accumulation_steps"],
         warmup_steps=20, weight_decay=0.01, max_length=config["max_length"],
-        completion_only_loss=True, packing=False, bf16=True, gradient_checkpointing=True,
+        completion_only_loss=True, packing=False, bf16=config.get("precision", "bf16") == "bf16",
+        fp16=config.get("precision", "bf16") == "fp16", gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant":False}, optim="adamw_torch",
         seed=config["seed"], data_seed=config["seed"], logging_steps=10,
         save_strategy="steps", save_steps=100, save_total_limit=2,
@@ -82,7 +88,7 @@ def train(config, directory):
                          eval_dataset=val_dataset, processing_class=tokenizer, peft_config=lora,
                          callbacks=[JsonLog()])
     started = time.monotonic()
-    trainer.train()
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
     elapsed = time.monotonic()-started
     adapter = directory / "adapter"
     trainer.save_model(str(adapter))
@@ -92,6 +98,8 @@ def train(config, directory):
         "gpu_hours":elapsed/3600, "gpu_count":1, "gpu_price_usd_per_hour":price,
         "training_cost_usd":elapsed/3600*price if price is not None else None,
         "seed":config["seed"], "model":config["model"], "revision":config["revision"],
+        "precision":config.get("precision", "bf16"), "quantization":config.get("quantization"),
+        "resumed_from_checkpoint":resume_from_checkpoint, "gpu_hours_scope":"this successful training session only; earlier interrupted GPU time is not inferred",
         "validation_execution_evaluation":"pending separate generation/evaluation commands"})
     del trainer, model
     gc.collect()
@@ -101,13 +109,21 @@ def train(config, directory):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/sft.json")
+    parser.add_argument("--resume-from-checkpoint")
     args = parser.parse_args()
     config = json.load(open(args.config))
     for key in ["train_data", "val_data"]:
         config[key + "_sha256"] = sha256(config[key]) if Path(config[key]).exists() else None
-    directory = start_run(config["output"], config)
+    if args.resume_from_checkpoint:
+        checkpoint = Path(args.resume_from_checkpoint).resolve()
+        checkpoint.relative_to((Path(config["output"]) / "checkpoints").resolve())
+        if not (checkpoint / "trainer_state.json").is_file():
+            raise ValueError("A full saved trainer checkpoint is required")
+        directory = resume_run(config["output"], config)
+    else:
+        directory = start_run(config["output"], config)
     try:
-        train(config, directory)
+        train(config, directory, resume_from_checkpoint=args.resume_from_checkpoint)
     except Exception as error:
         write_json(directory / "status.json", {"status":"blocked_or_failed", "error_type":type(error).__name__, "reason":str(error)[:500]})
         raise SystemExit(str(error))

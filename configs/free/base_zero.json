@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "backend": "transformers",
+  "data": "data/processed/val.jsonl",
+  "train_data": "data/processed/train_eligible.jsonl",
+  "seed": 42,
+  "max_prompt_tokens": 4096,
+  "max_new_tokens": 512,
+  "few_shot": 0,
+  "output": "results/free_runs/base_zero",
+  "gpu_price_usd_per_hour": 0.0,
+  "profile_id": "student_free_nf4_fp16_v1",
+  "precision": "fp16",
+  "quantization": "nf4"
+}

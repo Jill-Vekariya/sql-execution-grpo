@@ -20,7 +20,7 @@
     ]
   },
   "tests": {
-    "tests": 85,
+    "tests": 91,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -49,7 +49,7 @@
   },
   "data_audit": "results/data_audit.json",
   "gold_audit": "results/gold_audit/summary.json",
-  "test_evidence": "results/tests-completion-device.xml",
+  "test_evidence": "results/tests-free-profile-device.xml",
   "final_test_accessed": false,
   "rl_trained": false,
   "adapter_released": false,
