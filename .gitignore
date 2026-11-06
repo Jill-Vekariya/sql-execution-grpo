@@ -1,0 +1,17 @@
+.venv*/
+.tools/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/raw/
+data/processed/
+data/databases/
+checkpoints/
+*.sqlite*
+*.zip
+.env*
+!.env.example
+results/**/adapter/
+results/**/checkpoint-*/
+results_pc_initial/
+transport_payload.b64

@@ -1,0 +1,40 @@
+{
+  "config": {
+    "data": [
+      "data/processed/train.jsonl",
+      "data/processed/val.jsonl"
+    ],
+    "output": "results/gold_audit",
+    "workers": 8
+  },
+  "n": 16371,
+  "status_counts": {
+    "missing_database": 5132,
+    "ok": 11082,
+    "row_limit": 74,
+    "result_limit": 5,
+    "sql_error": 19,
+    "timeout": 47,
+    "memory_limit": 12
+  },
+  "available_queries": 11239,
+  "available_execution_rate": 0.9860307856570869,
+  "all_queries_execution_rate": 0.6769287154113982,
+  "by_dataset": {
+    "bird": {
+      "missing_database": 5132,
+      "ok": 4133,
+      "row_limit": 68,
+      "result_limit": 5,
+      "sql_error": 16,
+      "timeout": 47,
+      "memory_limit": 12
+    },
+    "spider": {
+      "ok": 6949,
+      "sql_error": 3,
+      "row_limit": 6
+    }
+  },
+  "final_test_accessed": false
+}

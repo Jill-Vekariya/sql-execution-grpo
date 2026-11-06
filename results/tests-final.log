@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0
+rootdir: /workspace/scratch/b32616576eb4/sql-execution-grpo
+configfile: pyproject.toml
+testpaths: tests
+collected 77 items
+
+tests/test_additional_edges.py .......                                   [  9%]
+tests/test_download.py ....                                              [ 14%]
+tests/test_evaluation.py ....                                            [ 19%]
+tests/test_executor.py ......................................            [ 68%]
+tests/test_protocol.py .............                                     [ 85%]
+tests/test_reward.py ...........                                         [100%]
+
+- generated xml file: /workspace/scratch/b32616576eb4/sql-execution-grpo/results/tests-final.xml -
+============================== 77 passed in 2.07s ==============================

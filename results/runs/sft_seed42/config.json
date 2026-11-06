@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "seed": 42,
+  "train_data": "data/processed/train.jsonl",
+  "val_data": "data/processed/val.jsonl",
+  "output": "results/runs/sft_seed42",
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "gradient_accumulation_steps": 16,
+  "max_length": 4608,
+  "gpu_price_usd_per_hour": null,
+  "train_data_sha256": "2b0fc3b5315a190e5b4e1f58a8c5a3d68cfa1c0aa4fbdac1faa6dcfef2367751",
+  "val_data_sha256": "66ab642351b67761312ecca57ee79fc68ca72622097f55ee5397fbb7702adfde"
+}

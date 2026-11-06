@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "backend": "transformers",
+  "data": "data/processed/val.jsonl",
+  "train_data": "data/processed/train.jsonl",
+  "seed": 42,
+  "max_prompt_tokens": 4096,
+  "max_new_tokens": 512,
+  "few_shot": 0,
+  "output": "results/runs/base_zero_seed42",
+  "gpu_price_usd_per_hour": null,
+  "data_sha256": "66ab642351b67761312ecca57ee79fc68ca72622097f55ee5397fbb7702adfde"
+}

@@ -1,0 +1,2808 @@
+{
+  "policy": "shared_gold_executable_and_fits_context",
+  "raw_train_questions": 14067,
+  "eligible_questions": 13371,
+  "excluded": [
+    {
+      "id": "bird:00005",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00006",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00007",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00008",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00009",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00010",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00011",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00012",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00013",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00014",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00019",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00023",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00025",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00026",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00027",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00029",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00030",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00031",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00032",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00034",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00035",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00037",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00039",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00040",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00041",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00042",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00043",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00044",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00045",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00046",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00047",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00048",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00049",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00066",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00067",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00068",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00069",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00070",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00071",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00072",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00073",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00083",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00102",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:00115",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00120",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00121",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:00125",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00131",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00141",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00142",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00145",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00162",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:00291",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00530",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00640",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:00777",
+      "reason": "gold_result_limit"
+    },
+    {
+      "id": "bird:00819",
+      "reason": "gold_result_limit"
+    },
+    {
+      "id": "bird:00821",
+      "reason": "gold_result_limit"
+    },
+    {
+      "id": "bird:01048",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01050",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01052",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01090",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01103",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01108",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01127",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01128",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01131",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01133",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01134",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01144",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01146",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01147",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01152",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01174",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01183",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01203",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01208",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01209",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:01781",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:01786",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02104",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02105",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02108",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02111",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02112",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02116",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02118",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02119",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02120",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02124",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02142",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02143",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02145",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02224",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02256",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02263",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02265",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02269",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:02304",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02305",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:02325",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:02462",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02464",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02467",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02470",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02512",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02513",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02518",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02525",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02558",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:02567",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:03147",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03148",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03149",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03150",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03151",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03152",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03154",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03155",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03156",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03157",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03158",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03161",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03162",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03164",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03166",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03167",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03168",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03169",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03172",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03173",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03174",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03175",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03176",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03177",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03178",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03179",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03180",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03181",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03182",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03183",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03186",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03188",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03189",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03190",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03191",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03193",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03194",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03195",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03196",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03197",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03198",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03199",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03201",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03206",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03215",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03234",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03236",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03237",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03238",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03240",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03244",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03245",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03253",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03255",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03261",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03270",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03273",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03274",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03284",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03285",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03292",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03294",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03296",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03298",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03299",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03305",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:03436",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03463",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03468",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03491",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03534",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03535",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03536",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03538",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03571",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03573",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03574",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03575",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03581",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03600",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03605",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03642",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:03649",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03808",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:03891",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:04082",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:04086",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:04319",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:04451",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:04457",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05045",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05066",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05075",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05093",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05177",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05217",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05474",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05475",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05476",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05477",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05478",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05479",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05480",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05481",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05518",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05521",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05530",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05532",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05684",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05685",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05686",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05690",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05691",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05692",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05694",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05696",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05697",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05701",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05703",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05710",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05713",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05718",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05719",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05722",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05730",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05731",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05766",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05768",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05769",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05780",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05781",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05788",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05798",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05799",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05800",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05807",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05814",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:05815",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05817",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05819",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:05909",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06143",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06156",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06200",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06202",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06249",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06250",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06251",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06252",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06253",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06254",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06255",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06256",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06259",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:06260",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06297",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06298",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06299",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06300",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06301",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06302",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06303",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06304",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06305",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06306",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06307",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06308",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06309",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06310",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06311",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06312",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06313",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06314",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06315",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06316",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06317",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06318",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06319",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06320",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06321",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06322",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06323",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06325",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06326",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06327",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06328",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06329",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06330",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06331",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06333",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06335",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06336",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06337",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06338",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06339",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06340",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06341",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06342",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06345",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06346",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06347",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06350",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06351",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06352",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06353",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06354",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06356",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06357",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06358",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06360",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06361",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06362",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06363",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06364",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06365",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06366",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06367",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06368",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06369",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06370",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06372",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06373",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06374",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06375",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06376",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06377",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06378",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06380",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06381",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06382",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06383",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06384",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06385",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06386",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06387",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06388",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06389",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06390",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06391",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06392",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06393",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06394",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06395",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06396",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06397",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06398",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06399",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06400",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06401",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06402",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06403",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06404",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06405",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06406",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06407",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06408",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06409",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06410",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06412",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06413",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06414",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06415",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06416",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06417",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06418",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06419",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06420",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06421",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06422",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06423",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06424",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06426",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06427",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06428",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06431",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06432",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06433",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06435",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06436",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06437",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06438",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06439",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06440",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06441",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06442",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06443",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06444",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06445",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06446",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06447",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06448",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06449",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06450",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06451",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06452",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06453",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06454",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06455",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06456",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06457",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06458",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06459",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06460",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06462",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06464",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06465",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06466",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06467",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06468",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06471",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06472",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06473",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06474",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06475",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06476",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06477",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06478",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06479",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06480",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06481",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06482",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06483",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06484",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06485",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06486",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06487",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06488",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06489",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06490",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06491",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06492",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06493",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06494",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06496",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06497",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06498",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06500",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06501",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06503",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06504",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06505",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06507",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06509",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06510",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06511",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06512",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06513",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06515",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06517",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06518",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06519",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06520",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06521",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06522",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06523",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06524",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06525",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06526",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06527",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06528",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06529",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06530",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06531",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06532",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06533",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06535",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06536",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06537",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06538",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06539",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06540",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06541",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06542",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06543",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06544",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06545",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06546",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06547",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06548",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06550",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06551",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06553",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06554",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06555",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06556",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06557",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06558",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06559",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06560",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06561",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06562",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06563",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06564",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06565",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06566",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06567",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06568",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06569",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06570",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06571",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06572",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06573",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06575",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06576",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06577",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06578",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06579",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06581",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06582",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06584",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06586",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06587",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06588",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06589",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06590",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06591",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06592",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06593",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06594",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06595",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06596",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06597",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06598",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06599",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06600",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06601",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06602",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06603",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06604",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06605",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06606",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06607",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06609",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06610",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06611",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06612",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06615",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06616",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06617",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06618",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06619",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06620",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06621",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06623",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06624",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06625",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06626",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06627",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06628",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06629",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06630",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06631",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06632",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06633",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06634",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06635",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06636",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06638",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06639",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06640",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06641",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06642",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06643",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06645",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06646",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06647",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06648",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06649",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06650",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06651",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06652",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06654",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06657",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06658",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06659",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06660",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06661",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06662",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06663",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06664",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06665",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06667",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06668",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06669",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:06677",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06679",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06720",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06723",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06736",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06755",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06759",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06761",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06763",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06764",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06768",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06771",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06775",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06776",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06780",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06783",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06794",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06797",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06806",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06820",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06832",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06833",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06836",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06843",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06845",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06848",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06849",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06877",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:06879",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06880",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06881",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06889",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06890",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06891",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06902",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:06913",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:07122",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07129",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07172",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07173",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07178",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07218",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07227",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07325",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07409",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07438",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "bird:07440",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07518",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07561",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07597",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07638",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07739",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:07923",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07926",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:07928",
+      "reason": "gold_result_limit"
+    },
+    {
+      "id": "bird:07932",
+      "reason": "gold_result_limit"
+    },
+    {
+      "id": "bird:07934",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:07951",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07957",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07959",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07960",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07970",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:07973",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:08531",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08540",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08570",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08572",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08576",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08595",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08696",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08764",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08770",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:08994",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:08997",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:08998",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09001",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09002",
+      "reason": "gold_memory_limit"
+    },
+    {
+      "id": "bird:09017",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09022",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09023",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09024",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09025",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09029",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09034",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09035",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09051",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09052",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09061",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09067",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09083",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "bird:09087",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "bird:09096",
+      "reason": "gold_timeout"
+    },
+    {
+      "id": "spider:03153",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "spider:03661",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "spider:03662",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "spider:03663",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "spider:03664",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "spider:04513",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "spider:04514",
+      "reason": "gold_sql_error"
+    },
+    {
+      "id": "spider:06877",
+      "reason": "gold_row_limit"
+    },
+    {
+      "id": "spider:06878",
+      "reason": "gold_row_limit"
+    }
+  ],
+  "max_context_tokens": 4608,
+  "tokenizer_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "token_lengths": {
+    "min": 2,
+    "max": 2
+  },
+  "manifest": {
+    "path": "data/manifests/train_eligible.jsonl",
+    "sha256": "d08bea092c9218e387dbd67b3bfe1f604e27032d349849af2dd01df5a989c180"
+  },
+  "processed_train_sha256": "da0c01d29465164cbaab45bdd846da4c7827d81e6a5797c5f882f46ae4751a35",
+  "raw_train_sha256": "be02de11e6c9c56cec316ef09c3c447b968eb7e39314c61d48a37fa3fc921ae7",
+  "gold_audit_sha256": "2d5bfe7ec3ab5b58513d8d8b7bd63d761615c8a40e2b02b3349f6bdc7a791ea4",
+  "validation_modified": false,
+  "labels_rewritten": false,
+  "benchmark_models_run": false
+}

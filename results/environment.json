@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sqlite": "3.53.1",
+  "cuda_gpu_present": false,
+  "api_key_configured": false,
+  "secrets_recorded": false,
+  "packages": {
+    "Pygments": "2.21.0",
+    "pyarrow": "24.0.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "sqlglot": "30.30.0",
+    "sql-execution-grpo": "0.1.0",
+    "pytest": "9.2.0",
+    "pluggy": "1.7.0"
+  }
+}

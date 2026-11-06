@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "kind": "random_tiny_qwen3_api_integration",
+  "benchmark_result": false,
+  "optimizer_steps": 2,
+  "training_loss": 2.927347421646118,
+  "lora_weights_updated": true,
+  "adapter_file_saved": true,
+  "elapsed_s": 0.24452539999947476,
+  "device": "cpu",
+  "training_cost_usd": null
+}

@@ -1,0 +1,31 @@
+{
+  "n": 9,
+  "databases": 1,
+  "execution_accuracy": 0.2222222222222222,
+  "execution_accuracy_ci95": [
+    0.2222222222222222,
+    0.2222222222222222
+  ],
+  "ci_method": "database_cluster_percentile_bootstrap",
+  "bootstrap_seed": 42,
+  "bootstrap_samples": 2000,
+  "valid_sql_rate": 0.5555555555555556,
+  "timeout_rate": 0.1111111111111111,
+  "gold_errors": 0,
+  "average_output_tokens": null,
+  "token_counts_complete": false,
+  "total_cost_usd": null,
+  "average_latency_s": 0.3829994507777883,
+  "average_generation_latency_s": null,
+  "by_difficulty": {
+    "synthetic": {
+      "n": 9,
+      "accuracy": 0.2222222222222222,
+      "ci95": [
+        0.2222222222222222,
+        0.2222222222222222
+      ]
+    }
+  },
+  "kind": "synthetic_verifier_not_model_evaluation"
+}

@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "few_shot_ids": [
+    "bird:02176",
+    "spider:04915",
+    "spider:05697"
+  ],
+  "max_prompt_tokens": 4096,
+  "zero": {
+    "n": 2304,
+    "min": 161,
+    "max": 1407,
+    "over_budget": 0
+  },
+  "few": {
+    "n": 2304,
+    "min": 1562,
+    "max": 2808,
+    "over_budget": 0
+  }
+}

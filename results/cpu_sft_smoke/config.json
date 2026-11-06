@@ -1,0 +1,9 @@
+{
+  "kind": "random_tiny_qwen3_api_integration",
+  "benchmark_result": false,
+  "seed": 42,
+  "max_steps": 2,
+  "hidden_size": 64,
+  "layers": 1,
+  "device": "cpu"
+}

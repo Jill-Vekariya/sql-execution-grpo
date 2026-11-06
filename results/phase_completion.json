@@ -1,0 +1,57 @@
+{
+  "scope": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "user_authorized_no_intermediate_stops": true,
+  "phase_0": {
+    "status": "train_val_audit_complete",
+    "completed": [
+      "repository layout",
+      "official license/source audit",
+      "full TRAIN annotation audit",
+      "database-disjoint train/val manifests with checksums",
+      "normalized duplicate removal"
+    ],
+    "pending": [
+      "final checksum and cross-final duplicate check reserved under no-access rule"
+    ]
+  },
+  "phase_1": {
+    "status": "implemented_and_tested_full_corpus",
+    "evidence": [
+      "results/tests-final.xml",
+      "results/gold_audit/summary.json",
+      "results/gold_investigation.json"
+    ],
+    "pending": []
+  },
+  "phase_2": {
+    "status": "implemented_model_runs_blocked",
+    "evidence": "results/run_attempts.json",
+    "pending": [
+      "base zero-shot VAL run",
+      "base few-shot VAL run",
+      "frontier VAL run"
+    ]
+  },
+  "phase_3": {
+    "status": "implemented_cpu_api_smoke_passed_full_sft_blocked",
+    "evidence": "results/cpu_sft_smoke/status.json",
+    "pending": [
+      "full Qwen LoRA SFT on CUDA",
+      "SFT VAL execution evaluation",
+      "measured GPU training cost"
+    ]
+  },
+  "final_data_policy": {
+    "dev_questions_opened": false,
+    "dev_gold_sql_opened": false,
+    "dev_databases_opened": false,
+    "shared_schema_metadata_read": true,
+    "final_evaluation_run": false
+  },
+  "no_accuracy_improvement_claim": true
+}

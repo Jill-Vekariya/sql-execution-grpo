@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-06",
+  "statistics_type": "maintainer_reported_not_locally_measured",
+  "spider": {
+    "version": "Spider 1.0",
+    "license": "CC-BY-SA-4.0",
+    "reported_questions": 10181,
+    "reported_unique_sql": 5693,
+    "reported_databases": 200,
+    "known_noise": "Maintainers reported corrections to roughly 4% of dev examples in June 2020. This is historical correction evidence, not a measured current label-error rate.",
+    "sources": [
+      "https://yale-lily.github.io/spider",
+      "https://github.com/taoyds/spider"
+    ],
+    "download_page": "https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view",
+    "final_evaluation": "Official dev reserved as final test because official test labels are hidden"
+  },
+  "bird": {
+    "version": "BIRD-SQL 2023 original train",
+    "license": "CC-BY-SA-4.0",
+    "license_change_announced": "2024-04-27",
+    "reported_question_sql_pairs": 12751,
+    "reported_databases": 95,
+    "reported_total_database_gb": 33.4,
+    "known_noise": "Original dev cleaning was announced in September 2023. A 2025 filtered training subset retained 6601 of 9428 examples; that filtering rate is not a confirmed annotation-error rate. Mini-Dev received further annotation corrections in October 2026; this project does not substitute Mini-Dev for the original corpus.",
+    "sources": [
+      "https://bird-bench.github.io/",
+      "https://github.com/bird-bench/mini_dev",
+      "https://huggingface.co/datasets/birdsql/bird23-train-filtered"
+    ],
+    "train_download": "https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip",
+    "dev_download_reserved_not_fetched": "https://bird-bench.oss-cn-beijing.aliyuncs.com/dev.zip",
+    "final_evaluation": "Official dev reserved as final test because official test labels are hidden"
+  },
+  "redistribution": "Repository code uses MIT. Raw benchmarks are not committed; CC-BY-SA-4.0 continues to govern dataset-derived material and requires attribution. Original database sources may have additional provenance and licensing considerations.",
+  "api_documentation": [
+    "https://huggingface.co/docs/trl/main/en/sft_trainer",
+    "https://huggingface.co/docs/trl/main/en/grpo_trainer",
+    "https://huggingface.co/docs/peft/package_reference/lora",
+    "https://huggingface.co/docs/transformers/model_doc/qwen3",
+    "https://docs.vllm.ai/en/stable/getting_started/installation/",
+    "https://sqlglot.com/sqlglot.html",
+    "https://www.sqlite.org/c3ref/set_authorizer.html",
+    "https://docs.python.org/3.12/library/sqlite3.html"
+  ]
+}

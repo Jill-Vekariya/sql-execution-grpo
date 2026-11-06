@@ -1,0 +1,37 @@
+{
+  "utc": "2026-11-06T19:14:49.190471+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": null,
+    "transformers": null,
+    "peft": null,
+    "trl": null,
+    "vllm": null,
+    "sqlglot": "30.30.0"
+  },
+  "git_commit": null,
+  "source_sha256": {
+    "src/sqlrl/__init__.py": "ad8da50cea47a0428cc83652a477886bd04ca8699c1483ec68fe29388616be4d",
+    "src/sqlrl/analysis/__init__.py": "7022ca208b846a1ff4efdc1c2f0db5a4155e048dfee8109587c904db719092ed",
+    "src/sqlrl/analysis/compare_runs.py": "d32bd15687ecd6251170ed70c366c35e28b53ab67be36f087f2ebee2d2ef6277",
+    "src/sqlrl/common.py": "0c1b7c0f21a14cb2428b99d09f7564c36d518f0fcf3b7a6aee50d6933d22bea5",
+    "src/sqlrl/data/__init__.py": "2d1e5ea03c3ec93143d464f07dc74736ee0ad2157c68eb33c3041010366f75d7",
+    "src/sqlrl/data/audit_gold.py": "6c20f61f81dfffb99e0296876a5e05fff7150d7c5d88ee33a8d59638e1e78f25",
+    "src/sqlrl/data/guard.py": "d19ab55e62ee26eabd838ceb87e5546bf570394f852522cc29596329bb74f11d",
+    "src/sqlrl/data/prepare.py": "e4493d93b886d4e07f70f57baeb235ed7ddc7862a3312060f490239c62577107",
+    "src/sqlrl/eval/__init__.py": "cdfe0974040baf1739adf4f89fecd0b386de21ed19569c28d80c2f3914f416f0",
+    "src/sqlrl/eval/generate.py": "539fce11c396dfa7c8947bb5cc88454935ad3dca5d8313bde3fed683e718b5c9",
+    "src/sqlrl/eval/prompts.py": "5578fa152ac1e86228e8f715e1c310212b765dd010a773e9c6a618018a6760e6",
+    "src/sqlrl/eval/run.py": "4ef11d4d07c9a8d78477eddebc57d4ced02a241fc6bb8f382984e997ef6810a8",
+    "src/sqlrl/eval/statistics.py": "f942eee1191d0a3fc8c0e158a1966018ec6da229e7cf3ee304b39ab6eb60a271",
+    "src/sqlrl/executor/__init__.py": "4231796ec50221c726e1c396ac375b1dee2b20171509af4f210ed9cdf81fd049",
+    "src/sqlrl/executor/compare.py": "db2e5784a5fffb3f20818f9566f3d62b85066131d384ada478b9d00357865d2a",
+    "src/sqlrl/executor/runner.py": "9f915e1d348e0698afd6d4e8705c2f940ef663b1ea5b64b5a5ce6f3b6c4102eb",
+    "src/sqlrl/executor/worker.py": "ccd352b32af8971be1f8f0856403fa646fb210a43c15affaf81f9e72d3f9c439",
+    "src/sqlrl/reward/__init__.py": "b033be9cc7233e91fe245b8ea953b5ea5b42b28086a21ed3a0166bf823225544",
+    "src/sqlrl/train_grpo/__init__.py": "20744d3d040eac31c55bfbc54601a8f50aa374e379d2863dd3e5081059cfd0c3",
+    "src/sqlrl/train_sft/__init__.py": "985514778bfcbc7ea38450f6588d2cd9695924dfed8111a705388a62795a1ab5",
+    "src/sqlrl/train_sft/run.py": "4fe6ff83240234c034f7d75614b5f7613c2bf0a7bd68efce52644e25d70e5e28"
+  }
+}

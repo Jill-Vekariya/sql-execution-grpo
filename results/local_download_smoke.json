@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "resumed_prefix_and_ranges_reconstruct_exact_bytes",
+    "completed_archive_is_not_overwritten"
+  ],
+  "source": "scripts/download_bird_parallel.py",
+  "fixture_bytes": 1024
+}

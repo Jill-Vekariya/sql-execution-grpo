@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "url": "https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip",
+  "etag": "\"1FBA2891BD215A42CE1004736AB7F47F-400\"",
+  "archive_bytes": 8919543554,
+  "resumed_prefix_bytes": 0,
+  "workers": 8,
+  "chunk_bytes": 8388608,
+  "elapsed_s": 1057.8719152020003
+}

@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "model_options": {
+    "newer": "Qwen/Qwen3.5-4B",
+    "selected": "Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "phase_scope": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "user_authorized_continuation": true,
+  "final_test_phase": 9,
+  "final_test_sources": [
+    "Spider 1.0 official dev",
+    "BIRD-SQL 2023 official dev"
+  ],
+  "val_fraction": 0.15,
+  "sample_values": false,
+  "bird_evidence": true,
+  "few_shot_examples": 3,
+  "budget": {
+    "paid_gpu_usd_authorized": 0,
+    "frontier_api_usd_authorized": 0
+  },
+  "environment": {
+    "python": "3.12",
+    "torch": "2.13.0",
+    "transformers": "5.19.0",
+    "peft": "0.21.2",
+    "trl": "1.17.1",
+    "vllm": "0.32.0"
+  },
+  "executor": {
+    "timeout_s": 3,
+    "max_rows": 10000,
+    "memory_mb": 256,
+    "max_sql_chars": 20000,
+    "max_result_bytes": 2000000
+  },
+  "metric": "strict_column_order_bag_execution_accuracy",
+  "bootstrap": {
+    "unit": "database",
+    "samples": 2000,
+    "seed": 42
+  }
+}

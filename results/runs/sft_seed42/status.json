@@ -1,0 +1,5 @@
+{
+  "status": "blocked_or_failed",
+  "error_type": "RuntimeError",
+  "reason": "No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists"
+}

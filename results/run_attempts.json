@@ -1,0 +1,24 @@
+{
+  "attempts": [
+    {
+      "config": "configs/base_zero.json",
+      "returncode": 1,
+      "log": "results/attempt-base_zero.log"
+    },
+    {
+      "config": "configs/base_few.json",
+      "returncode": 1,
+      "log": "results/attempt-base_few.log"
+    },
+    {
+      "config": "configs/frontier.json",
+      "returncode": 1,
+      "log": "results/attempt-frontier.log"
+    },
+    {
+      "config": "configs/sft.json",
+      "returncode": 1,
+      "log": "results/attempt-sft.log"
+    }
+  ]
+}

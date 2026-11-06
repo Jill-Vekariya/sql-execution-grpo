@@ -1,0 +1,9 @@
+Adding EOS to train dataset:   0%|          | 0/4 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|██████████| 4/4 [00:00<00:00, 1940.68 examples/s]
+Tokenizing train dataset:   0%|          | 0/4 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|██████████| 4/4 [00:00<00:00, 945.78 examples/s]
+Building labels for train dataset:   0%|          | 0/4 [00:00<?, ? examples/s]Building labels for train dataset: 100%|██████████| 4/4 [00:00<00:00, 2203.47 examples/s]
+Truncating train dataset:   0%|          | 0/4 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 4/4 [00:00<00:00, 1989.94 examples/s]
+Dropping fully masked examples from train dataset:   0%|          | 0/4 [00:00<?, ? examples/s]Dropping fully masked examples from train dataset: 100%|██████████| 4/4 [00:00<00:00, 3470.67 examples/s]
+  0%|          | 0/2 [00:00<?, ?it/s]                                      50%|█████     | 1/2 [00:00<00:00, 71.15it/s]                                             100%|██████████| 2/2 [00:00<00:00, 110.11it/s]                                              100%|██████████| 2/2 [00:00<00:00, 108.88it/s]100%|██████████| 2/2 [00:00<00:00, 107.34it/s]
+{'loss': '2.917', 'grad_norm': '0.4735', 'learning_rate': '0.001', 'entropy': '2.762', 'mean_token_accuracy': '0', 'num_tokens': '13', 'epoch': '0.25'}
+{'loss': '2.937', 'grad_norm': '0.4682', 'learning_rate': '0.0005', 'entropy': '2.779', 'mean_token_accuracy': '0', 'num_tokens': '25', 'epoch': '0.5'}
+{'train_runtime': '0.019', 'train_samples_per_second': '105.5', 'train_steps_per_second': '105.5', 'train_loss': '2.927', 'epoch': '0.5'}

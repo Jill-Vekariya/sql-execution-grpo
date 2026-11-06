@@ -1,0 +1,11 @@
+{
+  "status": "sealed_not_downloaded",
+  "phase_available": 9,
+  "datasets": [
+    "Spider 1.0 official dev",
+    "BIRD-SQL 2023 official dev"
+  ],
+  "sha256": null,
+  "reason": "No held-out annotations or DBs opened before Phase 9",
+  "cross_final_question_dedup": "not_performed: requires access forbidden before Phase 9"
+}

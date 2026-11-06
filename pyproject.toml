@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sql-execution-grpo"
+version = "0.1.0"
+description = "Auditable execution-rewarded SQLite experiments"
+requires-python = ">=3.12,<3.13"
+dependencies = ["sqlglot==30.30.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.2.0"]
+data = ["pyarrow==24.0.0"]
+train = [
+  "torch==2.13.0", "transformers==5.19.0", "peft==0.21.2",
+  "trl==1.17.1", "datasets==5.1.0", "accelerate==1.15.0",
+  "socksio==1.0.0",
+]
+generation = ["vllm==0.32.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sqlrl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]
+
+[tool.uv]
+required-version = "==0.13.7"

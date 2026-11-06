@@ -1,0 +1,369 @@
+{
+  "dataset": "bird",
+  "url": "https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip",
+  "archive_size_bytes": 8919543554,
+  "etag": "\"1FBA2891BD215A42CE1004736AB7F47F-400\"",
+  "last_modified": "Tue, 11 Jul 2023 06:13:29 GMT",
+  "source_split": "train",
+  "opened_members": [
+    {
+      "member": "train/train.json",
+      "path": "data/raw/bird/train.json",
+      "sha256": "abf17d3def22f56f41b3e139b94bba3fa4a986280abcbf6df2d7f30150695520"
+    },
+    {
+      "member": "train/train_tables.json",
+      "path": "data/raw/bird/tables.json",
+      "sha256": "23946b0f7af774071e54a07c01c11f540c332457598f7a68c1a957c6410d4773",
+      "train_metadata_only": true
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/european_football_1/european_football_1.sqlite",
+      "path": "data/databases/bird/european_football_1/european_football_1.sqlite",
+      "sha256": "1a7c2e8e0868a3c61f0cf6dc936483b31e05d86226400273280a5975c5fc99d5"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/sales_in_weather/sales_in_weather.sqlite",
+      "path": "data/databases/bird/sales_in_weather/sales_in_weather.sqlite",
+      "sha256": "470eb5d25cd281042ef3ced349c2a2fbd7a6c16122a037f5ca391d4bac8a8f89"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/craftbeer/craftbeer.sqlite",
+      "path": "data/databases/bird/craftbeer/craftbeer.sqlite",
+      "sha256": "127bad8fbd45772d66f81aa3935e5b957eaeccce104ec3e933ff156efea168ea"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/soccer_2016/soccer_2016.sqlite",
+      "path": "data/databases/bird/soccer_2016/soccer_2016.sqlite",
+      "sha256": "84651eed21dbfae9f36a15697a5df81f3cb6ad78740f7301096e99dd7c4c06d5"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/restaurant/restaurant.sqlite",
+      "path": "data/databases/bird/restaurant/restaurant.sqlite",
+      "sha256": "39dbaf39bf244e1062e50d3be9dfd952320bd12e8471a58ae93db6ff83d57504"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/movie/movie.sqlite",
+      "path": "data/databases/bird/movie/movie.sqlite",
+      "sha256": "4d87ad371470f07af926e4bbca2784aed9a643935dd6e6a00d8009aad1816547"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/olympics/olympics.sqlite",
+      "path": "data/databases/bird/olympics/olympics.sqlite",
+      "sha256": "c34a94838914a78f62c2989b729907aa9f58cd45b93567ab211a8a840957e074"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/language_corpus/language_corpus.sqlite",
+      "path": "data/databases/bird/language_corpus/language_corpus.sqlite",
+      "sha256": "826e913eb22387a8b4a59da8ba6e7e539ea0d288565b2da5b0ec708baffb7d15"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/app_store/app_store.sqlite",
+      "path": "data/databases/bird/app_store/app_store.sqlite",
+      "sha256": "5abf267faa3c2b25f1b23c0a82bca1ca7b65368b84b16be2a6e7228168a681ef"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/sales/sales.sqlite",
+      "path": "data/databases/bird/sales/sales.sqlite",
+      "sha256": "632673acfed3a90241f8992324755fdd5304d282fe26a97db551bab7dfafce8a"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/video_games/video_games.sqlite",
+      "path": "data/databases/bird/video_games/video_games.sqlite",
+      "sha256": "d45a2b2e9014c1bac97ab0a94ca71a3d17632f046e48e3766134d01f5e155641"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/image_and_language/image_and_language.sqlite",
+      "path": "data/databases/bird/image_and_language/image_and_language.sqlite",
+      "sha256": "e2fde5486e977b4fde2097bbfbb789be5950753872a3707956b946c92080d0f1"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/software_company/software_company.sqlite",
+      "path": "data/databases/bird/software_company/software_company.sqlite",
+      "sha256": "21b00d9d2b3bf20af55597c5e844223340ae35efb034797b34100681827e2ca2"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/authors/authors.sqlite",
+      "path": "data/databases/bird/authors/authors.sqlite",
+      "sha256": "72f3c288aab05bcfdeae92dbb419e6d8468f63c7b36813b09ea1be2b9956b72f"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/movies_4/movies_4.sqlite",
+      "path": "data/databases/bird/movies_4/movies_4.sqlite",
+      "sha256": "65bdaa5265e5d84fc97cc22eb977bff86755c7d07f2f607d7bb3d9e36046afcd"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/social_media/social_media.sqlite",
+      "path": "data/databases/bird/social_media/social_media.sqlite",
+      "sha256": "5b085c690554b800656b847cd170411bf0a0e26840c106c3f0813b1107d4f78f"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/human_resources/human_resources.sqlite",
+      "path": "data/databases/bird/human_resources/human_resources.sqlite",
+      "sha256": "9cc6021a63b07908765954f922f86c4f335706a54b956e7c401f8f0c23aaa6f2"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/regional_sales/regional_sales.sqlite",
+      "path": "data/databases/bird/regional_sales/regional_sales.sqlite",
+      "sha256": "9820888505c30dfd913738265ddb9150bf1c33a93e1b236313964ada98423a0c"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/computer_student/computer_student.sqlite",
+      "path": "data/databases/bird/computer_student/computer_student.sqlite",
+      "sha256": "617669575dff24ed08efacf95e05bb53347f2d895f053faa2dcbcd047b27a513"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/works_cycles/works_cycles.sqlite",
+      "path": "data/databases/bird/works_cycles/works_cycles.sqlite",
+      "sha256": "5a5968b86a2de3cf521294eca7cdc54887830b765e8ca7ab0b103d0f1d7daf1b"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/food_inspection_2/food_inspection_2.sqlite",
+      "path": "data/databases/bird/food_inspection_2/food_inspection_2.sqlite",
+      "sha256": "f07515ff7c40c1944b35858fee8a5b6c19a6df2a46699fff853b1ce29299df65"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/citeseer/citeseer.sqlite",
+      "path": "data/databases/bird/citeseer/citeseer.sqlite",
+      "sha256": "2590117d0545f92aec1651f1bc063bd5897755eaadfd56aaf0c105a81e616e32"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/bike_share_1/bike_share_1.sqlite",
+      "path": "data/databases/bird/bike_share_1/bike_share_1.sqlite",
+      "sha256": "3d6918cb16405c1a5f483182d5effbe00c6e07d14f950b1843ec28ad8991246b"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/law_episode/law_episode.sqlite",
+      "path": "data/databases/bird/law_episode/law_episode.sqlite",
+      "sha256": "164ae73150ba2f081931fcca583aafc51f319c239eab3e0005ac1a08e6f95fc7"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/cs_semester/cs_semester.sqlite",
+      "path": "data/databases/bird/cs_semester/cs_semester.sqlite",
+      "sha256": "c6b199692b7169678682ad9e327762d0a0cafff1ac8f3d61505c7b2fed28b5eb"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/legislator/legislator.sqlite",
+      "path": "data/databases/bird/legislator/legislator.sqlite",
+      "sha256": "7fb0b945de2e21967c6f857325a42c727ef486e9f283520e2337c2ff08efdf4c"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/world/world.sqlite",
+      "path": "data/databases/bird/world/world.sqlite",
+      "sha256": "813faade795b875f6d46cf81d9651e2400524b414a407aa9d473aa9a8c142861"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/cookbook/cookbook.sqlite",
+      "path": "data/databases/bird/cookbook/cookbook.sqlite",
+      "sha256": "bff5b9b84f633be89f7954eb4067e246f4ba7441ad4ffb33374ca8a8efe206da"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/university/university.sqlite",
+      "path": "data/databases/bird/university/university.sqlite",
+      "sha256": "295afab81225bea2df72f5b779e4da0b6c5fb691ff8f7e9f448ed20e54555e18"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/books/books.sqlite",
+      "path": "data/databases/bird/books/books.sqlite",
+      "sha256": "8b34bb9752cb1550a622945e1b814b5978cd9435a00ab037c2758b552a7f856e"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/shipping/shipping.sqlite",
+      "path": "data/databases/bird/shipping/shipping.sqlite",
+      "sha256": "a6b4af6401c43aeb7f678ba18e3ebc5ba8708d4a98674be6095e3d9863f4f259"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/food_inspection/food_inspection.sqlite",
+      "path": "data/databases/bird/food_inspection/food_inspection.sqlite",
+      "sha256": "c76a6576ba7fe150e12b64a9eefa0ad418b10449f771f91830a87319e34f64c1"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/movie_platform/movie_platform.sqlite",
+      "path": "data/databases/bird/movie_platform/movie_platform.sqlite",
+      "sha256": "cd03bfa8c12445c40f46dcd69811d02fa3df917fbe54f4d886ac0f149c4004a9"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/shakespeare/shakespeare.sqlite",
+      "path": "data/databases/bird/shakespeare/shakespeare.sqlite",
+      "sha256": "c9557c1bafa039c420d8b87d5407f90d0a8c99f24f9129f9ea6b39024f0c788d"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/book_publishing_company/book_publishing_company.sqlite",
+      "path": "data/databases/bird/book_publishing_company/book_publishing_company.sqlite",
+      "sha256": "b493a54214d7b224a6f2b9b22b0f651c98f0c345a91cdec10b94825d4d897f4d"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/car_retails/car_retails.sqlite",
+      "path": "data/databases/bird/car_retails/car_retails.sqlite",
+      "sha256": "a5c434b67cd62c8e35721dfb462405b8750fee684e9d005f79bcc23bacdb1bf5"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/mental_health_survey/mental_health_survey.sqlite",
+      "path": "data/databases/bird/mental_health_survey/mental_health_survey.sqlite",
+      "sha256": "677194717340a10ed4ec490297d695b6bb7614e928bedc81d4753bb13d47433c"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/hockey/hockey.sqlite",
+      "path": "data/databases/bird/hockey/hockey.sqlite",
+      "sha256": "2987cba3921e2544fcd4603eccf5ff97b17f63103d8feb6fb908d55eb5bd9ba2"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/music_platform_2/music_platform_2.sqlite",
+      "path": "data/databases/bird/music_platform_2/music_platform_2.sqlite",
+      "sha256": "5267beadeb3928665704da6b5f265400b4821988404666ce337b35203a8f9a09"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/address/address.sqlite",
+      "path": "data/databases/bird/address/address.sqlite",
+      "sha256": "cc75a98289fc6998bb0cc314306b92277f23c97000ef3f2bd0d8b220cb1e8771"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/menu/menu.sqlite",
+      "path": "data/databases/bird/menu/menu.sqlite",
+      "sha256": "d38ef4f6982d34a536bb169e4af9b31f6b97d3959048f4fc1bdd5f9e15462d08"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/professional_basketball/professional_basketball.sqlite",
+      "path": "data/databases/bird/professional_basketball/professional_basketball.sqlite",
+      "sha256": "11bc18807f9209e4fae852695907c77961a208639e25b59def05802c9f0b8839"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/cars/cars.sqlite",
+      "path": "data/databases/bird/cars/cars.sqlite",
+      "sha256": "0338e4d6f3c7bb90748b6a1971c0d18f301166b77f2ca9984c197a0f20d7f67e"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/synthea/synthea.sqlite",
+      "path": "data/databases/bird/synthea/synthea.sqlite",
+      "sha256": "7803821b0e4f7e88dfb89461d85d3c6e0e4cfe31a9c6fd979d07fa5b735bffd4"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/genes/genes.sqlite",
+      "path": "data/databases/bird/genes/genes.sqlite",
+      "sha256": "726f142a9281a90cb36a6969b08be51d03a7ba2a58d30dfa02bdb766993fe6b5"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/retails/retails.sqlite",
+      "path": "data/databases/bird/retails/retails.sqlite",
+      "sha256": "2021fa97598a34216fbdbe604817c7d5bfdb15819da55aabdbd68ab04e4e3d78"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/talkingdata/talkingdata.sqlite",
+      "path": "data/databases/bird/talkingdata/talkingdata.sqlite",
+      "sha256": "a195526a8824c48ebdb1f0e5ddf5019d467a377022d52bda6b886936b09c1a50"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/beer_factory/beer_factory.sqlite",
+      "path": "data/databases/bird/beer_factory/beer_factory.sqlite",
+      "sha256": "3cf815ded995e8bec52d59b4763f8229054556f171a4eeb7b53f86535b94bc19"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/chicago_crime/chicago_crime.sqlite",
+      "path": "data/databases/bird/chicago_crime/chicago_crime.sqlite",
+      "sha256": "dfd081c54e79be5e980d16c8f0dd8403a82946073f2f061936fa18fb8ad69161"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/mondial_geo/mondial_geo.sqlite",
+      "path": "data/databases/bird/mondial_geo/mondial_geo.sqlite",
+      "sha256": "02e71c23c27973be373e0c110600b4f12c77904c7594f3e345310511fe8b8d63"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/student_loan/student_loan.sqlite",
+      "path": "data/databases/bird/student_loan/student_loan.sqlite",
+      "sha256": "8dac8a8757e66599716907071ebdfb20bfd1d06b90d9cecc945dd5a040a0f3b6"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/codebase_comments/codebase_comments.sqlite",
+      "path": "data/databases/bird/codebase_comments/codebase_comments.sqlite",
+      "sha256": "e4b25e8c72a79cc4142deab8c81c0c6bfd1294ae7014d518d55b7a3e8faff0a8"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/retail_world/retail_world.sqlite",
+      "path": "data/databases/bird/retail_world/retail_world.sqlite",
+      "sha256": "90ac33a038f95e9f2fae7ed4782b3bbe5e65ee94b7df5422915a745419f77d33"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/music_tracker/music_tracker.sqlite",
+      "path": "data/databases/bird/music_tracker/music_tracker.sqlite",
+      "sha256": "7c2444428e987218e2ce0655e489448dac95cec1225ba965183f09961034038f"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/disney/disney.sqlite",
+      "path": "data/databases/bird/disney/disney.sqlite",
+      "sha256": "0356fc508607fa20da3c94dc785705f05a4b8a9455bb4ac02fb1271fe3bd5c25"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/college_completion/college_completion.sqlite",
+      "path": "data/databases/bird/college_completion/college_completion.sqlite",
+      "sha256": "f60afb45836644ef4d6311882afd985e3d2320ee26a097fe5a706f880df6507e"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/ice_hockey_draft/ice_hockey_draft.sqlite",
+      "path": "data/databases/bird/ice_hockey_draft/ice_hockey_draft.sqlite",
+      "sha256": "4b297d4b7f8c0ff3b751a4017c4d2355aa8eeb11159cf258600995a56f53bf18"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/world_development_indicators/world_development_indicators.sqlite",
+      "path": "data/databases/bird/world_development_indicators/world_development_indicators.sqlite",
+      "sha256": "363cacb7b42219c8bad1b4b7a092107f3b2466852bc47d1aab34d34cae040c0c"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/airline/airline.sqlite",
+      "path": "data/databases/bird/airline/airline.sqlite",
+      "sha256": "50308a01c2467df9370ce6ee45595c97af2a06b73e195f52444406d4cdad08a8"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/retail_complains/retail_complains.sqlite",
+      "path": "data/databases/bird/retail_complains/retail_complains.sqlite",
+      "sha256": "03dce545a321d5564f5ac1ccd123bd5948c90ef7b56253fea534e11235cbe8bc"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/trains/trains.sqlite",
+      "path": "data/databases/bird/trains/trains.sqlite",
+      "sha256": "5ff21e3769ac341aec4b58d8c3e2fc5215688958cc2c0a82132223eeb124d724"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/public_review_platform/public_review_platform.sqlite",
+      "path": "data/databases/bird/public_review_platform/public_review_platform.sqlite",
+      "sha256": "d87fa4bbcb2d5daec149330d5c47378b2c669222e616bfe2c04cc3624e7ad4ba"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/donor/donor.sqlite",
+      "path": "data/databases/bird/donor/donor.sqlite",
+      "sha256": "b7012d018662e149011e4e010563ecfe7d2a7472ab2d29524fea886f81a97e35"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/coinmarketcap/coinmarketcap.sqlite",
+      "path": "data/databases/bird/coinmarketcap/coinmarketcap.sqlite",
+      "sha256": "ff179a460968f85bc7b0836a50d6c3dd3e5002be7990fb9e2bfa88213803a0f2"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/simpson_episodes/simpson_episodes.sqlite",
+      "path": "data/databases/bird/simpson_episodes/simpson_episodes.sqlite",
+      "sha256": "777172b55c622b0106dc4e0a03a1c1af61a0413d0a358f40e6210b8f0ca64f4d"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/movie_3/movie_3.sqlite",
+      "path": "data/databases/bird/movie_3/movie_3.sqlite",
+      "sha256": "af79f59f94e64e43fb0bb6a8fdc6e6d3a2017aec9dfcb5519bc840d16e01871f"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/shooting/shooting.sqlite",
+      "path": "data/databases/bird/shooting/shooting.sqlite",
+      "sha256": "9d96c60a9ef532f6c02b942ac5691eda753937324ddedd2dae7a131185cae82b"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/superstore/superstore.sqlite",
+      "path": "data/databases/bird/superstore/superstore.sqlite",
+      "sha256": "6090a5d5214c49b4eb41ab793e87c370bf54973febe6a017d569c6d0c245ab77"
+    },
+    {
+      "member": "train/train_databases.zip/train_databases/movielens/movielens.sqlite",
+      "path": "data/databases/bird/movielens/movielens.sqlite",
+      "sha256": "7c0f4f556f28e787eef6ed52ad2745f05124302c9405a977643ceb5f190ee431"
+    }
+  ],
+  "omitted_databases": [],
+  "final_data_opened": false,
+  "database_download_budget_mb": 12000
+}

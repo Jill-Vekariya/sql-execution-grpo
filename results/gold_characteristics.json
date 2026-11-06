@@ -1,0 +1,21 @@
+{
+  "spider": {
+    "n": 6958,
+    "empty_gold": 254,
+    "failure_statuses": {
+      "sql_error": 3,
+      "row_limit": 6
+    }
+  },
+  "bird": {
+    "n": 9413,
+    "empty_gold": 272,
+    "failure_statuses": {
+      "timeout": 197,
+      "row_limit": 132,
+      "memory_limit": 28,
+      "result_limit": 5,
+      "sql_error": 349
+    }
+  }
+}

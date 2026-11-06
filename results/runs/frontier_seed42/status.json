@@ -1,0 +1,5 @@
+{
+  "status": "blocked_or_failed",
+  "error_type": "RuntimeError",
+  "reason": "Frontier/API model and endpoint have not been configured; no API request made"
+}
