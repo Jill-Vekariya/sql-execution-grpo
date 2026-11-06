@@ -1,6 +1,6 @@
 {
   "github_pushed": true,
-  "status": "initial_checkpoint_pushed_ci_portability_fix_in_progress",
+  "status": "pushed_and_ci_verified",
   "target_account": "Jill-Vekariya",
   "intended_repo": "sql-execution-grpo",
   "repository_url": "https://github.com/Jill-Vekariya/sql-execution-grpo",
@@ -13,5 +13,11 @@
     "failed": 1,
     "reason": "SQLite parser nesting assumption in test"
   },
-  "source_backup_created": true
+  "source_backup_created": true,
+  "validated_ci": {
+    "run_id": 42278625478,
+    "head_sha": "0a0bc1e44b4c9ae47ee40a2e7bfc016872eefd6e",
+    "conclusion": "success",
+    "url": "https://github.com/Jill-Vekariya/sql-execution-grpo/actions/runs/42278625478"
+  }
 }
