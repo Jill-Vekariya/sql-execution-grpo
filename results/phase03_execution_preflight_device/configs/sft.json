@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "seed": 42,
+  "train_data": "data/processed/train_eligible.jsonl",
+  "val_data": "data/processed/val.jsonl",
+  "output": "results/phase03_execution_preflight_device/sft",
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "gradient_accumulation_steps": 16,
+  "max_length": 4608,
+  "gpu_price_usd_per_hour": null
+}

@@ -1,0 +1,18 @@
+{
+  "model": null,
+  "revision": null,
+  "backend": "http",
+  "data": "data/processed/val.jsonl",
+  "train_data": "data/processed/train_eligible.jsonl",
+  "seed": 42,
+  "max_prompt_tokens": 4096,
+  "max_new_tokens": 512,
+  "few_shot": 0,
+  "output": "results/phase03_readiness/frontier",
+  "gpu_price_usd_per_hour": null,
+  "endpoint": null,
+  "api_key_env": "SQLRL_API_KEY",
+  "budget_usd": 0,
+  "input_usd_per_million": null,
+  "output_usd_per_million": null
+}

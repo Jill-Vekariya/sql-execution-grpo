@@ -1,0 +1,19 @@
+{
+  "status": "blocked",
+  "model_runs_started": false,
+  "blockers": [
+    "Data preflight: [Errno 2] No such file or directory: 'data/processed/train_eligible.jsonl'",
+    "Provide the actual GPU hourly rate, including 0 if known free",
+    "Missing training dependency: torch==2.13.0",
+    "Missing training dependency: transformers==5.19.0",
+    "Missing training dependency: peft==0.21.2",
+    "Missing training dependency: trl==1.17.1",
+    "Missing training dependency: datasets==5.1.0",
+    "Missing training dependency: accelerate==1.15.0",
+    "CUDA availability cannot be checked without the locked torch package",
+    "nvidia-smi is required by the frozen generation/training entry points",
+    "Configure a frontier model and HTTPS endpoint without embedded credentials",
+    "Frontier API credential is not set in the execution environment",
+    "Configure a positive frontier spending cap and verified token prices"
+  ]
+}
