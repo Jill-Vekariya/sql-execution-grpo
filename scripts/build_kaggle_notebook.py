@@ -9,13 +9,15 @@ import zipfile
 
 def main():
     names=[]
-    for directory in ["src","scripts","tests","configs","docs","data/manifests"]:
+    for directory in ["src","scripts","tests","configs","docs"]:
         names.extend(p for p in Path(directory).rglob("*") if p.is_file() and "__pycache__" not in p.parts)
-    names += [Path(p) for p in ["pyproject.toml","uv.lock","requirements-free.in","requirements-free.lock","LICENSE","DATA_LICENSES.md","README.md","results/data_audit.json","results/training_eligibility.json","results/model_selection.json"]]
+    # prepare_free_data regenerates train/val manifests and verifies their
+    # committed checksums. Only eligible IDs must be embedded verbatim.
+    names += [Path(p) for p in ["data/manifests/checksums.json","data/manifests/train_eligible.jsonl","data/manifests/final_test.plan.json","pyproject.toml","requirements-free.in","requirements-free.lock","LICENSE","DATA_LICENSES.md","README.md","results/data_audit.json","results/training_eligibility.json","results/model_selection.json"]]
     buffer=io.BytesIO()
-    with zipfile.ZipFile(buffer,"w",zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
+    with zipfile.ZipFile(buffer,"w",zipfile.ZIP_LZMA) as archive:
         for path in sorted(set(names)):
-            info=zipfile.ZipInfo(str(path),(2026,11,7,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+            info=zipfile.ZipInfo(str(path),(2026,11,7,0,0,0));info.compress_type=zipfile.ZIP_LZMA
             archive.writestr(info,path.read_bytes())
     data=buffer.getvalue();encoded=base64.b64encode(data).decode();digest=hashlib.sha256(data).hexdigest()
     cells=[]
@@ -115,6 +117,8 @@ else:
     notebook={"cells":cells,"metadata":{"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"name":"python","version":"3.12"},"source_snapshot_sha256":digest},"nbformat":4,"nbformat_minor":5}
     output=Path("notebooks/Free_Phase03_Kaggle.ipynb");output.parent.mkdir(exist_ok=True)
     output.write_text(json.dumps(notebook,indent=1)+"\n")
+    if output.stat().st_size >= 1000000:
+        raise ValueError("Kaggle notebook import requires a file smaller than 1 MB")
     print(json.dumps({"notebook":str(output),"source_snapshot_sha256":digest,"source_files":len(names),"notebook_bytes":output.stat().st_size}))
 
 
