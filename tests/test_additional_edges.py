@@ -2,7 +2,7 @@ import sqlite3
 
 import pytest
 
-from sqlrl.executor import execute, matches
+from sqlrl.executor import Limits, execute, matches
 from sqlrl.reward import score
 
 
@@ -33,7 +33,14 @@ def test_wal_sidecar_rejected(db):
 
 def test_pathological_parser_input_is_bounded(db):
     sql = "SELECT " + "(" * 4000 + "1" + ")" * 4000
-    assert execute(db, sql).status != "ok"
+    limits = Limits(timeout_s=1.0)
+    result = execute(db, sql, limits)
+    # SQLite builds differ in how deeply their parser can nest. Redundant
+    # parentheses may execute successfully; the contract is bounded work.
+    assert result.status in {"ok", "sql_error", "memory_limit", "timeout"}
+    assert result.elapsed_s < limits.timeout_s + 2.0
+    if result.status == "ok":
+        assert result.rows == [[1]] and result.columns == 1
 
 
 def test_large_approximate_comparison_fails_explicitly():

@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0
+rootdir: /mnt/c/Users/jillv/Projects/sql-execution-grpo
+configfile: pyproject.toml
+collected 7 items
+
+tests/test_additional_edges.py .......                                   [100%]
+
+- generated xml file: /mnt/c/Users/jillv/Projects/sql-execution-grpo/results/tests-ci-portability-device.xml -
+============================== 7 passed in 3.06s ===============================

@@ -18,6 +18,7 @@ Append concrete observations; do not close an item without saved evidence.
 | F012 | A local audit was started while BIRD extraction was still incomplete. | That report is retained separately under gold_audit_partial_extraction; the primary audit was rerun only after all 209 database snapshots were present. |
 | F013 | The tokenizer client could not initialize under the workspace's SOCKS proxy because its optional socksio dependency was absent. | The initial traceback is preserved. socksio is explicitly pinned for training and the CPU environment. |
 | F014 | The initial context audit incorrectly counted the two fields of the current tokenizer's BatchEncoding instead of input_ids. | Detected from an impossible 2-token distribution before benchmark training. The incorrect eligibility report is retained; the corrected count has a regression test and eligibility is regenerated. |
+| F015 | The first GitHub CI run passed 76 tests and failed a test that assumed 4,000 redundant parentheses must overflow SQLite's parser. The runner instead returned the correct value promptly. | CI run 42278188866 preserves the failure. The test now verifies bounded execution and checks the exact value if the SQLite build accepts the query; executor protections are unchanged. Follow-up CI evidence is recorded in publication_status.json. |
 
 Gold query errors, missing databases and resource-bound failures are recorded
 individually in results/gold_audit/queries.jsonl. Their existence is not evidence
