@@ -1,0 +1,28 @@
+{
+  "observation_date": "2026-11-07",
+  "source": "Saved Colab notebook hardware/environment receipt; no benchmark",
+  "notebook": "https://colab.research.google.com/drive/1cTMxhhGlbZT_1pF3T7n2YD1APCK5maNZ",
+  "source_snapshot_sha256": "bf30e56913aabd272ee8c8d759c038e62246e6a66105602e98645a73b099b48e",
+  "torch": "2.13.0+cu126",
+  "transformers": "5.19.0",
+  "peft": "0.21.2",
+  "trl": "1.17.1",
+  "bitsandbytes": "0.50.0",
+  "cuda": true,
+  "gpu": "Tesla T4",
+  "gpu_bytes": 15637086208,
+  "kernel_sum": 16,
+  "scratch_free_gib": 106,
+  "account_subscription": false,
+  "compute_units": 0,
+  "hosted_model_catalog": [
+    "google/gemini-3.5-flash-lite",
+    "google/gemini-3.8-flash"
+  ],
+  "hosted_generate_text_parameters": [
+    "prompt",
+    "model_name",
+    "stream"
+  ],
+  "model_benchmarks_started": false
+}
