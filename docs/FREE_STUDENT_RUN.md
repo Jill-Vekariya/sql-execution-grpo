@@ -39,7 +39,8 @@ annotations and databases are never fetched. Original source, DB and manifest
 hashes are checked before the frozen eligible file is restored.
 
 Run the local stages first. Each request/finished stage is saved. SFT checkpoints
-are saved every 100 optimizer steps. On interruption, save the notebook output
+are saved every 10 optimizer steps in the free profile (100 remains the original
+reference default). On interruption, save the notebook output
 privately and attach it as input next session; set `RESUME_FROM` to that prior
 `sqlrl_free_run` directory before unpacking. Use the same embedded source and run root.
 The runner refuses changed source/config/data. An interrupted SFT run without

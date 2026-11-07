@@ -14,6 +14,7 @@ def main():
         source = source.replace("/kaggle/temp/", "/content/sqlrl_temp/")
         source = source.replace("/kaggle/working/sqlrl_free_run", "/content/sqlrl_free_run")
         source = source.replace("Kaggle Settings", "Colab Runtime > Change runtime type")
+        source = source.replace("'28000'", "'10800'")
         source = source.replace("# Attach your previous PRIVATE output and enter its sqlrl_free_run path.",
                                 "# Upload/extract a prior private output and enter its sqlrl_free_run path.")
         source = source.replace("No DB/archive symlink is placed under /kaggle/working.",

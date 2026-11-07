@@ -12,5 +12,6 @@
   "gpu_price_usd_per_hour": 0.0,
   "profile_id": "student_free_nf4_fp16_v1",
   "precision": "fp16",
-  "quantization": "nf4"
+  "quantization": "nf4",
+  "checkpoint_steps": 10
 }

@@ -75,7 +75,7 @@ def train(config, directory, *, resume_from_checkpoint=None):
         fp16=config.get("precision", "bf16") == "fp16", gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant":False}, optim="adamw_torch",
         seed=config["seed"], data_seed=config["seed"], logging_steps=10,
-        save_strategy="steps", save_steps=100, save_total_limit=2,
+        save_strategy="steps", save_steps=config.get("checkpoint_steps",100), save_total_limit=2,
         eval_strategy="steps", eval_steps=100, report_to="none", load_best_model_at_end=False,
     )
 

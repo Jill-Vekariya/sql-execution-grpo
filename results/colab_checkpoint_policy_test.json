@@ -1,0 +1,14 @@
+{
+  "observation_date": "2026-11-07",
+  "notebook": "https://colab.research.google.com/drive/1cTMxhhGlbZT_1pF3T7n2YD1APCK5maNZ",
+  "scope": "Actual Colab pytest output after the operational checkpoint policy amendment; not model performance",
+  "python": "3.12.3",
+  "pytest": "9.2.0",
+  "collected": 91,
+  "passed": 91,
+  "duration_s": 3.31,
+  "checkpoint_steps": 10,
+  "sft_source_sha256": "9c9fab2b38c75dc85ed3d4acbebb06125cebd3875353ecd50b4e0c8586ef84f7",
+  "xml_in_temporary_runtime": "/content/sqlrl_free_run/tests-colab.xml",
+  "durable_xml_export_verified": false
+}
