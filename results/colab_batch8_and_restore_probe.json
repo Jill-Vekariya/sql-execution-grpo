@@ -1,0 +1,37 @@
+{
+  "observed_date": "2026-11-07",
+  "source": "Actual saved Colab throughput diagnostic and Drive restore probe outputs",
+  "phase3_complete": false,
+  "batch_diagnostic": {
+    "diagnostic_only": true,
+    "questions": 8,
+    "serial_seconds": 28.520274701999824,
+    "batch4": {
+      "seconds": 10.025393323000571,
+      "exact_answer_matches": 8,
+      "peak_allocated_bytes": 3061089280
+    },
+    "batch8": {
+      "seconds": 6.903840816999946,
+      "speedup": 4.131073623796742,
+      "exact_answer_matches": 8,
+      "peak_allocated_bytes": 3384800768
+    },
+    "limitation": "Eight fixed inputs only; not a full-corpus speed guarantee or accuracy result"
+  },
+  "restore_probe": {
+    "status": "restored_private_drive_backup",
+    "bytes": 9186519,
+    "sha256": "1b8f201f71b2c2829ec5b78999013c4ee31112c35865b68cd2e50c41af3cc339",
+    "md5Checksum": "ea59c8aa76da6cd44461194f2feb2279",
+    "validation_examples_verified": 2304,
+    "eligible_training_sha256_verified": true,
+    "generation_script_sha256_verified": true,
+    "trained_checkpoint_present": false
+  },
+  "tests": {
+    "laptop": "111 passed in 15.91s",
+    "actual_colab": "105 passed in 4.20s",
+    "note": "Six additional offline archive-path tests ran on laptop; the real Drive restore ran in Colab"
+  }
+}
