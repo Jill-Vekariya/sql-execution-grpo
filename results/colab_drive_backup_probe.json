@@ -1,0 +1,15 @@
+{
+  "observed_date": "2026-11-07",
+  "source": "Saved Colab cell 8 output after public Google Drive API authorization",
+  "status": "verified_private_drive_backup",
+  "sha256": "8c8f3f6d6fe0ddb76c5cb162e4744bf56ca0a352a929cfa23559ed86d2d4a836",
+  "bytes": 668896,
+  "drive_file": {
+    "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+    "md5Checksum": "3712b6e79717301176d7cbf26b7d26b5",
+    "size": "668896"
+  },
+  "checkpoint": null,
+  "phase3_complete": false,
+  "limitation": "Initial backup contains preparation/source evidence, no trained adapter or model predictions. Later backups update this same private Drive file; verify the latest receipt."
+}
