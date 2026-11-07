@@ -3,7 +3,7 @@
   "identical_bootstrap_repeat_passed": true,
   "changed_operational_source_rejected": true,
   "base_source_sha256": "bf30e56913aabd272ee8c8d759c038e62246e6a66105602e98645a73b099b48e",
-  "operational_bundle_sha256": "4d32b79a770c5276f505df15ceaa1aafc1ea22607db7fbf6c0615a3326ca44de",
+  "operational_bundle_sha256": "5d6b0b4b7722359e8869770c7a30726685104a52bdfb770471bbf64d14e914f0",
   "model_or_api_called": false,
   "phase3_complete": false
 }

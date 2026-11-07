@@ -1,6 +1,11 @@
 import io, stat, zipfile
 import pytest
-from scripts.colab_restore_private import validated_members
+import importlib.util
+from pathlib import Path
+_spec=importlib.util.spec_from_file_location("colab_restore_fixture",Path(__file__).resolve().parents[1]/"scripts/colab_restore_private.py")
+_module=importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_module)
+validated_members=_module.validated_members
 
 @pytest.mark.parametrize("name",["../outside","/absolute","a/../../outside","a\\\\escape"])
 def test_restore_rejects_escaping_paths(name):

@@ -1,6 +1,11 @@
 """Resume order and token accounting for the optional batched profile."""
 import pytest
-from scripts.run_batched_generation import batch_size_from_config, trim_eos, validate_prefix
+import importlib.util
+from pathlib import Path
+_spec=importlib.util.spec_from_file_location("batched_generation_fixture",Path(__file__).resolve().parents[1]/"scripts/run_batched_generation.py")
+_module=importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_module)
+batch_size_from_config,trim_eos,validate_prefix=_module.batch_size_from_config,_module.trim_eos,_module.validate_prefix
 
 def test_multiple_stop_ids_preserve_first_stop_token():
     assert trim_eos([8,9,2,4,3,3],{2,3}) == [8,9,2]
