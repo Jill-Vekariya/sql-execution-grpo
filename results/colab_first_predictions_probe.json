@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-11-07T09:33:55.437622+00:00",
+  "source": "Transcribed from saved Colab cell 8 output; no credentials or raw answers included",
+  "train_preparation_returncode": 0,
+  "phase3_complete": false,
+  "controller": {
+    "status": "running_local_experiments",
+    "pid": 12268,
+    "bounded_seconds": 10800,
+    "cash_budget_usd": 0
+  },
+  "base_zero": {
+    "predictions": 22,
+    "generation_errors": 0,
+    "nonempty_answers": 22,
+    "output_tokens": 949,
+    "median_seconds": 3.95,
+    "error_examples": []
+  },
+  "gpu": {
+    "name": "Tesla T4",
+    "memory_used_mib": 2919,
+    "memory_total_mib": 15360,
+    "utilization_percent": 40
+  },
+  "limitation": "Partial generation evidence only. Full 2304-question evaluation, other local stages, hosted baseline and final report are not complete."
+}
