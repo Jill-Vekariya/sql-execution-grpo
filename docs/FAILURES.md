@@ -77,3 +77,11 @@ that a label is incorrect; inspect the error and original annotation first.
 - F003 follow-up: Colab Secrets showed no saved secret. The zero cash budget
   and owner-managed Free tier/billing-disabled credential gate remain; no
   hosted API request, key creation or provider-terms acceptance occurred.
+
+- F024: a nested Windows-to-WSL quoted commit command truncated the unpublished
+  title and did not push. A WSL read-only remote lookup then stalled; a headless
+  retry returned 128 and gh was absent in WSL. The title was corrected before
+  publication, and already-authenticated native Windows Git/gh pushed the
+  verified commit successfully. The stalled read-only request was stopped.
+  Training/data/results were unaffected. Evidence:
+  results/publication_checkpoint_20261118.json.

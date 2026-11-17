@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-11-18",
+  "source_commit": "256c9f64af91398c324494c2be0a0637345d71cb",
+  "ci_url": "https://github.com/Jill-Vekariya/sql-execution-grpo/actions/runs/44173448395",
+  "ci_passed": true,
+  "ci_tests": 111,
+  "ci_metric_replay_passed": true,
+  "screenshot_sha256": "14b636f6dfcfc1bab0e62345cca3834456837a0108e80db8216e9ad5bf1f07b8",
+  "screenshot_observed_utc": "2026-11-17T20:53:02.636129+00:00",
+  "few_shot_observed_predictions": 872,
+  "few_shot_imported_predictions": 600,
+  "full_sft_checkpoint_observed": false,
+  "hosted_api_secret_observed": false,
+  "phase3_complete": false,
+  "final_test_accessed": false,
+  "publication_notes": [
+    "The initial Windows-to-WSL quoted commit command truncated the unpublished title and did not push.",
+    "The title was corrected before first publication.",
+    "A WSL read-only remote check stalled; its headless retry returned 128 and gh was absent in WSL.",
+    "Stopped the stalled read-only check and used already-authenticated native Windows Git/gh.",
+    "Native push and remote-head equality succeeded; no credentials were exported."
+  ]
+}
