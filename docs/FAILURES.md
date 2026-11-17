@@ -23,3 +23,18 @@ Append concrete observations; do not close an item without saved evidence.
 Gold query errors, missing databases and resource-bound failures are recorded
 individually in results/gold_audit/queries.jsonl. Their existence is not evidence
 that a label is incorrect; inspect the error and original annotation first.
+
+## Resume observations, 18 November 2026
+
+- F016: The saved Spider literature audit incorrectly said official test labels
+  were hidden. The maintainer page states the test was released in 2024.
+  Corrected the rationale with prior text retained in
+  results/literature_audit.json. Existing official-dev final cohort unchanged;
+  no held-out content opened.
+- F017: Saved Colab progress and old GPU receipts do not confirm a current
+  runtime or the newest private backup. Current restoration/GPU status is
+  unverified, not a demonstrated runtime failure. See
+  results/resume_audit_20261118/summary.json. No inference/SFT completion claimed.
+- F018: Current web access could not open the vLLM GRPO documentation URL.
+  Recorded in results/resume_audit_20261118/upstream_review.json; no training
+  API implementation or dependency change was made on that basis.

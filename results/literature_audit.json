@@ -13,7 +13,8 @@
       "https://github.com/taoyds/spider"
     ],
     "download_page": "https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view",
-    "final_evaluation": "Official dev reserved as final test because official test labels are hidden"
+    "final_evaluation": "Official dev retained as the preregistered final test. Spider 1.0 official test was publicly released; hidden test labels are not the reason for this choice.",
+    "final_evaluation_correction": {"checked_on": "2026-11-18", "source": "https://yale-lily.github.io/spider", "prior_rationale": "Official test labels are hidden", "disposition": "Prior rationale was incorrect; final cohort unchanged and held-out content unopened."}
   },
   "bird": {
     "version": "BIRD-SQL 2023 original train",

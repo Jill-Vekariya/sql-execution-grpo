@@ -16,7 +16,7 @@ Evidence: [project status](results/project_status.json), [tests](results/tests-f
 
 Missing costs are unknown, not zero. Failure/preflight reasons and configs are saved under [results/runs](results/runs).
 
-Verifier suite: **91 passed**, 0 failures, 0 errors ([saved XML](results/tests-free-profile-device.xml)).
+Verifier suite: **111 passed**, 0 failures, 0 errors ([fresh saved XML](results/tests-resume-20261118.xml)). [Resume audit](results/resume_audit_20261118/summary.json) verifies train/val manifest hashes and zero database/question-hash overlap; [current handoff](docs/STATUS_20261118.md) distinguishes historical Colab progress from current evidence.
 Training annotation audit: **16,428 source questions**; **57 duplicates removed** across project train/val ([audit](results/data_audit.json)).
 Gold execution on available databases: **15,651/16,371 (95.60%)**. **0** declared examples lack downloaded databases; all statuses remain in the [audit](results/gold_audit/summary.json).
 CPU SFT API integration: **passed** on a random tiny Qwen3 fixture. This is not a benchmark model or accuracy result ([evidence](results/cpu_sft_smoke/status.json)).

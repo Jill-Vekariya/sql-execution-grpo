@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "sqlglot": "30.30.0",
+    "pytest": "9.2.0"
+  },
+  "source_commit": "41770f4cc342107c2bfc88b417f8002e86ca0e07"
+}

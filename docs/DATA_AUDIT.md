@@ -2,8 +2,11 @@
 
 The maintained machine-readable record is `results/literature_audit.json` for
 upstream claims and `results/data_audit.json` for locally measured train/val
-counts and checksums. Do not confuse published dataset totals (including hidden
-test questions) with this project's training corpus.
+counts and checksums. Published totals include held-out splits, unlike this
+project's training corpus. Spider 1.0's official test was publicly released;
+this project retains official dev as its preregistered final cohort. BIRD's
+official test labels remain hidden. No held-out content was opened to check
+these public dataset-status statements.
 
 | Corpus | Upstream license | Published total | Official source |
 |---|---|---|---|

@@ -1,0 +1,84 @@
+{
+  "observation_date": "2026-11-18",
+  "source_commit": "41770f4cc342107c2bfc88b417f8002e86ca0e07",
+  "manifests": {
+    "val": {
+      "path": "data/manifests/val.jsonl",
+      "sha256": "7a9bd16649b60245d1dd1d2bdeeccee298889dbefc24b40bbad6ff1aa3fc389c",
+      "questions": 2304,
+      "verified": true
+    },
+    "train": {
+      "path": "data/manifests/train.jsonl",
+      "sha256": "87a08cc5faba8aca42bff16358ce23af1602dfd223f0e215b1b33feaee81e24f",
+      "questions": 14067,
+      "verified": true
+    },
+    "train_eligible": {
+      "path": "data/manifests/train_eligible.jsonl",
+      "sha256": "60d16615a69d97c2b3d30104f3186e1126428d999bd255fdf8b006e4c07367c3",
+      "questions": 12908,
+      "verified": true
+    }
+  },
+  "database_overlap_count": 0,
+  "train_val_question_hash_overlap_count": 0,
+  "database_counts": {
+    "train": 178,
+    "val": 31
+  },
+  "previous_audit_duplicates_removed": 57,
+  "tests": {
+    "tests": 111,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "path": "results/tests-resume-20261118.xml",
+    "sha256": "6c1fdc1fbe792a1179cb1a31ee89e69c39efa1e421a03a1f3234621c60c04770"
+  },
+  "historical_gold_audit": {
+    "path": "results/gold_audit/summary.json",
+    "n": 16371,
+    "status_counts": {
+      "ok": 15651,
+      "timeout": 197,
+      "row_limit": 138,
+      "memory_limit": 28,
+      "result_limit": 5,
+      "sql_error": 352
+    },
+    "execution_rate": 0.9560197910940077,
+    "rerun_in_this_audit": false
+  },
+  "local_free_run_status_files": {},
+  "last_saved_colab_progress": {
+    "observed_utc": "2026-11-07T10:25:57.164250+00:00",
+    "source": "docs/RESUME_PHASE03.md",
+    "base_zero_predictions": 720,
+    "validation_questions": 2304,
+    "current_runtime_verified": false,
+    "current_private_backup_verified": false
+  },
+  "selected_model_record": {
+    "selected": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license": "apache-2.0",
+    "alternative": "Qwen/Qwen3.5-4B",
+    "selection_reason": "Text-only non-thinking instruction model; simple SQL-only completion and mature Qwen3 integration",
+    "sql_superiority_measured": false,
+    "weights_downloaded": false,
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "https://huggingface.co/Qwen/Qwen3.5-4B"
+    ]
+  },
+  "pending": [
+    "Current model choice required by the new request before GPU work.",
+    "Verify newest private backup and current free GPU availability.",
+    "Complete base zero-shot, few-shot, hosted baseline, SFT and SFT validation.",
+    "Final manifest checksums and cross-final duplicate audit remain Phase 9 work."
+  ],
+  "phase3_complete": false,
+  "new_accuracy_result": false,
+  "final_test_content_access": false
+}

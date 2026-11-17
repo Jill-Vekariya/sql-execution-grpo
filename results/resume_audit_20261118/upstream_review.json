@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-18",
+  "review_type": "primary_documentation_review_not_benchmark",
+  "model_options": [
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "license": "Apache-2.0",
+      "reason": "Text-only, non-thinking instruct model. Existing pinned experiment and partial outputs use it.",
+      "recommendation": "Retain for this continuation pending user choice.",
+      "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B",
+      "license": "Apache-2.0",
+      "reason": "Newer in-range Qwen candidate with stronger publisher-reported general/coding results; multimodal hybrid architecture changes the integration.",
+      "recommendation": "Separate new experiment if chosen; no SQL superiority claim.",
+      "source": "https://huggingface.co/Qwen/Qwen3.5-4B"
+    }
+  ],
+  "search_scope": "Official Qwen model listings and cards for in-range general-purpose generation models. No exhaustive cross-vendor SQL ranking established.",
+  "sql_best_model_verified": false,
+  "new_model_chosen": false,
+  "dependency_policy": "Existing exact locks retained. No training/inference implementation or dependency upgrade in this audit. Rerun version-specific API and CUDA integration checks before changing model/stack.",
+  "documentation_reviewed": [
+    "https://huggingface.co/docs/trl/grpo_trainer",
+    "https://huggingface.co/docs/trl/sft_trainer",
+    "https://huggingface.co/docs/peft/package_reference/lora",
+    "https://huggingface.co/docs/transformers/main/en/model_doc/qwen3_5"
+  ],
+  "unverified_documentation_lookup": "https://docs.vllm.ai/en/stable/training/grpo/ was inaccessible through the web tool; no vLLM compatibility claim is made from that attempt.",
+  "dataset_review": {
+    "spider": {
+      "source": "https://yale-lily.github.io/spider",
+      "license": "CC-BY-SA-4.0",
+      "official_test_public": true,
+      "final_dev_cohort_changed": false,
+      "held_out_content_opened": false
+    },
+    "bird": {
+      "source": "https://bird-bench.github.io/",
+      "license": "CC-BY-SA-4.0",
+      "train_download": "https://bird-bench.oss-cn-beijing.aliyuncs.com/train.zip",
+      "held_out_content_opened": false
+    }
+  }
+}

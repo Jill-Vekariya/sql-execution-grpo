@@ -127,3 +127,25 @@ their reasons and checksums; original labels are never rewritten. This favors
 examples supported by the executor/resource budget and can change the query-type
 distribution. Report that limitation. Validation is not filtered: nonexecuting
 gold remains visible in the evaluation denominator and gold-error count.
+
+## D014 - Resume verification, 18 November 2026
+
+Recheck the existing checkout rather than recreate the project. The fresh audit
+verifies saved train/val/eligible manifest hashes, database/question disjointness,
+and 111 passing CPU checks without touching held-out content. Existing locks,
+model revision, prompts, training parameters, and partial run artifacts remain
+unchanged. See results/resume_audit_20261118/summary.json.
+
+The latest saved GPU progress is historical. Verify the newest private backup
+and a current free runtime before resuming a prefix or claiming current progress.
+A passing verifier suite is not completed Phase 2 inference or Phase 3 SFT.
+
+The current request explicitly requires a model choice before GPU work.
+Recommend retaining Qwen3-4B-Instruct-2507 for continuity; offer Qwen3.5-4B
+as a newer, separately configured experiment. No SQL best-model claim is made.
+The existing zero cash budget remains the ceiling pending any user amendment.
+
+Spider 1.0's official test is public according to the maintainer page.
+Keep official dev as the existing final cohort; correct the earlier hidden-test
+rationale rather than change the experiment after partial model generation.
+Final checksum/dedup work remains pending under D004.

@@ -1,0 +1,14 @@
+{
+  "observation_date": "2026-11-18",
+  "seed": 42,
+  "seed_note": "Inherited experiment seed; no random sampling in this audit.",
+  "tests": "results/tests-resume-20261118.xml",
+  "output": "results/resume_audit_20261118",
+  "operations": [
+    "verify_train_val_manifests",
+    "read_existing_receipts"
+  ],
+  "model_generation": false,
+  "training": false,
+  "final_test_content_access": false
+}
