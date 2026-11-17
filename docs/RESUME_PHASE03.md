@@ -100,3 +100,31 @@ The Google AI Studio eligibility/terms and owner-created Free tier credential re
 - Latest observed batched progress at 2026-11-07T10:25:57.164250+00:00: 720/2,304 zero-shot predictions, zero generation errors, GPU utilization 100 percent. No evaluation or model accuracy was claimed at that observation.
 
 - The first batch-eight commit 31d4f8a8ef0059dd1344969598cabb417c29183e was pushed. CI 42364570722 found two test-import failures under the console pytest entry point (the runtime used python -m pytest). The fixtures now load the standalone scripts explicitly by file path, matching existing repository tests. The console entry point passes all 111 checks in 11.98 seconds. The clean notebook was rebuilt (912,717 bytes; operational bundle SHA256 5d6b0b4b7722359e8869770c7a30726685104a52bdfb770471bbf64d14e914f0) and its bootstrap/repeat/changed-source-rejection checks passed again. Model, training source and the active run were not changed by this test-only correction.
+
+## Current continuation checkpoint - 18 November 2026
+
+- User delegated model choice. Retain Qwen3-4B-Instruct-2507, pinned revision,
+  batch-eight v2 profile, seed 42, full cohorts and zero cash budget.
+- GitHub audit commit 4242083 passed CI. No new training implementation was
+  changed in this continuation, so the fresh 111-test CPU result still applies.
+- Browser opened the original saved Drive notebook. Its historical cell 8 output
+  shows 1,448 zero-shot predictions at 2026-11-07T10:46:40.455938+00:00.
+  This supersedes the repository's last 720 count, but backup count is unverified.
+- A fresh free T4 runtime connected. Existing source cell 1 ran successfully with
+  hash bf30e56913aabd272ee8c8d759c038e62246e6a66105602e98645a73b099b48e.
+  Setup cell 3 has not run in this session. Auth cell 4 is waiting at the
+  Google credentials Allow dialog (Drive AND Google Cloud data).
+- Automatic approval review rejected (1) uploading the clean resume notebook
+  from the private repo to private Google Colab and (2) clicking that Allow
+  button. Do not bypass either. Ask for explicit approval of the precise
+  notebook/destination and data-access scope. No private archive was restored
+  and no new benchmark generation/SFT started.
+- Do not run old backup cells 7/11 before a successful restore: avoid replacing
+  the existing archive with source-only state. Do not Run All.
+- The local transfer copy of the clean notebook matched SHA256
+  abc508f7c224ea08c651744d443711c9221d3617244d68525c101df82dcb8799.
+  Its static payload review found no runtime database/model/credential paths or
+  common credential-pattern matches in the embedded source archive. This is a
+  limited static check, not permission to upload or proof of all confidentiality.
+- Current receipts: results/continuation_choice_20261118.json and
+  results/notebook_payload_review_20261118.json. Hosted baseline remains pending.

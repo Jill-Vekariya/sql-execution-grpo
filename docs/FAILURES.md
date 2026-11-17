@@ -38,3 +38,12 @@ that a label is incorrect; inspect the error and original annotation first.
 - F018: Current web access could not open the vLLM GRPO documentation URL.
   Recorded in results/resume_audit_20261118/upstream_review.json; no training
   API implementation or dependency change was made on that basis.
+
+- F019 (18 November 2026): Automatic approval review rejected uploading the
+  clean private-project resume notebook to Google Colab because the specific
+  payload/destination lacked explicit end-user authorization. No upload occurred.
+- F020 (18 November 2026): Refreshing the existing notebook's Drive connection
+  reached an Allow dialog for Google Drive and Google Cloud data. Automatic
+  approval review rejected clicking Allow without explicit authorization for
+  that exact scope. Restoration and GPU work remain paused. Both rejections
+  and the actual saved progress are in results/continuation_choice_20261118.json.

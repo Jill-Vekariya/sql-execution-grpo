@@ -1,0 +1,15 @@
+{
+  "notebook_sha256": "abc508f7c224ea08c651744d443711c9221d3617244d68525c101df82dcb8799",
+  "all_code_cells_have_empty_outputs": true,
+  "embedded_archives": [
+    {
+      "sha256": "bf30e56913aabd272ee8c8d759c038e62246e6a66105602e98645a73b099b48e",
+      "files": 84,
+      "runtime_or_credential_paths": [],
+      "credential_pattern_files": [],
+      "total_uncompressed_bytes": 2488817
+    }
+  ],
+  "review_date": "2026-11-18",
+  "limitation": "Static path/pattern checks only; not proof of absence of every form of sensitive information. Upload remains blocked pending explicit approval."
+}

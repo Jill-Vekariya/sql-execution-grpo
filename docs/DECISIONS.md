@@ -149,3 +149,23 @@ Spider 1.0's official test is public according to the maintainer page.
 Keep official dev as the existing final cohort; correct the earlier hidden-test
 rationale rather than change the experiment after partial model generation.
 Final checksum/dedup work remains pending under D004.
+
+## D015 - Delegated model choice, 18 November 2026
+
+The user delegated the choice ("best for me i trust you"). Retain the pinned
+Qwen3-4B-Instruct-2507 and student_free_nf4_fp16_batch8_v2 configuration,
+seed 42, unchanged cohorts, and zero cash budget. This chooses continuity
+and verified integration, not a claim of best measured SQL capability.
+
+The saved Colab notebook has later historical progress than the repository
+handoff: 1,448/2,304 zero-shot predictions at 2026-11-07T10:46:40 UTC.
+The newest actual backup remains unverified. A fresh free T4 connected and
+ran the original source cell with the expected source hash; no new benchmark
+generation or SFT restarted. Details: results/continuation_choice_20261118.json.
+
+Automatic approval review rejected the clean-notebook upload to Google Colab
+and the notebook's Allow prompt for Google Drive AND Google Cloud data.
+These actions remain blocked; do not route them through another mechanism.
+Explicit owner approval for that payload/destination and exact access scope
+is needed before resuming backup restoration. Earlier approval records are
+retained as history, not treated as a way to bypass these current rejections.
