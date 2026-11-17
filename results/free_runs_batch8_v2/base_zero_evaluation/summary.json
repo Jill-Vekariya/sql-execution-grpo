@@ -1,0 +1,30 @@
+{
+  "n": 2304,
+  "databases": 31,
+  "execution_accuracy": 0.6475694444444444,
+  "execution_accuracy_ci95": [
+    0.5867580856681543,
+    0.7052655075187969
+  ],
+  "ci_method": "database_cluster_percentile_bootstrap",
+  "bootstrap_seed": 42,
+  "bootstrap_samples": 2000,
+  "valid_sql_rate": 0.9383680555555556,
+  "timeout_rate": 0.003472222222222222,
+  "gold_errors": 26,
+  "average_output_tokens": 44.53081597222222,
+  "token_counts_complete": true,
+  "total_cost_usd": null,
+  "average_latency_s": 12.014086556303813,
+  "average_generation_latency_s": 11.832127707034727,
+  "by_difficulty": {
+    "unknown": {
+      "n": 2304,
+      "accuracy": 0.6475694444444444,
+      "ci95": [
+        0.5867580856681543,
+        0.7052655075187969
+      ]
+    }
+  }
+}

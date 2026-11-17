@@ -13,8 +13,12 @@ jobs:
           python-version: "3.12"
       - run: uv sync --frozen --extra test
       - run: uv run --no-sync pytest --junitxml=results/ci-tests.xml
+      - name: Replay saved baseline evidence without GPU or datasets
+        run: uv run --no-sync python scripts/verify_saved_baseline.py --output results/ci-baseline-check.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: verifier-test-results
-          path: results/ci-tests.xml
+          path: |
+            results/ci-tests.xml
+            results/ci-baseline-check.json

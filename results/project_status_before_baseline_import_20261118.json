@@ -1,0 +1,5201 @@
+{
+  "scope": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "project": "Execution-rewarded text-to-SQL with GRPO",
+  "model": {
+    "selected": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license": "apache-2.0",
+    "alternative": "Qwen/Qwen3.5-4B",
+    "selection_reason": "Text-only non-thinking instruction model; simple SQL-only completion and mature Qwen3 integration",
+    "sql_superiority_measured": false,
+    "weights_downloaded": false,
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "https://huggingface.co/Qwen/Qwen3.5-4B"
+    ]
+  },
+  "tests": {
+    "tests": 91,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runs": {
+    "Base zero-shot": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+    },
+    "Base few-shot": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+    },
+    "Frontier": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "Frontier/API model and endpoint have not been configured; no API request made"
+    },
+    "SFT": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists"
+    }
+  },
+  "data_audit": "results/data_audit.json",
+  "gold_audit": "results/gold_audit/summary.json",
+  "test_evidence": "results/tests-free-profile-device.xml",
+  "final_test_accessed": false,
+  "rl_trained": false,
+  "adapter_released": false,
+  "research_accuracy_available": false,
+  "cpu_api_smoke": {
+    "status": "passed",
+    "kind": "random_tiny_qwen3_api_integration",
+    "benchmark_result": false,
+    "optimizer_steps": 2,
+    "training_loss": 2.927347421646118,
+    "lora_weights_updated": true,
+    "adapter_file_saved": true,
+    "elapsed_s": 0.24452539999947476,
+    "device": "cpu",
+    "training_cost_usd": null
+  },
+  "training_eligibility": {
+    "policy": "shared_gold_executable_and_fits_context",
+    "raw_train_questions": 14067,
+    "eligible_questions": 12908,
+    "excluded": [
+      {
+        "id": "bird:00005",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00006",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00007",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00008",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00009",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00010",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00011",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00012",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00013",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00014",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00019",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00023",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00025",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00026",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00027",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00029",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00030",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00031",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00032",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00034",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00035",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00037",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00039",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00040",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00041",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00042",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00043",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00044",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00045",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00046",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00047",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00048",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00049",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00066",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00067",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00068",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00069",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00070",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00071",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00072",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00073",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00083",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00102",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:00115",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00120",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00121",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:00125",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00131",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00141",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00142",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00145",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00162",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:00291",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00530",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00640",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:00777",
+        "reason": "gold_result_limit"
+      },
+      {
+        "id": "bird:00819",
+        "reason": "gold_result_limit"
+      },
+      {
+        "id": "bird:00821",
+        "reason": "gold_result_limit"
+      },
+      {
+        "id": "bird:01048",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01050",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01052",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01090",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01103",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01108",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01127",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01128",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01131",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01133",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01134",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01144",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01146",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01147",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01152",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01174",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01183",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01203",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01208",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01209",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:01781",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:01786",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02104",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02105",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02108",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02111",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02112",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02116",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02118",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02119",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02120",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02124",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02142",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02143",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02145",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02224",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02256",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02263",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02265",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02269",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:02304",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02305",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:02325",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:02462",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02464",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02467",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02470",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02512",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02513",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02518",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02525",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02558",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:02567",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:03147",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03148",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03149",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03150",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03151",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03152",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03154",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03155",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03156",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03157",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03158",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03161",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03162",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03164",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03166",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03167",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03168",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03169",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03172",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03173",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03174",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03175",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03176",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03177",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03178",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03179",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03180",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03181",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03182",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03183",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03186",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03188",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03189",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03190",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03191",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03193",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03194",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03195",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03196",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03197",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03198",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03199",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03201",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03206",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03215",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03234",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03236",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03237",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03238",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03240",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03244",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03245",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03253",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03255",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03261",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03270",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03273",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03274",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03284",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03285",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03292",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03294",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03296",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03298",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03299",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03305",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:03436",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03463",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03468",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03491",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03534",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03535",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03536",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03538",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03571",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03573",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03574",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03575",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03581",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03600",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03605",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03642",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:03649",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03808",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:03891",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:04082",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:04086",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:04319",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:04451",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:04457",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05045",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05066",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05075",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05093",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05177",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05217",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05474",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05475",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05476",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05477",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05478",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05479",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05480",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05481",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05518",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05521",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05530",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05532",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05684",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05685",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05686",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05690",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05691",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05692",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05694",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05696",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05697",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05701",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05703",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05710",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05713",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05718",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05719",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05722",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05730",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05731",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05766",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05768",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05769",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05780",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05781",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05788",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05798",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05799",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05800",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05807",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05814",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:05815",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05817",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05819",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:05909",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06143",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06156",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06200",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06202",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06249",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06250",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06251",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06252",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06253",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06254",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06255",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06256",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06259",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:06260",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06297",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06298",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06299",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06300",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06301",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06302",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06303",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06304",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06305",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06306",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06307",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06308",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06309",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06310",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06311",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06312",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06313",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06314",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06315",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06316",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06317",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06318",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06319",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06320",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06321",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06322",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06323",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06325",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06326",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06327",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06328",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06329",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06330",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06331",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06333",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06335",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06336",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06337",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06338",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06339",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06340",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06341",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06342",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06345",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06346",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06347",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06350",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06351",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06352",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06353",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06354",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06356",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06357",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06358",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06360",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06361",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06362",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06363",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06364",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06365",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06366",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06367",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06368",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06369",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06370",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06372",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06373",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06374",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06375",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06376",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06377",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06378",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06380",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06381",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06382",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06383",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06384",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06385",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06386",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06387",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06388",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06389",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06390",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06391",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06392",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06393",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06394",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06395",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06396",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06397",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06398",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06399",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06400",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06401",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06402",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06403",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06404",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06405",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06406",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06407",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06408",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06409",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06410",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06412",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06413",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06414",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06415",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06416",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06417",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06418",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06419",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06420",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06421",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06422",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06423",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06424",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06426",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06427",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06428",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06431",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06432",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06433",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06435",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06436",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06437",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06438",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06439",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06440",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06441",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06442",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06443",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06444",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06445",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06446",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06447",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06448",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06449",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06450",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06451",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06452",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06453",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06454",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06455",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06456",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06457",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06458",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06459",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06460",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06462",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06464",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06465",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06466",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06467",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06468",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06471",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06472",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06473",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06474",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06475",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06476",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06477",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06478",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06479",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06480",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06481",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06482",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06483",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06484",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06485",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06486",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06487",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06488",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06489",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06490",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06491",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06492",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06493",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06494",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06496",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06497",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06498",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06500",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06501",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06503",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06504",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06505",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06507",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06509",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06510",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06511",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06512",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06513",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06515",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06517",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06518",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06519",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06520",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06521",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06522",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06523",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06524",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06525",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06526",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06527",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06528",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06529",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06530",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06531",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06532",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06533",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06535",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06536",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06537",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06538",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06539",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06540",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06541",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06542",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06543",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06544",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06545",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06546",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06547",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06548",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06550",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06551",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06553",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06554",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06555",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06556",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06557",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06558",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06559",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06560",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06561",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06562",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06563",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06564",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06565",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06566",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06567",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06568",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06569",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06570",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06571",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06572",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06573",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06575",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06576",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06577",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06578",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06579",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06581",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06582",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06584",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06586",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06587",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06588",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06589",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06590",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06591",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06592",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06593",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06594",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06595",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06596",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06597",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06598",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06599",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06600",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06601",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06602",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06603",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06604",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06605",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06606",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06607",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06609",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06610",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06611",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06612",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06615",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06616",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06617",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06618",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06619",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06620",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06621",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06623",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06624",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06625",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06626",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06627",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06628",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06629",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06630",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06631",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06632",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06633",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06634",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06635",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06636",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06638",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06639",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06640",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06641",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06642",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06643",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06645",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06646",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06647",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06648",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06649",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06650",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06651",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06652",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06654",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06657",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06658",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06659",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06660",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06661",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06662",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06663",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06664",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06665",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06667",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06668",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06669",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:06677",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06679",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06720",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06723",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06736",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06755",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06759",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06761",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06763",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06764",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06768",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06771",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06775",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06776",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06780",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06783",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06794",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06797",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06806",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06820",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06832",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06833",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06836",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06843",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06845",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06848",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06849",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06877",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:06879",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06880",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06881",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06889",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06890",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06891",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06902",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06913",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:06999",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07000",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07001",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07002",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07003",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07004",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07005",
+        "reason": "context_limit",
+        "tokens": 6693
+      },
+      {
+        "id": "bird:07006",
+        "reason": "context_limit",
+        "tokens": 6678
+      },
+      {
+        "id": "bird:07007",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07008",
+        "reason": "context_limit",
+        "tokens": 6694
+      },
+      {
+        "id": "bird:07009",
+        "reason": "context_limit",
+        "tokens": 6639
+      },
+      {
+        "id": "bird:07010",
+        "reason": "context_limit",
+        "tokens": 6645
+      },
+      {
+        "id": "bird:07011",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07012",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07013",
+        "reason": "context_limit",
+        "tokens": 6645
+      },
+      {
+        "id": "bird:07014",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07015",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07016",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07017",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07018",
+        "reason": "context_limit",
+        "tokens": 6685
+      },
+      {
+        "id": "bird:07019",
+        "reason": "context_limit",
+        "tokens": 6665
+      },
+      {
+        "id": "bird:07020",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07021",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07022",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07023",
+        "reason": "context_limit",
+        "tokens": 6677
+      },
+      {
+        "id": "bird:07024",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07025",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07026",
+        "reason": "context_limit",
+        "tokens": 6627
+      },
+      {
+        "id": "bird:07027",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07028",
+        "reason": "context_limit",
+        "tokens": 6728
+      },
+      {
+        "id": "bird:07029",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07030",
+        "reason": "context_limit",
+        "tokens": 6722
+      },
+      {
+        "id": "bird:07031",
+        "reason": "context_limit",
+        "tokens": 6725
+      },
+      {
+        "id": "bird:07032",
+        "reason": "context_limit",
+        "tokens": 6671
+      },
+      {
+        "id": "bird:07033",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07034",
+        "reason": "context_limit",
+        "tokens": 6715
+      },
+      {
+        "id": "bird:07035",
+        "reason": "context_limit",
+        "tokens": 6737
+      },
+      {
+        "id": "bird:07036",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07037",
+        "reason": "context_limit",
+        "tokens": 6678
+      },
+      {
+        "id": "bird:07038",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07039",
+        "reason": "context_limit",
+        "tokens": 6688
+      },
+      {
+        "id": "bird:07040",
+        "reason": "context_limit",
+        "tokens": 6689
+      },
+      {
+        "id": "bird:07041",
+        "reason": "context_limit",
+        "tokens": 6650
+      },
+      {
+        "id": "bird:07042",
+        "reason": "context_limit",
+        "tokens": 6642
+      },
+      {
+        "id": "bird:07043",
+        "reason": "context_limit",
+        "tokens": 6700
+      },
+      {
+        "id": "bird:07044",
+        "reason": "context_limit",
+        "tokens": 6714
+      },
+      {
+        "id": "bird:07045",
+        "reason": "context_limit",
+        "tokens": 6628
+      },
+      {
+        "id": "bird:07046",
+        "reason": "context_limit",
+        "tokens": 6650
+      },
+      {
+        "id": "bird:07047",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07048",
+        "reason": "context_limit",
+        "tokens": 6633
+      },
+      {
+        "id": "bird:07049",
+        "reason": "context_limit",
+        "tokens": 6646
+      },
+      {
+        "id": "bird:07050",
+        "reason": "context_limit",
+        "tokens": 6625
+      },
+      {
+        "id": "bird:07051",
+        "reason": "context_limit",
+        "tokens": 6624
+      },
+      {
+        "id": "bird:07052",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07053",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07054",
+        "reason": "context_limit",
+        "tokens": 6695
+      },
+      {
+        "id": "bird:07055",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07056",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07057",
+        "reason": "context_limit",
+        "tokens": 6684
+      },
+      {
+        "id": "bird:07058",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07059",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07060",
+        "reason": "context_limit",
+        "tokens": 6699
+      },
+      {
+        "id": "bird:07061",
+        "reason": "context_limit",
+        "tokens": 6699
+      },
+      {
+        "id": "bird:07062",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07063",
+        "reason": "context_limit",
+        "tokens": 6658
+      },
+      {
+        "id": "bird:07064",
+        "reason": "context_limit",
+        "tokens": 6665
+      },
+      {
+        "id": "bird:07065",
+        "reason": "context_limit",
+        "tokens": 6680
+      },
+      {
+        "id": "bird:07066",
+        "reason": "context_limit",
+        "tokens": 6708
+      },
+      {
+        "id": "bird:07067",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07068",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07069",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07070",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07071",
+        "reason": "context_limit",
+        "tokens": 6698
+      },
+      {
+        "id": "bird:07072",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07073",
+        "reason": "context_limit",
+        "tokens": 6724
+      },
+      {
+        "id": "bird:07074",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07075",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07076",
+        "reason": "context_limit",
+        "tokens": 6724
+      },
+      {
+        "id": "bird:07077",
+        "reason": "context_limit",
+        "tokens": 6801
+      },
+      {
+        "id": "bird:07078",
+        "reason": "context_limit",
+        "tokens": 6758
+      },
+      {
+        "id": "bird:07079",
+        "reason": "context_limit",
+        "tokens": 6776
+      },
+      {
+        "id": "bird:07080",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07081",
+        "reason": "context_limit",
+        "tokens": 6738
+      },
+      {
+        "id": "bird:07082",
+        "reason": "context_limit",
+        "tokens": 6775
+      },
+      {
+        "id": "bird:07083",
+        "reason": "context_limit",
+        "tokens": 6730
+      },
+      {
+        "id": "bird:07084",
+        "reason": "context_limit",
+        "tokens": 6643
+      },
+      {
+        "id": "bird:07085",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07086",
+        "reason": "context_limit",
+        "tokens": 6731
+      },
+      {
+        "id": "bird:07087",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07088",
+        "reason": "context_limit",
+        "tokens": 6708
+      },
+      {
+        "id": "bird:07089",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07090",
+        "reason": "context_limit",
+        "tokens": 6714
+      },
+      {
+        "id": "bird:07091",
+        "reason": "context_limit",
+        "tokens": 6793
+      },
+      {
+        "id": "bird:07092",
+        "reason": "context_limit",
+        "tokens": 6632
+      },
+      {
+        "id": "bird:07093",
+        "reason": "context_limit",
+        "tokens": 6667
+      },
+      {
+        "id": "bird:07094",
+        "reason": "context_limit",
+        "tokens": 6693
+      },
+      {
+        "id": "bird:07095",
+        "reason": "context_limit",
+        "tokens": 6657
+      },
+      {
+        "id": "bird:07096",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07097",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07098",
+        "reason": "context_limit",
+        "tokens": 6728
+      },
+      {
+        "id": "bird:07099",
+        "reason": "context_limit",
+        "tokens": 6707
+      },
+      {
+        "id": "bird:07100",
+        "reason": "context_limit",
+        "tokens": 6657
+      },
+      {
+        "id": "bird:07101",
+        "reason": "context_limit",
+        "tokens": 6668
+      },
+      {
+        "id": "bird:07102",
+        "reason": "context_limit",
+        "tokens": 6754
+      },
+      {
+        "id": "bird:07103",
+        "reason": "context_limit",
+        "tokens": 6735
+      },
+      {
+        "id": "bird:07104",
+        "reason": "context_limit",
+        "tokens": 6747
+      },
+      {
+        "id": "bird:07105",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07106",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07107",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07108",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07109",
+        "reason": "context_limit",
+        "tokens": 6636
+      },
+      {
+        "id": "bird:07110",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07111",
+        "reason": "context_limit",
+        "tokens": 6665
+      },
+      {
+        "id": "bird:07112",
+        "reason": "context_limit",
+        "tokens": 6627
+      },
+      {
+        "id": "bird:07113",
+        "reason": "context_limit",
+        "tokens": 6645
+      },
+      {
+        "id": "bird:07114",
+        "reason": "context_limit",
+        "tokens": 6651
+      },
+      {
+        "id": "bird:07115",
+        "reason": "context_limit",
+        "tokens": 6647
+      },
+      {
+        "id": "bird:07116",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07117",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07118",
+        "reason": "context_limit",
+        "tokens": 6641
+      },
+      {
+        "id": "bird:07119",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07120",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07121",
+        "reason": "context_limit",
+        "tokens": 6667
+      },
+      {
+        "id": "bird:07122",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07123",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07124",
+        "reason": "context_limit",
+        "tokens": 6642
+      },
+      {
+        "id": "bird:07125",
+        "reason": "context_limit",
+        "tokens": 6704
+      },
+      {
+        "id": "bird:07126",
+        "reason": "context_limit",
+        "tokens": 6705
+      },
+      {
+        "id": "bird:07127",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07128",
+        "reason": "context_limit",
+        "tokens": 6702
+      },
+      {
+        "id": "bird:07129",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07130",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07131",
+        "reason": "context_limit",
+        "tokens": 6650
+      },
+      {
+        "id": "bird:07132",
+        "reason": "context_limit",
+        "tokens": 6642
+      },
+      {
+        "id": "bird:07133",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07134",
+        "reason": "context_limit",
+        "tokens": 6747
+      },
+      {
+        "id": "bird:07135",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07136",
+        "reason": "context_limit",
+        "tokens": 6676
+      },
+      {
+        "id": "bird:07137",
+        "reason": "context_limit",
+        "tokens": 6691
+      },
+      {
+        "id": "bird:07138",
+        "reason": "context_limit",
+        "tokens": 6714
+      },
+      {
+        "id": "bird:07139",
+        "reason": "context_limit",
+        "tokens": 6728
+      },
+      {
+        "id": "bird:07140",
+        "reason": "context_limit",
+        "tokens": 6678
+      },
+      {
+        "id": "bird:07141",
+        "reason": "context_limit",
+        "tokens": 6632
+      },
+      {
+        "id": "bird:07142",
+        "reason": "context_limit",
+        "tokens": 6624
+      },
+      {
+        "id": "bird:07143",
+        "reason": "context_limit",
+        "tokens": 6627
+      },
+      {
+        "id": "bird:07144",
+        "reason": "context_limit",
+        "tokens": 6628
+      },
+      {
+        "id": "bird:07145",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07146",
+        "reason": "context_limit",
+        "tokens": 6618
+      },
+      {
+        "id": "bird:07147",
+        "reason": "context_limit",
+        "tokens": 6619
+      },
+      {
+        "id": "bird:07148",
+        "reason": "context_limit",
+        "tokens": 6648
+      },
+      {
+        "id": "bird:07149",
+        "reason": "context_limit",
+        "tokens": 6624
+      },
+      {
+        "id": "bird:07150",
+        "reason": "context_limit",
+        "tokens": 6629
+      },
+      {
+        "id": "bird:07151",
+        "reason": "context_limit",
+        "tokens": 6621
+      },
+      {
+        "id": "bird:07152",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07153",
+        "reason": "context_limit",
+        "tokens": 6647
+      },
+      {
+        "id": "bird:07154",
+        "reason": "context_limit",
+        "tokens": 6676
+      },
+      {
+        "id": "bird:07155",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07156",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07157",
+        "reason": "context_limit",
+        "tokens": 6744
+      },
+      {
+        "id": "bird:07158",
+        "reason": "context_limit",
+        "tokens": 6741
+      },
+      {
+        "id": "bird:07159",
+        "reason": "context_limit",
+        "tokens": 6651
+      },
+      {
+        "id": "bird:07160",
+        "reason": "context_limit",
+        "tokens": 6684
+      },
+      {
+        "id": "bird:07161",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07162",
+        "reason": "context_limit",
+        "tokens": 6667
+      },
+      {
+        "id": "bird:07163",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07164",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07165",
+        "reason": "context_limit",
+        "tokens": 6658
+      },
+      {
+        "id": "bird:07166",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07167",
+        "reason": "context_limit",
+        "tokens": 6737
+      },
+      {
+        "id": "bird:07168",
+        "reason": "context_limit",
+        "tokens": 6728
+      },
+      {
+        "id": "bird:07169",
+        "reason": "context_limit",
+        "tokens": 6760
+      },
+      {
+        "id": "bird:07170",
+        "reason": "context_limit",
+        "tokens": 6745
+      },
+      {
+        "id": "bird:07171",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07172",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07173",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07174",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07175",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07176",
+        "reason": "context_limit",
+        "tokens": 6783
+      },
+      {
+        "id": "bird:07177",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07178",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07179",
+        "reason": "context_limit",
+        "tokens": 6679
+      },
+      {
+        "id": "bird:07180",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07181",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07182",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07183",
+        "reason": "context_limit",
+        "tokens": 6656
+      },
+      {
+        "id": "bird:07184",
+        "reason": "context_limit",
+        "tokens": 6630
+      },
+      {
+        "id": "bird:07185",
+        "reason": "context_limit",
+        "tokens": 6671
+      },
+      {
+        "id": "bird:07186",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07187",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07188",
+        "reason": "context_limit",
+        "tokens": 6722
+      },
+      {
+        "id": "bird:07189",
+        "reason": "context_limit",
+        "tokens": 6676
+      },
+      {
+        "id": "bird:07190",
+        "reason": "context_limit",
+        "tokens": 6705
+      },
+      {
+        "id": "bird:07191",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07192",
+        "reason": "context_limit",
+        "tokens": 6713
+      },
+      {
+        "id": "bird:07193",
+        "reason": "context_limit",
+        "tokens": 6723
+      },
+      {
+        "id": "bird:07194",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07195",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07196",
+        "reason": "context_limit",
+        "tokens": 6680
+      },
+      {
+        "id": "bird:07197",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07198",
+        "reason": "context_limit",
+        "tokens": 6724
+      },
+      {
+        "id": "bird:07199",
+        "reason": "context_limit",
+        "tokens": 6696
+      },
+      {
+        "id": "bird:07200",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07201",
+        "reason": "context_limit",
+        "tokens": 6651
+      },
+      {
+        "id": "bird:07202",
+        "reason": "context_limit",
+        "tokens": 6752
+      },
+      {
+        "id": "bird:07203",
+        "reason": "context_limit",
+        "tokens": 6736
+      },
+      {
+        "id": "bird:07204",
+        "reason": "context_limit",
+        "tokens": 6740
+      },
+      {
+        "id": "bird:07205",
+        "reason": "context_limit",
+        "tokens": 6751
+      },
+      {
+        "id": "bird:07206",
+        "reason": "context_limit",
+        "tokens": 6764
+      },
+      {
+        "id": "bird:07207",
+        "reason": "context_limit",
+        "tokens": 6639
+      },
+      {
+        "id": "bird:07208",
+        "reason": "context_limit",
+        "tokens": 6623
+      },
+      {
+        "id": "bird:07209",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07210",
+        "reason": "context_limit",
+        "tokens": 6628
+      },
+      {
+        "id": "bird:07211",
+        "reason": "context_limit",
+        "tokens": 6694
+      },
+      {
+        "id": "bird:07212",
+        "reason": "context_limit",
+        "tokens": 6645
+      },
+      {
+        "id": "bird:07213",
+        "reason": "context_limit",
+        "tokens": 6710
+      },
+      {
+        "id": "bird:07214",
+        "reason": "context_limit",
+        "tokens": 6665
+      },
+      {
+        "id": "bird:07215",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07216",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07217",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07218",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07219",
+        "reason": "context_limit",
+        "tokens": 6722
+      },
+      {
+        "id": "bird:07220",
+        "reason": "context_limit",
+        "tokens": 6687
+      },
+      {
+        "id": "bird:07221",
+        "reason": "context_limit",
+        "tokens": 6668
+      },
+      {
+        "id": "bird:07222",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07223",
+        "reason": "context_limit",
+        "tokens": 6679
+      },
+      {
+        "id": "bird:07224",
+        "reason": "context_limit",
+        "tokens": 6657
+      },
+      {
+        "id": "bird:07225",
+        "reason": "context_limit",
+        "tokens": 6724
+      },
+      {
+        "id": "bird:07226",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07227",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07228",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07229",
+        "reason": "context_limit",
+        "tokens": 6641
+      },
+      {
+        "id": "bird:07230",
+        "reason": "context_limit",
+        "tokens": 6695
+      },
+      {
+        "id": "bird:07231",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07232",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07233",
+        "reason": "context_limit",
+        "tokens": 6688
+      },
+      {
+        "id": "bird:07234",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07235",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07236",
+        "reason": "context_limit",
+        "tokens": 6693
+      },
+      {
+        "id": "bird:07237",
+        "reason": "context_limit",
+        "tokens": 6646
+      },
+      {
+        "id": "bird:07238",
+        "reason": "context_limit",
+        "tokens": 6691
+      },
+      {
+        "id": "bird:07239",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07240",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07241",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07242",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07243",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07244",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07245",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07246",
+        "reason": "context_limit",
+        "tokens": 6689
+      },
+      {
+        "id": "bird:07247",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07248",
+        "reason": "context_limit",
+        "tokens": 6631
+      },
+      {
+        "id": "bird:07249",
+        "reason": "context_limit",
+        "tokens": 6634
+      },
+      {
+        "id": "bird:07250",
+        "reason": "context_limit",
+        "tokens": 6694
+      },
+      {
+        "id": "bird:07251",
+        "reason": "context_limit",
+        "tokens": 6657
+      },
+      {
+        "id": "bird:07252",
+        "reason": "context_limit",
+        "tokens": 6770
+      },
+      {
+        "id": "bird:07253",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07254",
+        "reason": "context_limit",
+        "tokens": 6678
+      },
+      {
+        "id": "bird:07255",
+        "reason": "context_limit",
+        "tokens": 6739
+      },
+      {
+        "id": "bird:07256",
+        "reason": "context_limit",
+        "tokens": 6715
+      },
+      {
+        "id": "bird:07257",
+        "reason": "context_limit",
+        "tokens": 6723
+      },
+      {
+        "id": "bird:07258",
+        "reason": "context_limit",
+        "tokens": 6717
+      },
+      {
+        "id": "bird:07259",
+        "reason": "context_limit",
+        "tokens": 6694
+      },
+      {
+        "id": "bird:07260",
+        "reason": "context_limit",
+        "tokens": 6700
+      },
+      {
+        "id": "bird:07261",
+        "reason": "context_limit",
+        "tokens": 6726
+      },
+      {
+        "id": "bird:07262",
+        "reason": "context_limit",
+        "tokens": 6723
+      },
+      {
+        "id": "bird:07263",
+        "reason": "context_limit",
+        "tokens": 6715
+      },
+      {
+        "id": "bird:07264",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07265",
+        "reason": "context_limit",
+        "tokens": 6710
+      },
+      {
+        "id": "bird:07266",
+        "reason": "context_limit",
+        "tokens": 6700
+      },
+      {
+        "id": "bird:07267",
+        "reason": "context_limit",
+        "tokens": 6733
+      },
+      {
+        "id": "bird:07268",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07269",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07270",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07271",
+        "reason": "context_limit",
+        "tokens": 6711
+      },
+      {
+        "id": "bird:07272",
+        "reason": "context_limit",
+        "tokens": 6720
+      },
+      {
+        "id": "bird:07273",
+        "reason": "context_limit",
+        "tokens": 6712
+      },
+      {
+        "id": "bird:07274",
+        "reason": "context_limit",
+        "tokens": 6766
+      },
+      {
+        "id": "bird:07275",
+        "reason": "context_limit",
+        "tokens": 6633
+      },
+      {
+        "id": "bird:07276",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07277",
+        "reason": "context_limit",
+        "tokens": 6643
+      },
+      {
+        "id": "bird:07278",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07279",
+        "reason": "context_limit",
+        "tokens": 6630
+      },
+      {
+        "id": "bird:07280",
+        "reason": "context_limit",
+        "tokens": 6640
+      },
+      {
+        "id": "bird:07281",
+        "reason": "context_limit",
+        "tokens": 6636
+      },
+      {
+        "id": "bird:07282",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07283",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07284",
+        "reason": "context_limit",
+        "tokens": 6685
+      },
+      {
+        "id": "bird:07285",
+        "reason": "context_limit",
+        "tokens": 6711
+      },
+      {
+        "id": "bird:07286",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07287",
+        "reason": "context_limit",
+        "tokens": 6693
+      },
+      {
+        "id": "bird:07288",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07289",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07290",
+        "reason": "context_limit",
+        "tokens": 6665
+      },
+      {
+        "id": "bird:07291",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07292",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07293",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07294",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07295",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07296",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07297",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07298",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07299",
+        "reason": "context_limit",
+        "tokens": 6716
+      },
+      {
+        "id": "bird:07300",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07301",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07302",
+        "reason": "context_limit",
+        "tokens": 6691
+      },
+      {
+        "id": "bird:07303",
+        "reason": "context_limit",
+        "tokens": 6705
+      },
+      {
+        "id": "bird:07304",
+        "reason": "context_limit",
+        "tokens": 6709
+      },
+      {
+        "id": "bird:07305",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07306",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07307",
+        "reason": "context_limit",
+        "tokens": 6684
+      },
+      {
+        "id": "bird:07308",
+        "reason": "context_limit",
+        "tokens": 6639
+      },
+      {
+        "id": "bird:07309",
+        "reason": "context_limit",
+        "tokens": 6642
+      },
+      {
+        "id": "bird:07310",
+        "reason": "context_limit",
+        "tokens": 6688
+      },
+      {
+        "id": "bird:07311",
+        "reason": "context_limit",
+        "tokens": 6709
+      },
+      {
+        "id": "bird:07312",
+        "reason": "context_limit",
+        "tokens": 6686
+      },
+      {
+        "id": "bird:07313",
+        "reason": "context_limit",
+        "tokens": 6750
+      },
+      {
+        "id": "bird:07314",
+        "reason": "context_limit",
+        "tokens": 6732
+      },
+      {
+        "id": "bird:07315",
+        "reason": "context_limit",
+        "tokens": 6702
+      },
+      {
+        "id": "bird:07316",
+        "reason": "context_limit",
+        "tokens": 6738
+      },
+      {
+        "id": "bird:07317",
+        "reason": "context_limit",
+        "tokens": 6715
+      },
+      {
+        "id": "bird:07318",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07319",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07320",
+        "reason": "context_limit",
+        "tokens": 6694
+      },
+      {
+        "id": "bird:07321",
+        "reason": "context_limit",
+        "tokens": 6719
+      },
+      {
+        "id": "bird:07322",
+        "reason": "context_limit",
+        "tokens": 6706
+      },
+      {
+        "id": "bird:07323",
+        "reason": "context_limit",
+        "tokens": 6643
+      },
+      {
+        "id": "bird:07324",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07325",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07326",
+        "reason": "context_limit",
+        "tokens": 6682
+      },
+      {
+        "id": "bird:07327",
+        "reason": "context_limit",
+        "tokens": 6691
+      },
+      {
+        "id": "bird:07328",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07329",
+        "reason": "context_limit",
+        "tokens": 6703
+      },
+      {
+        "id": "bird:07330",
+        "reason": "context_limit",
+        "tokens": 6668
+      },
+      {
+        "id": "bird:07331",
+        "reason": "context_limit",
+        "tokens": 6720
+      },
+      {
+        "id": "bird:07332",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07333",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07334",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07335",
+        "reason": "context_limit",
+        "tokens": 6702
+      },
+      {
+        "id": "bird:07336",
+        "reason": "context_limit",
+        "tokens": 6719
+      },
+      {
+        "id": "bird:07337",
+        "reason": "context_limit",
+        "tokens": 6620
+      },
+      {
+        "id": "bird:07338",
+        "reason": "context_limit",
+        "tokens": 6705
+      },
+      {
+        "id": "bird:07339",
+        "reason": "context_limit",
+        "tokens": 6636
+      },
+      {
+        "id": "bird:07340",
+        "reason": "context_limit",
+        "tokens": 6641
+      },
+      {
+        "id": "bird:07341",
+        "reason": "context_limit",
+        "tokens": 6627
+      },
+      {
+        "id": "bird:07342",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07343",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07344",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07345",
+        "reason": "context_limit",
+        "tokens": 6637
+      },
+      {
+        "id": "bird:07346",
+        "reason": "context_limit",
+        "tokens": 6632
+      },
+      {
+        "id": "bird:07347",
+        "reason": "context_limit",
+        "tokens": 6636
+      },
+      {
+        "id": "bird:07348",
+        "reason": "context_limit",
+        "tokens": 6633
+      },
+      {
+        "id": "bird:07349",
+        "reason": "context_limit",
+        "tokens": 6651
+      },
+      {
+        "id": "bird:07350",
+        "reason": "context_limit",
+        "tokens": 6695
+      },
+      {
+        "id": "bird:07351",
+        "reason": "context_limit",
+        "tokens": 6714
+      },
+      {
+        "id": "bird:07352",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07353",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07354",
+        "reason": "context_limit",
+        "tokens": 6644
+      },
+      {
+        "id": "bird:07355",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07356",
+        "reason": "context_limit",
+        "tokens": 6658
+      },
+      {
+        "id": "bird:07357",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07358",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07359",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07360",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07361",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07362",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07363",
+        "reason": "context_limit",
+        "tokens": 6658
+      },
+      {
+        "id": "bird:07364",
+        "reason": "context_limit",
+        "tokens": 6650
+      },
+      {
+        "id": "bird:07365",
+        "reason": "context_limit",
+        "tokens": 6758
+      },
+      {
+        "id": "bird:07366",
+        "reason": "context_limit",
+        "tokens": 6786
+      },
+      {
+        "id": "bird:07367",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07368",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07369",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07370",
+        "reason": "context_limit",
+        "tokens": 6668
+      },
+      {
+        "id": "bird:07371",
+        "reason": "context_limit",
+        "tokens": 6630
+      },
+      {
+        "id": "bird:07372",
+        "reason": "context_limit",
+        "tokens": 6674
+      },
+      {
+        "id": "bird:07373",
+        "reason": "context_limit",
+        "tokens": 6681
+      },
+      {
+        "id": "bird:07374",
+        "reason": "context_limit",
+        "tokens": 6656
+      },
+      {
+        "id": "bird:07375",
+        "reason": "context_limit",
+        "tokens": 6642
+      },
+      {
+        "id": "bird:07376",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07377",
+        "reason": "context_limit",
+        "tokens": 6653
+      },
+      {
+        "id": "bird:07378",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07379",
+        "reason": "context_limit",
+        "tokens": 6729
+      },
+      {
+        "id": "bird:07380",
+        "reason": "context_limit",
+        "tokens": 6741
+      },
+      {
+        "id": "bird:07381",
+        "reason": "context_limit",
+        "tokens": 6680
+      },
+      {
+        "id": "bird:07382",
+        "reason": "context_limit",
+        "tokens": 6755
+      },
+      {
+        "id": "bird:07383",
+        "reason": "context_limit",
+        "tokens": 6720
+      },
+      {
+        "id": "bird:07384",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07385",
+        "reason": "context_limit",
+        "tokens": 6730
+      },
+      {
+        "id": "bird:07386",
+        "reason": "context_limit",
+        "tokens": 6722
+      },
+      {
+        "id": "bird:07387",
+        "reason": "context_limit",
+        "tokens": 6700
+      },
+      {
+        "id": "bird:07388",
+        "reason": "context_limit",
+        "tokens": 6710
+      },
+      {
+        "id": "bird:07389",
+        "reason": "context_limit",
+        "tokens": 6706
+      },
+      {
+        "id": "bird:07390",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07391",
+        "reason": "context_limit",
+        "tokens": 6677
+      },
+      {
+        "id": "bird:07392",
+        "reason": "context_limit",
+        "tokens": 6771
+      },
+      {
+        "id": "bird:07393",
+        "reason": "context_limit",
+        "tokens": 6785
+      },
+      {
+        "id": "bird:07394",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07395",
+        "reason": "context_limit",
+        "tokens": 6703
+      },
+      {
+        "id": "bird:07396",
+        "reason": "context_limit",
+        "tokens": 6744
+      },
+      {
+        "id": "bird:07397",
+        "reason": "context_limit",
+        "tokens": 6641
+      },
+      {
+        "id": "bird:07398",
+        "reason": "context_limit",
+        "tokens": 6641
+      },
+      {
+        "id": "bird:07399",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07400",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07401",
+        "reason": "context_limit",
+        "tokens": 6632
+      },
+      {
+        "id": "bird:07402",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07403",
+        "reason": "context_limit",
+        "tokens": 6638
+      },
+      {
+        "id": "bird:07404",
+        "reason": "context_limit",
+        "tokens": 6615
+      },
+      {
+        "id": "bird:07405",
+        "reason": "context_limit",
+        "tokens": 6627
+      },
+      {
+        "id": "bird:07406",
+        "reason": "context_limit",
+        "tokens": 6645
+      },
+      {
+        "id": "bird:07407",
+        "reason": "context_limit",
+        "tokens": 6688
+      },
+      {
+        "id": "bird:07408",
+        "reason": "context_limit",
+        "tokens": 6656
+      },
+      {
+        "id": "bird:07409",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07410",
+        "reason": "context_limit",
+        "tokens": 6654
+      },
+      {
+        "id": "bird:07411",
+        "reason": "context_limit",
+        "tokens": 6679
+      },
+      {
+        "id": "bird:07412",
+        "reason": "context_limit",
+        "tokens": 6679
+      },
+      {
+        "id": "bird:07413",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07414",
+        "reason": "context_limit",
+        "tokens": 6717
+      },
+      {
+        "id": "bird:07415",
+        "reason": "context_limit",
+        "tokens": 6706
+      },
+      {
+        "id": "bird:07416",
+        "reason": "context_limit",
+        "tokens": 6668
+      },
+      {
+        "id": "bird:07417",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07418",
+        "reason": "context_limit",
+        "tokens": 6724
+      },
+      {
+        "id": "bird:07419",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07420",
+        "reason": "context_limit",
+        "tokens": 6743
+      },
+      {
+        "id": "bird:07421",
+        "reason": "context_limit",
+        "tokens": 6722
+      },
+      {
+        "id": "bird:07422",
+        "reason": "context_limit",
+        "tokens": 6738
+      },
+      {
+        "id": "bird:07423",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07424",
+        "reason": "context_limit",
+        "tokens": 6707
+      },
+      {
+        "id": "bird:07425",
+        "reason": "context_limit",
+        "tokens": 6701
+      },
+      {
+        "id": "bird:07426",
+        "reason": "context_limit",
+        "tokens": 6676
+      },
+      {
+        "id": "bird:07427",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07428",
+        "reason": "context_limit",
+        "tokens": 6697
+      },
+      {
+        "id": "bird:07429",
+        "reason": "context_limit",
+        "tokens": 6728
+      },
+      {
+        "id": "bird:07430",
+        "reason": "context_limit",
+        "tokens": 6709
+      },
+      {
+        "id": "bird:07431",
+        "reason": "context_limit",
+        "tokens": 6780
+      },
+      {
+        "id": "bird:07432",
+        "reason": "context_limit",
+        "tokens": 6744
+      },
+      {
+        "id": "bird:07433",
+        "reason": "context_limit",
+        "tokens": 6727
+      },
+      {
+        "id": "bird:07434",
+        "reason": "context_limit",
+        "tokens": 6705
+      },
+      {
+        "id": "bird:07435",
+        "reason": "context_limit",
+        "tokens": 6646
+      },
+      {
+        "id": "bird:07436",
+        "reason": "context_limit",
+        "tokens": 6613
+      },
+      {
+        "id": "bird:07437",
+        "reason": "context_limit",
+        "tokens": 6643
+      },
+      {
+        "id": "bird:07438",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "bird:07439",
+        "reason": "context_limit",
+        "tokens": 6632
+      },
+      {
+        "id": "bird:07440",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07441",
+        "reason": "context_limit",
+        "tokens": 6664
+      },
+      {
+        "id": "bird:07442",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07443",
+        "reason": "context_limit",
+        "tokens": 6659
+      },
+      {
+        "id": "bird:07444",
+        "reason": "context_limit",
+        "tokens": 6669
+      },
+      {
+        "id": "bird:07445",
+        "reason": "context_limit",
+        "tokens": 6650
+      },
+      {
+        "id": "bird:07446",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07447",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07448",
+        "reason": "context_limit",
+        "tokens": 6672
+      },
+      {
+        "id": "bird:07449",
+        "reason": "context_limit",
+        "tokens": 6655
+      },
+      {
+        "id": "bird:07450",
+        "reason": "context_limit",
+        "tokens": 6643
+      },
+      {
+        "id": "bird:07451",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07452",
+        "reason": "context_limit",
+        "tokens": 6673
+      },
+      {
+        "id": "bird:07453",
+        "reason": "context_limit",
+        "tokens": 6690
+      },
+      {
+        "id": "bird:07454",
+        "reason": "context_limit",
+        "tokens": 6636
+      },
+      {
+        "id": "bird:07455",
+        "reason": "context_limit",
+        "tokens": 6711
+      },
+      {
+        "id": "bird:07456",
+        "reason": "context_limit",
+        "tokens": 6647
+      },
+      {
+        "id": "bird:07457",
+        "reason": "context_limit",
+        "tokens": 6628
+      },
+      {
+        "id": "bird:07458",
+        "reason": "context_limit",
+        "tokens": 6624
+      },
+      {
+        "id": "bird:07459",
+        "reason": "context_limit",
+        "tokens": 6639
+      },
+      {
+        "id": "bird:07460",
+        "reason": "context_limit",
+        "tokens": 6662
+      },
+      {
+        "id": "bird:07461",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07462",
+        "reason": "context_limit",
+        "tokens": 6670
+      },
+      {
+        "id": "bird:07463",
+        "reason": "context_limit",
+        "tokens": 6649
+      },
+      {
+        "id": "bird:07464",
+        "reason": "context_limit",
+        "tokens": 6661
+      },
+      {
+        "id": "bird:07465",
+        "reason": "context_limit",
+        "tokens": 6663
+      },
+      {
+        "id": "bird:07466",
+        "reason": "context_limit",
+        "tokens": 6660
+      },
+      {
+        "id": "bird:07467",
+        "reason": "context_limit",
+        "tokens": 6646
+      },
+      {
+        "id": "bird:07468",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07469",
+        "reason": "context_limit",
+        "tokens": 6675
+      },
+      {
+        "id": "bird:07470",
+        "reason": "context_limit",
+        "tokens": 6652
+      },
+      {
+        "id": "bird:07471",
+        "reason": "context_limit",
+        "tokens": 6677
+      },
+      {
+        "id": "bird:07472",
+        "reason": "context_limit",
+        "tokens": 6683
+      },
+      {
+        "id": "bird:07518",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07561",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07597",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07638",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07739",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:07923",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07926",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:07928",
+        "reason": "gold_result_limit"
+      },
+      {
+        "id": "bird:07932",
+        "reason": "gold_result_limit"
+      },
+      {
+        "id": "bird:07934",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:07951",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07957",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07959",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07960",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07970",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:07973",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:08531",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08540",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08570",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08572",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08576",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08595",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08696",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08764",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08770",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:08994",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:08997",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:08998",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09001",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09002",
+        "reason": "gold_memory_limit"
+      },
+      {
+        "id": "bird:09017",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09022",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09023",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09024",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09025",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09029",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09034",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09035",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09051",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09052",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09061",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09067",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09083",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "bird:09087",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "bird:09096",
+        "reason": "gold_timeout"
+      },
+      {
+        "id": "spider:03153",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "spider:03661",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "spider:03662",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "spider:03663",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "spider:03664",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "spider:04513",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "spider:04514",
+        "reason": "gold_sql_error"
+      },
+      {
+        "id": "spider:06877",
+        "reason": "gold_row_limit"
+      },
+      {
+        "id": "spider:06878",
+        "reason": "gold_row_limit"
+      }
+    ],
+    "max_context_tokens": 4608,
+    "tokenizer_model": "Qwen/Qwen3-4B-Instruct-2507",
+    "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "token_lengths": {
+      "min": 155,
+      "max": 6801
+    },
+    "manifest": {
+      "path": "data/manifests/train_eligible.jsonl",
+      "sha256": "60d16615a69d97c2b3d30104f3186e1126428d999bd255fdf8b006e4c07367c3"
+    },
+    "processed_train_sha256": "0af7954617e81a26b5fda24a2923c68477792043ca2c464e00e17f62c319b290",
+    "raw_train_sha256": "be02de11e6c9c56cec316ef09c3c447b968eb7e39314c61d48a37fa3fc921ae7",
+    "gold_audit_sha256": "2d5bfe7ec3ab5b58513d8d8b7bd63d761615c8a40e2b02b3349f6bdc7a791ea4",
+    "validation_modified": false,
+    "labels_rewritten": false,
+    "benchmark_models_run": false
+  },
+  "limitations": [
+    "No CUDA GPU available",
+    "No frontier model/API budget configured",
+    "Final checksum/cross-final duplicate audit pending under no-access rule",
+    "Benchmark contamination possible",
+    "SQLite only",
+    "No benchmark training seeds run yet",
+    "Official dev will serve as final test"
+  ]
+}

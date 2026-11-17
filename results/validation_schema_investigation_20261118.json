@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-11-18",
+  "laptop_before_sha256": "5afd7b90746900cf24713a908ff43184600f805f47a31717502cd6962763dfb5",
+  "saved_prompt_schema_candidate_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "saved_run_validation_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "schema_changed_questions": 1276,
+  "changes_by_dataset": {
+    "bird": 1276
+  },
+  "changed_schemas_match_metadata_fallback": 1276,
+  "non_schema_fields_changed": false,
+  "gold_sql_unchanged": true,
+  "id_order_unchanged": true,
+  "all_saved_prompts_match": true,
+  "full_validation_bytes_match_saved_run": true,
+  "database_files_available_on_laptop_by_dataset": {
+    "spider": 1028,
+    "bird": 0
+  },
+  "database_availability_unit": "question records, not distinct DBs",
+  "new_execution_or_generation_performed": false,
+  "final_test_accessed": false,
+  "diagnosis": "The laptop working file retained metadata fallback schemas. The verified Colab run used actual database DDL. Only schema fields were reconstructed from the saved prompts; the full-file SHA256 must reproduce the saved run exactly."
+}

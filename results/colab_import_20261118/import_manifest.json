@@ -1,0 +1,133 @@
+{
+  "import_date": "2026-11-18",
+  "archive_sha256": "7e7fdb237be67d886f86103a0049571f4c3ded4e4cf6e6ea448b997c4c57dca9",
+  "export_bytes": 540206,
+  "files": {
+    "backup_status.json": {
+      "path": "results/colab_import_20261118/backup_status.json",
+      "sha256": "163d84764ef355b3726cc6605750de0dedd1a82fdf93ab0307328dc3243007dd",
+      "bytes": 558
+    },
+    "restore_receipt_current.json": {
+      "path": "results/colab_import_20261118/restore_receipt_current.json",
+      "sha256": "bb7258fbe8620d664429879f0a88f8a0f6389b77d789bd6038bbe8e8ec9841ee",
+      "bytes": 649
+    },
+    "results/export_manifest_20261118.json": {
+      "path": "results/export_manifest_20261118.json",
+      "sha256": "1faf2ad8345d1fe49ffc44b8612b26162cc35b7c50e1f2e720a54994a03c08c4",
+      "bytes": 2980
+    },
+    "results/free_runs_batch8_v2/base_few/config.json": {
+      "path": "results/free_runs_batch8_v2/base_few/config.json",
+      "sha256": "56281094d6c918ea461bd678d1b9a1d939bba48f9135b5f63eb4b49a04343e78",
+      "bytes": 796
+    },
+    "results/free_runs_batch8_v2/base_few/environment.json": {
+      "path": "results/free_runs_batch8_v2/base_few/environment.json",
+      "sha256": "33d702c3b37bf8b62ea77c058ae4e6a89d31eab644d5616f4be86bf0375ac7a6",
+      "bytes": 2919
+    },
+    "results/free_runs_batch8_v2/base_few/few_shot_ids.json": {
+      "path": "results/free_runs_batch8_v2/base_few/few_shot_ids.json",
+      "sha256": "69925495d0bd3c249d9f63046813feae98926503d6fe407827e70e78c3cb0bad",
+      "bytes": 55
+    },
+    "results/free_runs_batch8_v2/base_few/predictions.jsonl": {
+      "path": "results/free_runs_batch8_v2/base_few/predictions.jsonl",
+      "sha256": "db8674e3bc0aaa6ef2ea9c85e0ac4821d00aa763881c238c7adb2add48fe0395",
+      "bytes": 5796801
+    },
+    "results/free_runs_batch8_v2/base_zero/config.json": {
+      "path": "results/free_runs_batch8_v2/base_zero/config.json",
+      "sha256": "f32cced8b185ac28e3506297996be77ad12b0099105f8a8d8e595c8219c88dc9",
+      "bytes": 797
+    },
+    "results/free_runs_batch8_v2/base_zero/environment.json": {
+      "path": "results/free_runs_batch8_v2/base_zero/environment.json",
+      "sha256": "c2220e925279b8bba2a8831e8239dcffbbf47a1da42910f4f6c727ca6e177b65",
+      "bytes": 2919
+    },
+    "results/free_runs_batch8_v2/base_zero/few_shot_ids.json": {
+      "path": "results/free_runs_batch8_v2/base_zero/few_shot_ids.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "results/free_runs_batch8_v2/base_zero/predictions.jsonl": {
+      "path": "results/free_runs_batch8_v2/base_zero/predictions.jsonl",
+      "sha256": "eefe993b296ffc2ea207189ba44cf38777368f6a39979b648cb4f0e68b68741e",
+      "bytes": 7626519
+    },
+    "results/free_runs_batch8_v2/base_zero/status.json": {
+      "path": "results/free_runs_batch8_v2/base_zero/status.json",
+      "sha256": "3691df1f91f7b951294eaeafd4069fec417a10181a0f8818c3fff9c2748f53c3",
+      "bytes": 304
+    },
+    "results/free_runs_batch8_v2/base_zero_evaluation/config.json": {
+      "path": "results/free_runs_batch8_v2/base_zero_evaluation/config.json",
+      "sha256": "ed01f454bebc25155b92d64957c15b112f823c2a7d1557112ffdd6a4b0307f65",
+      "bytes": 372
+    },
+    "results/free_runs_batch8_v2/base_zero_evaluation/environment.json": {
+      "path": "results/free_runs_batch8_v2/base_zero_evaluation/environment.json",
+      "sha256": "0c63f2f053708fd56cab713a0caed0b1668b2b79af700800a740a62ee40e5c81",
+      "bytes": 2919
+    },
+    "results/free_runs_batch8_v2/base_zero_evaluation/per_question.jsonl": {
+      "path": "results/free_runs_batch8_v2/base_zero_evaluation/per_question.jsonl",
+      "sha256": "be4af4ea8599271647068ea0005d7bcd2675f08875986852ad5c9b6ad3adc439",
+      "bytes": 1226716
+    },
+    "results/free_runs_batch8_v2/base_zero_evaluation/summary.json": {
+      "path": "results/free_runs_batch8_v2/base_zero_evaluation/summary.json",
+      "sha256": "a4e3c87acd9a69e74ed34ee18805461298cd3933bd1cd0c0eba872445a7a41b7",
+      "bytes": 757
+    },
+    "results/free_runs_batch8_v2/configs/base_few.json": {
+      "path": "results/free_runs_batch8_v2/configs/base_few.json",
+      "sha256": "e287dfb5af7e45f44be426b23dcfd5ca2020a35689a9ee1eba54014ee1e8434f",
+      "bytes": 522
+    },
+    "results/free_runs_batch8_v2/configs/base_zero.json": {
+      "path": "results/free_runs_batch8_v2/configs/base_zero.json",
+      "sha256": "2defe7e6dc99907cffb98e444c7090f48a5cc31340e50da1ba9f37da569bc2ee",
+      "bytes": 523
+    },
+    "results/free_runs_batch8_v2/configs/gemini.json": {
+      "path": "results/free_runs_batch8_v2/configs/gemini.json",
+      "sha256": "8688894c605abc2c2f8416252fb41cfa7179a8ec304f68b6e821d485c879347e",
+      "bytes": 602
+    },
+    "results/free_runs_batch8_v2/configs/sft.json": {
+      "path": "results/free_runs_batch8_v2/configs/sft.json",
+      "sha256": "b69fcee9b583ce8cddbf73ba57f77b55570dff462b35f609a4fe9b3fe4544ce1",
+      "bytes": 518
+    },
+    "results/free_runs_batch8_v2/configs/sft_eval.json": {
+      "path": "results/free_runs_batch8_v2/configs/sft_eval.json",
+      "sha256": "ac11bc3eb7779da4c0e26bedaac82a197e4773fd101f3b1aba0b1d81af0f3336",
+      "bytes": 578
+    },
+    "results/resume_verified_20261118.json": {
+      "path": "results/resume_verified_20261118.json",
+      "sha256": "87e5d984318165329b558b052712fe1aac90dd8ccf96de5c39e27809c04f2e1c",
+      "bytes": 3241
+    },
+    "tests-resumed-20261118.log": {
+      "path": "results/colab_import_20261118/tests-resumed-20261118.log",
+      "sha256": "d95b5dd4b14a3789f98979f2527efad11b34457e0000d4bc522d9de1f5473153",
+      "bytes": 1239
+    },
+    "tests-resumed-20261118.xml": {
+      "path": "results/colab_import_20261118/tests-resumed-20261118.xml",
+      "sha256": "f9d28d7c32b0f9a78555e907f78dacc1edeae40f89123a9eec7f066a2a8fcd26",
+      "bytes": 13078
+    }
+  },
+  "validation_hash_matches": true,
+  "prediction_hash_matches": true,
+  "per_question_metrics_match_summary": true,
+  "new_generation_performed_by_import": false,
+  "final_test_accessed": false,
+  "phase3_complete": false
+}

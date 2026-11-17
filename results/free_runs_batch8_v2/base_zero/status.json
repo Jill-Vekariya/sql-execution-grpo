@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "queries": 2304,
+  "api_budget_debited_usd": 0,
+  "generation_failures": 0,
+  "generation_batch_size": 8,
+  "profile_id": "student_free_nf4_fp16_batch8_v2",
+  "latency_definition": "Each request records its shared batch wall time; amortized throughput is a separate field"
+}

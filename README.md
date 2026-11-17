@@ -1,58 +1,56 @@
 # Execution-rewarded text-to-SQL with GRPO
 
-Study whether execution rewards improve a small Qwen model beyond base prompting and LoRA SFT, with auditable costs and reward exploits.
+Study whether execution rewards improve a small Qwen model beyond prompting and LoRA SFT, with auditable costs and reward exploits.
 
-**Work in progress: Phases 0–3 implementation is present; model benchmark runs and full SFT are blocked. No RL performance or released adapter is claimed.**
+**Work in progress: one complete validation baseline is measured. Few-shot, SFT and hosted comparisons remain incomplete; no RL improvement or released adapter is claimed.** [Saved status](results/project_status.json).
 
-Evidence: [project status](results/project_status.json), [tests](results/tests-free-profile-device.xml), [data audit](results/data_audit.json), [gold-query audit](results/gold_audit/summary.json).
-
-| System | Validation accuracy / 95% CI | Training / API cost | Run status |
+| System | Validation execution accuracy / 95% CI | Measured cost | Status |
 |---|---|---|---|
-| Base zero-shot | Not measured | Not measured | blocked_or_failed |
-| Base few-shot | Not measured | Not measured | blocked_or_failed |
-| Frontier | Not measured | Not measured | blocked_or_failed |
-| SFT | Not measured | Not measured | blocked_or_failed |
-| GRPO | Not measured | Not measured | Future Phase 5 |
+| Base zero-shot | **64.76% [58.68, 70.53]** | Unknown | Complete |
+| Base few-shot | Not measured | Unknown | 600/2,304 answers restored; incomplete |
+| Hosted / frontier | Not measured | Unknown | Owner-managed free API credential pending |
+| SFT | Not measured | Unknown | No trained checkpoint verified |
+| GRPO | Not measured | Unknown | Future Phase 5 |
 
-Missing costs are unknown, not zero. Failure/preflight reasons and configs are saved under [results/runs](results/runs).
+The measured system is pinned Qwen3-4B-Instruct-2507, NF4/FP16, seed 42, generation batch size 8. On **2,304 questions across 31 held-out databases**, it answers **1,492** correctly under this project's stricter SQLite comparator. The interval uses **2,000 database-cluster bootstrap samples**. These are project VAL results, not official benchmark leaderboard scores. [Raw outputs, config and environment](results/free_runs_batch8_v2/base_zero); [evaluation](results/free_runs_batch8_v2/base_zero_evaluation/summary.json); [recomputed evidence](results/saved_baseline_check_20261118.json).
 
-Verifier suite: **111 passed**, 0 failures, 0 errors ([fresh saved XML](results/tests-resume-20261118.xml)). [Resume audit](results/resume_audit_20261118/summary.json) verifies train/val manifest hashes and zero database/question-hash overlap; [current handoff](docs/STATUS_20261118.md) distinguishes historical Colab progress from current evidence.
-Training annotation audit: **16,428 source questions**; **57 duplicates removed** across project train/val ([audit](results/data_audit.json)).
-Gold execution on available databases: **15,651/16,371 (95.60%)**. **0** declared examples lack downloaded databases; all statuses remain in the [audit](results/gold_audit/summary.json).
-CPU SFT API integration: **passed** on a random tiny Qwen3 fixture. This is not a benchmark model or accuracy result ([evidence](results/cpu_sft_smoke/status.json)).
-Shared SFT/RL/few-shot training pool: **12,908** eligible questions; exclusions and the immutable manifest are recorded in the [eligibility report](results/training_eligibility.json).
+Valid-SQL rate is **93.84%**, timeout rate **0.35%**, mean output **44.53 tokens**. All **26** gold-query errors remain in the denominator. Difficulty labels are unavailable for this training-derived VAL cohort. Recorded generation latency is shared batch wall time; it must not be presented as isolated per-query latency. Missing costs remain unknown, so cost per accuracy point is not yet available. [Per-question evidence](results/free_runs_batch8_v2/base_zero_evaluation/per_question.jsonl).
+
+Verifier suite: **111 passed** in the restored Colab environment ([XML](results/colab_import_20261118/tests-resumed-20261118.xml), [GPU/runtime receipt](results/resume_verified_20261118.json)). Train/VAL manifests have zero database/question-hash overlap ([resume audit](results/resume_audit_20261118/summary.json)). The audit records **16,428 source questions**, **57 duplicates removed**, and a shared eligible training pool of **12,908**. Historical gold execution was **15,651/16,371 (95.60%)**, below the near-100% target; failures remain visible. [Data audit](results/data_audit.json), [eligibility](results/training_eligibility.json), [gold audit](results/gold_audit/summary.json).
+
+Planned comparison:
 
 ```mermaid
 flowchart TD
-  D["Database-disjoint train / val"] --> P["Fixed prompt and model"]
-  P --> X["Bounded read-only SQLite execution"]
-  X --> E["Accuracy, uncertainty, cost and failures"]
+  T["Frozen train / VAL cohorts"] --> B["Base prompting"]
+  T --> S["LoRA SFT"]
+  S --> R["GRPO: future phase"]
+  B --> E["SQLite verification on VAL"]
+  S --> E
+  R --> E
+  E --> C["Select by accuracy; account for cost"]
 ```
 
-CPU reproduction in three commands (Python 3.12, uv 0.13.7):
+CPU verification in three commands (Python 3.12 and pinned uv):
 
 ```bash
 uv sync --frozen --extra test --extra data
 uv run --no-sync pytest
-uv run --no-sync python scripts/synthetic_checks.py --output results/reproduction_synthetic
+uv run --no-sync python scripts/verify_saved_baseline.py --output results/reproduction_baseline_check.json
 ```
 
-The synthetic check is a verifier demonstration, not model accuracy. [Full data/baseline/SFT reproduction](docs/REPRODUCE.md).
+The third command verifies imported hashes and recomputes saved metrics and intervals; it does not regenerate answers. [Full reproduction](docs/REPRODUCE.md), [free GPU notebook](notebooks/Free_Phase03_Colab_Batch8_Resume.ipynb), [current continuation](docs/STATUS_20261118.md). The zero cash budget is binding. A free hosted Flash model would be a budget baseline, not evidence of beating the strongest frontier model.
 
-[Run the remaining Phase 2–3 experiment in one command](docs/COMPLETE_PHASE03.md). The runner verifies the frozen data, reports hardware/API blockers before execution, and writes paired comparisons and measured costs only after real model runs succeed.
+What failed and what remains: [FAILURES.md](docs/FAILURES.md) records environment, export and data-schema problems; [DECISIONS.md](docs/DECISIONS.md) explains evaluation choices. [Cheating analysis](docs/WHAT_THE_MODEL_LEARNED_TO_CHEAT.md) currently concerns anticipated exploits, not learned RL behavior.
 
-**Free student route:** [Kaggle notebook](notebooks/Free_Phase03_Kaggle.ipynb) and [setup/limitations](docs/FREE_STUDENT_RUN.md). The separately named free profile uses matching NF4/FP16 base and QLoRA systems, plus a quota-resumable Gemini 3.8 Flash baseline. Actual free GPU/API runs still require authenticated accounts; no benchmark accuracy is claimed.
-
-What failed: [FAILURES.md](docs/FAILURES.md) preserves the initial memory-cap test failure and infrastructure blockers. [Cheating analysis](docs/WHAT_THE_MODEL_LEARNED_TO_CHEAT.md) distinguishes anticipated exploits from learned behavior. [Decisions](docs/DECISIONS.md) explains the stricter comparator and pending final-set audit.
-
-Limitations: unmeasured model performance; no training seeds completed; possible benchmark contamination; SQLite only; official-dev-as-final-test caveat; BIRD database coverage and final-manifest checks remain explicit in the audit. No final test was run ([status](results/project_status.json)).
+Limitations: no completed SFT/RL training seed, possible benchmark contamination, SQLite only, stricter resource-limited metric, and official-dev-as-final-test caveat. Final data remains sealed; final manifest/dedup checks are deferred under that rule ([status](results/project_status.json)).
 
 How I would extend this:
 
-- Run the frozen base and SFT configurations on a CUDA GPU.
-- Add a budgeted, versioned frontier baseline.
-- Freeze and ablate the GRPO reward after counterfactual-query tests.
-- Train GRPO with multiple seeds and select by validation execution accuracy.
-- Run the final test once after freezing the complete experiment.
+- Finish the frozen few-shot, SFT and hosted comparisons.
+- Finalize the reward with counterfactual-database checks.
+- Run budget-matched GRPO ablations and multiple seeds.
+- Report measured costs, paired differences and concrete exploits.
+- Freeze all systems before the single final-test evaluation.
 
 Code: MIT. Dataset terms and primary sources: [data audit](docs/DATA_AUDIT.md).

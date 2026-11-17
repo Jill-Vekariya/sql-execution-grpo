@@ -13,47 +13,61 @@
     "alternative": "Qwen/Qwen3.5-4B",
     "selection_reason": "Text-only non-thinking instruction model; simple SQL-only completion and mature Qwen3 integration",
     "sql_superiority_measured": false,
-    "weights_downloaded": false,
+    "weights_downloaded": true,
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
       "https://huggingface.co/Qwen/Qwen3.5-4B"
-    ]
+    ],
+    "weights_location": "temporary free Colab T4 runtime; not committed"
   },
   "tests": {
-    "tests": 91,
+    "tests": 111,
     "failures": 0,
     "errors": 0,
     "skipped": 0
   },
   "runs": {
     "Base zero-shot": {
-      "status": "blocked_or_failed",
-      "error_type": "RuntimeError",
-      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+      "status": "completed",
+      "predictions": 2304,
+      "summary": "results/free_runs_batch8_v2/base_zero_evaluation/summary.json",
+      "accuracy": 0.6475694444444444,
+      "ci95": [
+        0.5867580856681543,
+        0.7052655075187969
+      ],
+      "cost_usd": null
     },
     "Base few-shot": {
-      "status": "blocked_or_failed",
-      "error_type": "RuntimeError",
-      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+      "status": "generation_resumed",
+      "imported_predictions": 600,
+      "last_observed_predictions": 616,
+      "last_observed_utc": "2026-11-17T20:37:51.166609+00:00",
+      "accuracy": null
     },
     "Frontier": {
-      "status": "blocked_or_failed",
-      "error_type": "RuntimeError",
-      "reason": "Frontier/API model and endpoint have not been configured; no API request made"
+      "status": "blocked_owner_free_project_credential",
+      "predictions": 0,
+      "api_requests_made_in_this_continuation": 0,
+      "accuracy": null
     },
     "SFT": {
-      "status": "blocked_or_failed",
-      "error_type": "RuntimeError",
-      "reason": "No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists"
+      "status": "queued_after_few_shot",
+      "complete_checkpoint_observed": false,
+      "accuracy": null
+    },
+    "GRPO": {
+      "status": "future_phase_5",
+      "accuracy": null
     }
   },
   "data_audit": "results/data_audit.json",
   "gold_audit": "results/gold_audit/summary.json",
-  "test_evidence": "results/tests-free-profile-device.xml",
+  "test_evidence": "results/colab_import_20261118/tests-resumed-20261118.xml",
   "final_test_accessed": false,
   "rl_trained": false,
   "adapter_released": false,
-  "research_accuracy_available": false,
+  "research_accuracy_available": true,
   "cpu_api_smoke": {
     "status": "passed",
     "kind": "random_tiny_qwen3_api_integration",
@@ -5197,5 +5211,37 @@
     "SQLite only",
     "No benchmark training seeds run yet",
     "Official dev will serve as final test"
-  ]
+  ],
+  "historical_laptop_preflights": {
+    "Base zero-shot": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+    },
+    "Base few-shot": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; benchmark generation was not started"
+    },
+    "Frontier": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "Frontier/API model and endpoint have not been configured; no API request made"
+    },
+    "SFT": {
+      "status": "blocked_or_failed",
+      "error_type": "RuntimeError",
+      "reason": "No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists"
+    }
+  },
+  "updated_on": "2026-11-18",
+  "scope_complete": false,
+  "phase3_complete": false,
+  "cash_budget_usd": 0,
+  "latest_progress_evidence": "results/continuation_progress_20261118.json",
+  "baseline_import_evidence": "results/colab_import_20261118/import_manifest.json",
+  "baseline_replay_evidence": "results/saved_baseline_check_20261118.json",
+  "schema_integrity_evidence": "results/validation_schema_investigation_20261118.json",
+  "final_manifest_status": "deferred_under_no_final_access_rule",
+  "gold_near_100_percent_target_met": false
 }

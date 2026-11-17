@@ -47,3 +47,33 @@ that a label is incorrect; inspect the error and original annotation first.
   approval review rejected clicking Allow without explicit authorization for
   that exact scope. Restoration and GPU work remain paused. Both rejections
   and the actual saved progress are in results/continuation_choice_20261118.json.
+
+
+## Resolved handoffs and evidence import, 18 November 2026
+
+- F019/F020 follow-up: the user explicitly completed/approved the disclosed
+  notebook upload and Drive/Google Cloud access. Clean upload, standard auth
+  and archive restoration then succeeded. The earlier rejections remain history;
+  they are no longer the current restoration blocker. Evidence:
+  results/resume_verified_20261118.json.
+- F021: both Colab files.download and a File-browser download failed to produce
+  an observed native download. A timed-out wait also reset the automation
+  runtime. No successful download was claimed. Instead, a read-only visible
+  notebook artifact transferred the results-only ZIP in chunks; byte length,
+  ZIP integrity, archive SHA256 and every member hash were verified before
+  import. Evidence: results/colab_import_20261118/import_manifest.json.
+- F022: the first import failed its processed-VAL checksum assertion. All 1,276
+  BIRD schemas on the laptop were stale metadata fallbacks; the BIRD database
+  files were absent there, so an attempted local actual-DDL read also failed.
+  Recovering only schema text from the saved prompts reproduced the entire
+  Colab VAL file byte for byte. The old local file was preserved. No question,
+  gold SQL or cohort changed and no benchmark was rerun to resolve this.
+  Evidence: results/validation_schema_investigation_20261118.json.
+- F023: the restored full baseline has 26 gold-error cases and unavailable
+  difficulty labels; these are visible evaluation limitations. Keep them in
+  the full denominator and report difficulty as unknown. Do not silently
+  filter them or relabel them as model failures or confirmed label noise.
+  Evidence: results/free_runs_batch8_v2/base_zero_evaluation.
+- F003 follow-up: Colab Secrets showed no saved secret. The zero cash budget
+  and owner-managed Free tier/billing-disabled credential gate remain; no
+  hosted API request, key creation or provider-terms acceptance occurred.

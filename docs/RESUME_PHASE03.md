@@ -128,3 +128,27 @@ The Google AI Studio eligibility/terms and owner-created Free tier credential re
   limited static check, not permission to upload or proof of all confidentiality.
 - Current receipts: results/continuation_choice_20261118.json and
   results/notebook_payload_review_20261118.json. Hosted baseline remains pending.
+
+
+## Superseding checkpoint - 18 November 2026
+
+Use docs/STATUS_20261118.md and results/continuation_progress_20261118.json for
+the current state. The clean notebook is now live at
+https://colab.research.google.com/drive/1hK3M0cVWKPnFP9xu5TNAjkOmDDKXKiZc.
+The user resolved the exact upload/access handoffs. A real verified restore
+recovered all 2,304 zero-shot answers and 600 few-shot answers; the earlier
+1,448 notebook display was stale. The completed zero-shot evaluation and raw
+answers are now imported into Git, with hashes and a CPU-only metric replay.
+Accuracy is 64.76% [58.68, 70.53] on project VAL, not final test.
+
+The new free T4 passed 111 tests and its CUDA kernel probe. TRAIN-only preparation
+has now passed original source/DB/cohort checks, restoring the exact 12,908
+eligible examples. The bounded model controller resumed few-shot from the same
+prefix (616 observed at 2026-11-17T20:37:51 UTC) and will then attempt SFT/SFT VAL
+within the unchanged runtime bound. No full SFT checkpoint exists at this
+observation. The private backup worker is verified. Do not Run All or restart
+the source cell over amended source; use inspection cells for live state.
+
+Hosted API credential setup remains owner work: Colab Secrets contained no
+saved secret. Do not print keys, accept provider terms, create credentials or
+enable billing. Phase 3 is incomplete; final test remains sealed.

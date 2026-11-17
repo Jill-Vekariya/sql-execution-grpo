@@ -1,0 +1,64 @@
+{
+  "observed_utc": "2026-11-17T20:37:51.166609+00:00",
+  "profile_id": "student_free_nf4_fp16_batch8_v2",
+  "cash_budget_usd": 0,
+  "phase3_complete": false,
+  "final_test_accessed": false,
+  "train_preparation_returncode": 0,
+  "train_log_tail": "cookbook ready\nbird university ready\nbird books ready\nbird shipping ready\nbird food_inspection ready\nbird movie_platform ready\nbird shakespeare ready\nbird book_publishing_company ready\nbird car_retails ready\nbird mental_health_survey ready\nbird hockey ready\nbird music_platform_2 ready\nbird address ready\nbird menu ready\nbird professional_basketball ready\nbird cars ready\nbird synthea ready\nbird genes ready\nbird retails ready\nbird talkingdata ready\nbird beer_factory ready\nbird chicago_crime ready\nbird mondial_geo ready\nbird student_loan ready\nbird codebase_comments ready\nbird retail_world ready\nbird music_tracker ready\nbird disney ready\nbird college_completion ready\nbird ice_hockey_draft ready\nbird world_development_indicators ready\nbird airline ready\nbird retail_complains ready\nbird trains ready\nbird public_review_platform ready\nbird donor ready\nbird coinmarketcap ready\nbird simpson_episodes ready\nbird movie_3 ready\nbird shooting ready\nbird superstore ready\nbird movielens ready\nbird annotations 9428 DBs 69 available 71\n{\"restored_examples\": 12908, \"sha256\": \"0af7954617e81a26b5fda24a2923c68477792043ca2c464e00e17f62c319b290\", \"new_audit_performed\": false, \"final_test_accessed\": false}\n",
+  "stages": {
+    "base_zero": {
+      "predictions": 2304,
+      "status": {
+        "status": "completed",
+        "queries": 2304,
+        "api_budget_debited_usd": 0,
+        "generation_failures": 0,
+        "generation_batch_size": 8,
+        "profile_id": "student_free_nf4_fp16_batch8_v2",
+        "latency_definition": "Each request records its shared batch wall time; amortized throughput is a separate field"
+      }
+    },
+    "base_few": {
+      "predictions": 616,
+      "status": null
+    },
+    "sft": {
+      "predictions": 0,
+      "status": null
+    },
+    "sft_eval": {
+      "predictions": 0,
+      "status": null
+    },
+    "frontier": {
+      "predictions": 0,
+      "status": null
+    }
+  },
+  "controller_status": {
+    "status": "running_local_experiments",
+    "run_root": "results/free_runs_batch8_v2",
+    "pid": 10291,
+    "bounded_seconds": 10800,
+    "cash_budget_usd": 0,
+    "phase3_complete": false
+  },
+  "backup_status": {
+    "status": "verified_private_drive_backup",
+    "sha256": "82346e0f52b51b21fc0d74c587739e393b472222ed8229d319b27728ee5cd22f",
+    "bytes": 10127645,
+    "drive_file": {
+      "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+      "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+      "md5Checksum": "a5f37aa12026142497b3fc63037e3344",
+      "size": "10127645"
+    },
+    "checkpoints": {
+      "results/free_runs/sft/checkpoints": null,
+      "results/free_runs_batch8_v2/sft/checkpoints": null
+    },
+    "phase3_complete": false
+  },
+  "complete_checkpoint_names": []
+}

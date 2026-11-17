@@ -169,3 +169,30 @@ These actions remain blocked; do not route them through another mechanism.
 Explicit owner approval for that payload/destination and exact access scope
 is needed before resuming backup restoration. Earlier approval records are
 retained as history, not treated as a way to bypass these current rejections.
+
+## D016 - Imported baseline evidence and resumed work, 18 November 2026
+
+The user's subsequent "done" resolved the precise clean-notebook upload and
+Drive/Google Cloud authorization handoffs. The clean notebook was uploaded and
+the existing standard auth completed. The archive was restored and verified
+before restarting the private backup worker. No new access scope or paid
+resource was added beyond the disclosed approval.
+
+The restored full zero-shot run is reportable: all 2,304 predictions, config,
+environment, execution scores and summary were exported and hashed. A separate
+CPU replay reproduces the entire summary, including the seeded database-cluster
+bootstrap interval. Imported files remain immutable; later live progress is
+recorded separately. No incomplete-prefix accuracy is reported.
+
+The laptop's stale BIRD metadata fallback schemas were replaced only after the
+saved prompt schemas reproduced the full validation file SHA256 exactly.
+Question/evidence/gold/ID fields were unchanged. The stale local file is kept,
+and results/validation_schema_investigation_20261118.json documents the proof.
+Do not waive data pins just because a file has the right IDs or row count.
+
+Keep the same frozen model, quantization, source, prompts, seed and full cohorts.
+TRAIN reconstruction passed, and the bounded controller resumed few-shot
+generation rather than regenerating the completed zero-shot run. No checkpoint
+selection, training hyperparameter or reward was changed after seeing VAL.
+Costs remain null where unmeasured. A free-GPU price setting alone does not
+justify inventing measured inference cost. Shared batch latency must be labeled.

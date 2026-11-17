@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "export_files_verified": 24,
+  "validation_bytes_checked": true,
+  "validation_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "questions": 2304,
+  "correct": 1492,
+  "formatted": 4,
+  "summary_and_bootstrap_reproduced": true,
+  "summary": {
+    "n": 2304,
+    "databases": 31,
+    "execution_accuracy": 0.6475694444444444,
+    "execution_accuracy_ci95": [
+      0.5867580856681543,
+      0.7052655075187969
+    ],
+    "ci_method": "database_cluster_percentile_bootstrap",
+    "bootstrap_seed": 42,
+    "bootstrap_samples": 2000,
+    "valid_sql_rate": 0.9383680555555556,
+    "timeout_rate": 0.003472222222222222,
+    "gold_errors": 26,
+    "average_output_tokens": 44.53081597222222,
+    "token_counts_complete": true,
+    "total_cost_usd": null,
+    "average_latency_s": 12.014086556303813,
+    "average_generation_latency_s": 11.832127707034727,
+    "by_difficulty": {
+      "unknown": {
+        "n": 2304,
+        "accuracy": 0.6475694444444444,
+        "ci95": [
+          0.5867580856681543,
+          0.7052655075187969
+        ]
+      }
+    }
+  },
+  "by_dataset": {
+    "bird": {
+      "questions": 1276,
+      "databases": 10,
+      "correct": 741,
+      "valid": 1166,
+      "statuses": {
+        "ok": 1159,
+        "sql_error": 61,
+        "format_error": 1,
+        "row_limit": 16,
+        "gold_error": 26,
+        "memory_limit": 4,
+        "comparison_limit": 1,
+        "timeout": 8
+      }
+    },
+    "spider": {
+      "questions": 1028,
+      "databases": 21,
+      "correct": 751,
+      "valid": 996,
+      "statuses": {
+        "ok": 996,
+        "sql_error": 30,
+        "format_error": 2
+      }
+    }
+  },
+  "final_test_accessed": false,
+  "model_called": false,
+  "sql_executed": false,
+  "cost_per_accuracy_point_available": false,
+  "latency_caveat": "Generation latency is shared batch wall time, not isolated request latency."
+}

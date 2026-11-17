@@ -1,0 +1,8 @@
+{
+  "data": "data/processed/val.jsonl",
+  "predictions": "results/free_runs_batch8_v2/base_zero/predictions.jsonl",
+  "output": "results/free_runs_batch8_v2/base_zero_evaluation",
+  "seed": 42,
+  "data_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "predictions_sha256": "eefe993b296ffc2ea207189ba44cf38777368f6a39979b648cb4f0e68b68741e"
+}

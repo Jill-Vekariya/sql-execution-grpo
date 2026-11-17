@@ -1,0 +1,17 @@
+{
+  "status": "restored_private_drive_backup",
+  "bytes": 10098184,
+  "sha256": "6830c510ea7811136a6b34314aeec7a57b81922baad89feccdd89fa3b5358bc3",
+  "md5Checksum": "8691c6fffc3409c93a17efaa397b5ec8",
+  "drive_file": {
+    "md5Checksum": "8691c6fffc3409c93a17efaa397b5ec8",
+    "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+    "size": "10098184",
+    "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+    "appProperties": {
+      "profile": "student_free_nf4_fp16_batch8_v2",
+      "sha256": "6830c510ea7811136a6b34314aeec7a57b81922baad89feccdd89fa3b5358bc3"
+    }
+  },
+  "phase3_complete": false
+}

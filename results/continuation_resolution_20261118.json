@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-11-18",
+  "owner_reply": "done",
+  "clean_notebook_upload": "succeeded_after_specific_owner_approval",
+  "drive_and_cloud_auth": "succeeded_after_specific_owner_approval",
+  "clean_notebook_url": "https://colab.research.google.com/drive/1hK3M0cVWKPnFP9xu5TNAjkOmDDKXKiZc",
+  "restore_evidence": "results/resume_verified_20261118.json",
+  "train_preparation": "passed_frozen_hash_checks",
+  "local_model_work": "resumed_same_saved_few_shot_prefix",
+  "current_progress": "results/continuation_progress_20261118.json",
+  "colab_secrets_observation": "No secrets saved",
+  "hosted_baseline": "pending_owner_created_free_tier_key_and_billing_disabled_confirmation",
+  "native_download": "not_observed; no_success_claim",
+  "results_transfer": "visible_readonly_notebook_artifact_chunks",
+  "export_import_evidence": "results/colab_import_20261118/import_manifest.json",
+  "new_api_key_created": false,
+  "paid_resource_enabled": false,
+  "provider_terms_accepted": false,
+  "phase3_complete": false,
+  "final_test_accessed": false
+}
