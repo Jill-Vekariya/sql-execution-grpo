@@ -1,0 +1,100 @@
+{
+  "observed_utc": "2026-11-19T19:13:35.583867+00:00",
+  "seed": 42,
+  "phase3_complete": false,
+  "final_test_accessed": false,
+  "prepare_returncode": 0,
+  "preparation_tail": "s ready\nbird mental_health_survey ready\nbird hockey ready\nbird music_platform_2 ready\nbird address ready\nbird menu ready\nbird professional_basketball ready\nbird cars ready\nbird synthea ready\nbird genes ready\nbird retails ready\nbird talkingdata ready\nbird beer_factory ready\nbird chicago_crime ready\nbird mondial_geo ready\nbird student_loan ready\nbird codebase_comments ready\nbird retail_world ready\nbird music_tracker ready\nbird disney ready\nbird college_completion ready\nbird ice_hockey_draft ready\nbird world_development_indicators ready\nbird airline ready\nbird retail_complains ready\nbird trains ready\nbird public_review_platform ready\nbird donor ready\nbird coinmarketcap ready\nbird simpson_episodes ready\nbird movie_3 ready\nbird shooting ready\nbird superstore ready\nbird movielens ready\nbird annotations 9428 DBs 69 available 71\n{\"restored_examples\": 12908, \"sha256\": \"0af7954617e81a26b5fda24a2923c68477792043ca2c464e00e17f62c319b290\", \"new_audit_performed\": false, \"final_test_accessed\": false}\n",
+  "controller_alive": true,
+  "backup_alive": true,
+  "stages": {
+    "base_zero": {
+      "predictions": 2304,
+      "status": {
+        "status": "completed",
+        "queries": 2304,
+        "api_budget_debited_usd": 0,
+        "generation_failures": 0,
+        "generation_batch_size": 8,
+        "profile_id": "student_free_nf4_fp16_batch8_v2",
+        "latency_definition": "Each request records its shared batch wall time; amortized throughput is a separate field"
+      },
+      "log_tail": "\"saved_predictions\": 2224, \"total\": 2304, \"batch_seconds\": 3.357, \"generation_errors\": 0}\n{\"saved_predictions\": 2232, \"total\": 2304, \"batch_seconds\": 5.291, \"generation_errors\": 0}\n{\"saved_predictions\": 2240, \"total\": 2304, \"batch_seconds\": 5.754, \"generation_errors\": 0}\n{\"saved_predictions\": 2248, \"total\": 2304, \"batch_seconds\": 6.097, \"generation_errors\": 0}\n{\"saved_predictions\": 2256, \"total\": 2304, \"batch_seconds\": 4.241, \"generation_errors\": 0}\n{\"saved_predictions\": 2264, \"total\": 2304, \"batch_seconds\": 3.171, \"generation_errors\": 0}\n{\"saved_predictions\": 2272, \"total\": 2304, \"batch_seconds\": 5.374, \"generation_errors\": 0}\n{\"saved_predictions\": 2280, \"total\": 2304, \"batch_seconds\": 4.744, \"generation_errors\": 0}\n{\"saved_predictions\": 2288, \"total\": 2304, \"batch_seconds\": 5.026, \"generation_errors\": 0}\n{\"saved_predictions\": 2296, \"total\": 2304, \"batch_seconds\": 5.56, \"generation_errors\": 0}\n{\"saved_predictions\": 2304, \"total\": 2304, \"batch_seconds\": 10.071, \"generation_errors\": 0}\n",
+      "evaluation": {
+        "n": 2304,
+        "databases": 31,
+        "execution_accuracy": 0.6475694444444444,
+        "execution_accuracy_ci95": [
+          0.5867580856681543,
+          0.7052655075187969
+        ],
+        "ci_method": "database_cluster_percentile_bootstrap",
+        "bootstrap_seed": 42,
+        "bootstrap_samples": 2000,
+        "valid_sql_rate": 0.9383680555555556,
+        "timeout_rate": 0.003472222222222222,
+        "gold_errors": 26,
+        "average_output_tokens": 44.53081597222222,
+        "token_counts_complete": true,
+        "total_cost_usd": null,
+        "average_latency_s": 12.014086556303813,
+        "average_generation_latency_s": 11.832127707034727,
+        "by_difficulty": {
+          "unknown": {
+            "n": 2304,
+            "accuracy": 0.6475694444444444,
+            "ci95": [
+              0.5867580856681543,
+              0.7052655075187969
+            ]
+          }
+        }
+      }
+    },
+    "base_few": {
+      "predictions": 1632,
+      "status": null,
+      "log_tail": "0, 15.74it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 398/398 [00:33<00:00, 11.72it/s]\n{\"saved_predictions\": 1560, \"total\": 2304, \"batch_seconds\": 18.73, \"generation_errors\": 0}\n{\"saved_predictions\": 1568, \"total\": 2304, \"batch_seconds\": 17.643, \"generation_errors\": 0}\n{\"saved_predictions\": 1576, \"total\": 2304, \"batch_seconds\": 12.319, \"generation_errors\": 0}\n{\"saved_predictions\": 1584, \"total\": 2304, \"batch_seconds\": 15.182, \"generation_errors\": 0}\n{\"saved_predictions\": 1592, \"total\": 2304, \"batch_seconds\": 19.527, \"generation_errors\": 0}\n{\"saved_predictions\": 1600, \"total\": 2304, \"batch_seconds\": 20.114, \"generation_errors\": 0}\n{\"saved_predictions\": 1608, \"total\": 2304, \"batch_seconds\": 21.533, \"generation_errors\": 0}\n{\"saved_predictions\": 1616, \"total\": 2304, \"batch_seconds\": 21.844, \"generation_errors\": 0}\n{\"saved_predictions\": 1624, \"total\": 2304, \"batch_seconds\": 21.448, \"generation_errors\": 0}\n{\"saved_predictions\": 1632, \"total\": 2304, \"batch_seconds\": 22.396, \"generation_errors\": 0}\n"
+    },
+    "sft": {
+      "predictions": 0,
+      "status": null
+    },
+    "sft_eval": {
+      "predictions": 0,
+      "status": null
+    },
+    "frontier": {
+      "predictions": 0,
+      "status": null
+    }
+  },
+  "controller_status.json": {
+    "status": "running_local_experiments",
+    "run_root": "results/free_runs_batch8_v2",
+    "pid": 16285,
+    "bounded_seconds": 10800,
+    "cash_budget_usd": 0,
+    "phase3_complete": false
+  },
+  "backup_status.json": {
+    "status": "verified_private_drive_backup",
+    "sha256": "aa3533c095e794d190bc06b25a73ea08d1a088fe52e206339632b8c689f6da7a",
+    "bytes": 10864996,
+    "drive_file": {
+      "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+      "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+      "md5Checksum": "b935819689a96f36d9c213bfd44ce156",
+      "size": "10864996"
+    },
+    "checkpoints": {
+      "results/free_runs/sft/checkpoints": null,
+      "results/free_runs_batch8_v2/sft/checkpoints": null
+    },
+    "phase3_complete": false
+  },
+  "trainer_metrics_tail": null,
+  "checkpoints": [],
+  "gpu": "Tesla T4, 7477 MiB, 100 %",
+  "free_scratch_gib": 50.79
+}

@@ -7,7 +7,7 @@ Study whether execution rewards improve a small Qwen model beyond prompting and 
 | System | Validation execution accuracy / 95% CI | Measured cost | Status |
 |---|---|---|---|
 | Base zero-shot | **64.76% [58.68, 70.53]** | Unknown | Complete |
-| Base few-shot | Not measured | Unknown | 1,552/2,304 restored; incomplete |
+| Base few-shot | Not measured | Unknown | 1,632/2,304 saved; generation resumed |
 | Hosted / frontier | Not measured | Unknown | Owner-managed free API credential pending |
 | SFT | Not measured | Unknown | No trained checkpoint verified |
 | GRPO | Not measured | Unknown | Future Phase 5 |

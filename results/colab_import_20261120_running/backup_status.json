@@ -1,0 +1,16 @@
+{
+  "status": "verified_private_drive_backup",
+  "sha256": "aa3533c095e794d190bc06b25a73ea08d1a088fe52e206339632b8c689f6da7a",
+  "bytes": 10864996,
+  "drive_file": {
+    "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+    "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+    "md5Checksum": "b935819689a96f36d9c213bfd44ce156",
+    "size": "10864996"
+  },
+  "checkpoints": {
+    "results/free_runs/sft/checkpoints": null,
+    "results/free_runs_batch8_v2/sft/checkpoints": null
+  },
+  "phase3_complete": false
+}

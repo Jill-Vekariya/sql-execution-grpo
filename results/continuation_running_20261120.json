@@ -1,0 +1,49 @@
+{
+  "request_date": "2026-11-20",
+  "saved_utc": "2026-11-19T19:17:52.633488+00:00",
+  "observed_utc": "2026-11-19T19:13:35.583867+00:00",
+  "seed": 42,
+  "cash_budget_usd": 0,
+  "progress_evidence": {
+    "path": "results/colab_import_20261120_running/results/live_progress_20261120.json",
+    "sha256": "7afea1270607ab5d6f121936fd930982271432b00ef73b3bdac7926104dc7b03"
+  },
+  "import_manifest": {
+    "path": "results/colab_import_20261120_running/import_manifest.json",
+    "sha256": "fd15f56b15d4e41a221cb3e67f5f59acc03f552d0d18382c914cd4b5030bc58a"
+  },
+  "train_preparation_returncode": 0,
+  "eligible_train_examples": 12908,
+  "eligible_train_sha256": "0af7954617e81a26b5fda24a2923c68477792043ca2c464e00e17f62c319b290",
+  "few_shot_predictions": 1632,
+  "validation_questions": 2304,
+  "few_shot_generation_resumed": true,
+  "few_shot_complete": false,
+  "few_shot_accuracy": null,
+  "gpu": "Tesla T4, 7477 MiB, 100 %",
+  "controller": {
+    "status": "running_local_experiments",
+    "run_root": "results/free_runs_batch8_v2",
+    "pid": 16285,
+    "bounded_seconds": 10800,
+    "cash_budget_usd": 0,
+    "phase3_complete": false
+  },
+  "private_backup_status": "verified_private_drive_backup",
+  "sft_status": "queued_after_few_shot",
+  "complete_sft_checkpoint_observed": false,
+  "hosted_readiness": {
+    "ai_studio_free_tier_key_visible": true,
+    "visible_key_belongs_to_another_project": true,
+    "key_value_read_or_copied": false,
+    "owner_action_pending": "Configure an authorized Free-tier key as GEMINI_API_KEY in Colab Secrets and enable Notebook access",
+    "api_inference_requests": 0,
+    "new_credential_created": false,
+    "terms_accepted": false
+  },
+  "phase3_complete": false,
+  "scope_complete": false,
+  "final_test_accessed": false,
+  "screenshots_published": false,
+  "paid_resource_enabled": false
+}

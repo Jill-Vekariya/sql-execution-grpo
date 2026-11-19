@@ -39,10 +39,10 @@
       "cost_usd": null
     },
     "Base few-shot": {
-      "status": "restored_controller_waiting_for_train_verification",
-      "imported_predictions": 1552,
-      "last_observed_predictions": 1552,
-      "last_observed_utc": "2026-11-19T18:39:35.843728+00:00",
+      "status": "generation_running",
+      "imported_predictions": 1632,
+      "last_observed_predictions": 1632,
+      "last_observed_utc": "2026-11-19T19:13:35.583867+00:00",
       "accuracy": null,
       "last_user_reported_predictions": 872,
       "current_runtime_count_verified": true
@@ -5240,7 +5240,7 @@
   "scope_complete": false,
   "phase3_complete": false,
   "cash_budget_usd": 0,
-  "latest_progress_evidence": "results/resume_20261120.json",
+  "latest_progress_evidence": "results/continuation_running_20261120.json",
   "baseline_import_evidence": "results/colab_import_20261118/import_manifest.json",
   "baseline_replay_evidence": "results/saved_baseline_check_with_data_20261119.json",
   "schema_integrity_evidence": "results/validation_schema_investigation_20261118.json",
@@ -5249,7 +5249,7 @@
   "latest_resume_evidence": "results/resume_20261120.json",
   "gold_failure_analysis": "results/gold_failure_analysis_20261119.json",
   "current_blockers": [
-    "Hosted baseline requires owner-managed Free tier API credential and billing-disabled confirmation."
+    "Hosted baseline requires an authorized Free-tier API key configured in Colab Secrets; owner setup pending."
   ],
   "resolved_access_blocker": "Owner yes; Google authorization and checksum-verified backup restore succeeded."
 }

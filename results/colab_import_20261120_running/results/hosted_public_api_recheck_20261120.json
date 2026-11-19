@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-11-19T18:46:35.836284+00:00",
+  "generate_text_signature": "(prompt: str, model_name: str = 'google/gemini-3.8-flash', stream: bool = False) -> Union[str, Generator[str, Any, NoneType]]",
+  "generate_text_doc": "Generates text using the given prompt and model.\n\nArgs:\n  prompt: The input text or question.\n  model_name: The name of the model to use (currently defaults to\n    'google/gemini-3.8-flash').\n  stream: If `True`, the response will be streamed back in chunks. If `False`,\n    the complete generated text will be returned at once.\n\nReturns:\n  If `stream` is `True`, a `generator of str` is returned. If `stream` is\n  `False`, a string containing the complete generated text is returned.",
+  "models": [
+    "google/gemini-3.5-flash-lite",
+    "google/gemini-3.8-flash"
+  ],
+  "model_inference_requests": 0,
+  "final_test_accessed": false
+}

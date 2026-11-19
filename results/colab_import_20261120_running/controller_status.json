@@ -1,0 +1,8 @@
+{
+  "status": "running_local_experiments",
+  "run_root": "results/free_runs_batch8_v2",
+  "pid": 16285,
+  "bounded_seconds": 10800,
+  "cash_budget_usd": 0,
+  "phase3_complete": false
+}
