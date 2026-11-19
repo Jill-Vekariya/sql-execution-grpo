@@ -1,0 +1,76 @@
+{
+  "observed_utc": "2026-11-19T18:39:35.843728+00:00",
+  "request_date": "2026-11-20",
+  "seed": 42,
+  "cash_budget_usd": 0,
+  "restore": {
+    "status": "restored_private_drive_backup",
+    "bytes": 10841957,
+    "sha256": "aca285c50cfd9e72f62c115cb1f0336277d271776e20bb65446c75e866064bac",
+    "md5Checksum": "882d82c832a97d4442f45f1f3f01407b",
+    "drive_file": {
+      "md5Checksum": "882d82c832a97d4442f45f1f3f01407b",
+      "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+      "size": "10841957",
+      "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+      "appProperties": {
+        "profile": "student_free_nf4_fp16_batch8_v2",
+        "sha256": "aca285c50cfd9e72f62c115cb1f0336277d271776e20bb65446c75e866064bac"
+      }
+    },
+    "phase3_complete": false
+  },
+  "phase3_complete": false,
+  "final_test_accessed": false,
+  "val_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "stages": {
+    "base_zero": {
+      "predictions": 2304,
+      "status": {
+        "status": "completed",
+        "queries": 2304,
+        "api_budget_debited_usd": 0,
+        "generation_failures": 0,
+        "generation_batch_size": 8,
+        "profile_id": "student_free_nf4_fp16_batch8_v2",
+        "latency_definition": "Each request records its shared batch wall time; amortized throughput is a separate field"
+      },
+      "generation_errors": 0,
+      "log_tail": "152, \"total\": 2304, \"batch_seconds\": 11.07, \"generation_errors\": 0}\n{\"saved_predictions\": 2160, \"total\": 2304, \"batch_seconds\": 28.468, \"generation_errors\": 0}\n{\"saved_predictions\": 2168, \"total\": 2304, \"batch_seconds\": 5.716, \"generation_errors\": 0}\n{\"saved_predictions\": 2176, \"total\": 2304, \"batch_seconds\": 6.46, \"generation_errors\": 0}\n{\"saved_predictions\": 2184, \"total\": 2304, \"batch_seconds\": 8.943, \"generation_errors\": 0}\n{\"saved_predictions\": 2192, \"total\": 2304, \"batch_seconds\": 10.302, \"generation_errors\": 0}\n{\"saved_predictions\": 2200, \"total\": 2304, \"batch_seconds\": 12.023, \"generation_errors\": 0}\n{\"saved_predictions\": 2208, \"total\": 2304, \"batch_seconds\": 18.042, \"generation_errors\": 0}\n{\"saved_predictions\": 2216, \"total\": 2304, \"batch_seconds\": 6.734, \"generation_errors\": 0}\n{\"saved_predictions\": 2224, \"total\": 2304, \"batch_seconds\": 3.357, \"generation_errors\": 0}\n{\"saved_predictions\": 2232, \"total\": 2304, \"batch_seconds\": 5.291, \"generation_errors\": 0}\n{\"saved_predictions\": 2240, \"total\": 2304, \"batch_seconds\": 5.754, \"generation_errors\": 0}\n{\"saved_predictions\": 2248, \"total\": 2304, \"batch_seconds\": 6.097, \"generation_errors\": 0}\n{\"saved_predictions\": 2256, \"total\": 2304, \"batch_seconds\": 4.241, \"generation_errors\": 0}\n{\"saved_predictions\": 2264, \"total\": 2304, \"batch_seconds\": 3.171, \"generation_errors\": 0}\n{\"saved_predictions\": 2272, \"total\": 2304, \"batch_seconds\": 5.374, \"generation_errors\": 0}\n{\"saved_predictions\": 2280, \"total\": 2304, \"batch_seconds\": 4.744, \"generation_errors\": 0}\n{\"saved_predictions\": 2288, \"total\": 2304, \"batch_seconds\": 5.026, \"generation_errors\": 0}\n{\"saved_predictions\": 2296, \"total\": 2304, \"batch_seconds\": 5.56, \"generation_errors\": 0}\n{\"saved_predictions\": 2304, \"total\": 2304, \"batch_seconds\": 10.071, \"generation_errors\": 0}\n"
+    },
+    "base_few": {
+      "predictions": 1552,
+      "status": null,
+      "generation_errors": 0,
+      "log_tail": "2304, \"batch_seconds\": 12.075, \"generation_errors\": 0}\n{\"saved_predictions\": 1408, \"total\": 2304, \"batch_seconds\": 14.039, \"generation_errors\": 0}\n{\"saved_predictions\": 1416, \"total\": 2304, \"batch_seconds\": 16.274, \"generation_errors\": 0}\n{\"saved_predictions\": 1424, \"total\": 2304, \"batch_seconds\": 17.011, \"generation_errors\": 0}\n{\"saved_predictions\": 1432, \"total\": 2304, \"batch_seconds\": 17.171, \"generation_errors\": 0}\n{\"saved_predictions\": 1440, \"total\": 2304, \"batch_seconds\": 16.449, \"generation_errors\": 0}\n{\"saved_predictions\": 1448, \"total\": 2304, \"batch_seconds\": 16.988, \"generation_errors\": 0}\n{\"saved_predictions\": 1456, \"total\": 2304, \"batch_seconds\": 17.165, \"generation_errors\": 0}\n{\"saved_predictions\": 1464, \"total\": 2304, \"batch_seconds\": 14.07, \"generation_errors\": 0}\n{\"saved_predictions\": 1472, \"total\": 2304, \"batch_seconds\": 17.014, \"generation_errors\": 0}\n{\"saved_predictions\": 1480, \"total\": 2304, \"batch_seconds\": 17.927, \"generation_errors\": 0}\n{\"saved_predictions\": 1488, \"total\": 2304, \"batch_seconds\": 17.616, \"generation_errors\": 0}\n{\"saved_predictions\": 1496, \"total\": 2304, \"batch_seconds\": 18.927, \"generation_errors\": 0}\n{\"saved_predictions\": 1504, \"total\": 2304, \"batch_seconds\": 16.03, \"generation_errors\": 0}\n{\"saved_predictions\": 1512, \"total\": 2304, \"batch_seconds\": 20.989, \"generation_errors\": 0}\n{\"saved_predictions\": 1520, \"total\": 2304, \"batch_seconds\": 21.079, \"generation_errors\": 0}\n{\"saved_predictions\": 1528, \"total\": 2304, \"batch_seconds\": 17.311, \"generation_errors\": 0}\n{\"saved_predictions\": 1536, \"total\": 2304, \"batch_seconds\": 21.008, \"generation_errors\": 0}\n{\"saved_predictions\": 1544, \"total\": 2304, \"batch_seconds\": 21.916, \"generation_errors\": 0}\n{\"saved_predictions\": 1552, \"total\": 2304, \"batch_seconds\": 17.22, \"generation_errors\": 0}\n"
+    },
+    "sft": {
+      "predictions": 0,
+      "status": null,
+      "generation_errors": 0
+    },
+    "sft_eval": {
+      "predictions": 0,
+      "status": null,
+      "generation_errors": 0
+    },
+    "frontier": {
+      "predictions": 0,
+      "status": null,
+      "generation_errors": 0
+    }
+  },
+  "complete_checkpoints": [],
+  "gpu": {
+    "torch": "2.13.0+cu126",
+    "transformers": "5.19.0",
+    "peft": "0.21.2",
+    "trl": "1.17.1",
+    "bitsandbytes": "0.50.0",
+    "cuda": true,
+    "gpu": "Tesla T4",
+    "kernel_sum": 16.0
+  },
+  "test_returncode": 0,
+  "test_tail": "============================= test session starts ==============================\nplatform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0\nrootdir: /content/sqlrl_temp/sql-execution-grpo\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: anyio-4.16.0\ncollected 111 items\n\ntests/test_additional_edges.py .......                                   [  6%]\ntests/test_batched_generation.py ..............                          [ 18%]\ntests/test_colab_restore.py ......                                       [ 24%]\ntests/test_completion.py ........                                        [ 31%]\ntests/test_download.py ....                                              [ 35%]\ntests/test_evaluation.py ....                                            [ 38%]\ntests/test_executor.py ......................................            [ 72%]\ntests/test_free_profile.py ......                                        [ 78%]\ntests/test_protocol.py .............                                     [ 90%]\ntests/test_reward.py ...........                                         [100%]\n\n--- generated xml file: /content/sqlrl_free_run/tests-restored-20261120.xml ----\n============================= 111 passed in 3.01s ==============================\n"
+}

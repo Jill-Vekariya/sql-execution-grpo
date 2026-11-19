@@ -21,7 +21,7 @@
     "weights_location": "temporary free Colab T4 runtime; not committed"
   },
   "tests": {
-    "tests": 114,
+    "tests": 118,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -39,13 +39,13 @@
       "cost_usd": null
     },
     "Base few-shot": {
-      "status": "paused_pending_private_backup_restore",
-      "imported_predictions": 600,
-      "last_observed_predictions": 616,
-      "last_observed_utc": "2026-11-17T20:37:51.166609+00:00",
+      "status": "restored_controller_waiting_for_train_verification",
+      "imported_predictions": 1552,
+      "last_observed_predictions": 1552,
+      "last_observed_utc": "2026-11-19T18:39:35.843728+00:00",
       "accuracy": null,
       "last_user_reported_predictions": 872,
-      "current_runtime_count_verified": false
+      "current_runtime_count_verified": true
     },
     "Frontier": {
       "status": "blocked_owner_free_project_credential",
@@ -54,7 +54,7 @@
       "accuracy": null
     },
     "SFT": {
-      "status": "paused_pending_private_backup_restore",
+      "status": "queued_after_few_shot",
       "complete_checkpoint_observed": false,
       "accuracy": null
     },
@@ -65,7 +65,7 @@
   },
   "data_audit": "results/data_audit.json",
   "gold_audit": "results/gold_audit/summary.json",
-  "test_evidence": "results/tests-gold-accounting-20261119.xml",
+  "test_evidence": "results/tests-evidence-replay-20261120.xml",
   "final_test_accessed": false,
   "rl_trained": false,
   "adapter_released": false,
@@ -5236,20 +5236,20 @@
       "reason": "No NVIDIA CUDA runtime detected; Qwen SFT was not started and no adapter exists"
     }
   },
-  "updated_on": "2026-11-19",
+  "updated_on": "2026-11-20",
   "scope_complete": false,
   "phase3_complete": false,
   "cash_budget_usd": 0,
-  "latest_progress_evidence": "results/resume_20261119.json",
+  "latest_progress_evidence": "results/resume_20261120.json",
   "baseline_import_evidence": "results/colab_import_20261118/import_manifest.json",
   "baseline_replay_evidence": "results/saved_baseline_check_with_data_20261119.json",
   "schema_integrity_evidence": "results/validation_schema_investigation_20261118.json",
   "final_manifest_status": "deferred_under_no_final_access_rule",
   "gold_near_100_percent_target_met": false,
-  "latest_resume_evidence": "results/resume_20261119.json",
+  "latest_resume_evidence": "results/resume_20261120.json",
   "gold_failure_analysis": "results/gold_failure_analysis_20261119.json",
   "current_blockers": [
-    "Automatic approval review rejected Colab Allow for Google Drive and Google Cloud data; owner confirmation required.",
-    "Hosted baseline requires owner-managed free credential and billing-disabled confirmation."
-  ]
+    "Hosted baseline requires owner-managed Free tier API credential and billing-disabled confirmation."
+  ],
+  "resolved_access_blocker": "Owner yes; Google authorization and checksum-verified backup restore succeeded."
 }

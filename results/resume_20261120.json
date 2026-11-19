@@ -1,0 +1,69 @@
+{
+  "request_date": "2026-11-20",
+  "observed_utc": "2026-11-19T18:59:20.610776+00:00",
+  "scope": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seed": 42,
+  "cash_budget_usd": 0,
+  "owner_authorization": {
+    "reply": "yes",
+    "scope": "Private Colab notebook access to Google Drive and Google Cloud data for project restore and backups",
+    "completed": true
+  },
+  "restore_evidence": {
+    "path": "results/colab_import_20261120_initial/results/restored_checkpoint_20261120.json",
+    "sha256": "b777290380dfbb0519c62fbaf00087d3fd9225911159cef5f5542e7ddbbc0249",
+    "archive_sha256": "aca285c50cfd9e72f62c115cb1f0336277d271776e20bb65446c75e866064bac",
+    "archive_bytes": 10841957
+  },
+  "import_evidence": {
+    "path": "results/colab_import_20261120_initial/import_manifest.json",
+    "sha256": "1ccf5e0c1de1358b44b504796c469f1dc004cd98192589946c0b6bd1be2a154f",
+    "all_member_hashes_verified": true,
+    "operational_source_hashes_verified": true,
+    "previous_prefix_preserved": true
+  },
+  "restored_few_shot_predictions": 1552,
+  "validation_questions": 2304,
+  "few_shot_accuracy": null,
+  "complete_sft_checkpoints_at_restore": [],
+  "gpu": {
+    "torch": "2.13.0+cu126",
+    "transformers": "5.19.0",
+    "peft": "0.21.2",
+    "trl": "1.17.1",
+    "bitsandbytes": "0.50.0",
+    "cuda": true,
+    "gpu": "Tesla T4",
+    "kernel_sum": 16.0
+  },
+  "frozen_colab_tests": {
+    "passed": 111,
+    "receipt": "results/colab_import_20261120_initial/results/restored_checkpoint_20261120.json"
+  },
+  "current_repository_tests": {
+    "tests": 118,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "path": "results/tests-evidence-replay-20261120.xml",
+    "sha256": "08cdc0b78175ae2652b834c317ff3d9a8ead3d01f47077216cd126277e8df590"
+  },
+  "hosted_public_api_evidence": {
+    "path": "results/colab_import_20261120_initial/results/hosted_public_api_recheck_20261120.json",
+    "sha256": "6a95d69d6deea0f3f9c3667b048c628176e20c837b8231d149ae575e459e681a",
+    "signature": "(prompt: str, model_name: str = 'google/gemini-3.8-flash', stream: bool = False) -> Union[str, Generator[str, Any, NoneType]]",
+    "model_inference_requests": 0
+  },
+  "hosted_baseline_status": "Still needs owner-managed Free tier API credential and billing-disabled confirmation; public Colab wrapper lacks required output controls/usage receipts",
+  "continuation": "Verified TRAIN-only reconstruction and bounded local controller restarted; private backups verified",
+  "phase3_complete": false,
+  "scope_complete": false,
+  "final_test_accessed": false,
+  "screenshots_published": false,
+  "paid_resource_enabled": false
+}

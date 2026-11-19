@@ -1,0 +1,97 @@
+{
+  "observed_utc": "2026-11-19T18:46:02.286923+00:00",
+  "seed": 42,
+  "phase3_complete": false,
+  "final_test_accessed": false,
+  "prepare_returncode": null,
+  "preparation_tail": "t ready\nspider student_assessment ready\nspider tracking_grants_for_research ready\nspider tracking_grants_for_research ready\nspider customers_and_products_contacts ready\nspider customers_and_products_contacts ready\nspider e_learning ready\nspider e_learning ready\nspider college_1 ready\nspider college_1 ready\nspider apartment_rentals ready\nspider apartment_rentals ready\nspider customers_campaigns_ecommerce ready\nspider customers_campaigns_ecommerce ready\nspider driving_school ready\nspider driving_school ready\nspider customers_and_invoices ready\nspider customers_and_invoices ready\nspider local_govt_and_lot ready\nspider local_govt_and_lot ready\nspider hospital_1 ready\nspider hospital_1 ready\nspider e_government ready\nspider e_government ready\nspider cre_Theme_park ready\nspider cre_Theme_park ready\nspider assets_maintenance ready\nspider assets_maintenance ready\nspider customer_deliveries ready\nspider customer_deliveries ready\nspider behavior_monitoring ready\nspider behavior_monitoring ready\n",
+  "controller_alive": true,
+  "backup_alive": true,
+  "stages": {
+    "base_zero": {
+      "predictions": 2304,
+      "status": {
+        "status": "completed",
+        "queries": 2304,
+        "api_budget_debited_usd": 0,
+        "generation_failures": 0,
+        "generation_batch_size": 8,
+        "profile_id": "student_free_nf4_fp16_batch8_v2",
+        "latency_definition": "Each request records its shared batch wall time; amortized throughput is a separate field"
+      },
+      "log_tail": "\"saved_predictions\": 2224, \"total\": 2304, \"batch_seconds\": 3.357, \"generation_errors\": 0}\n{\"saved_predictions\": 2232, \"total\": 2304, \"batch_seconds\": 5.291, \"generation_errors\": 0}\n{\"saved_predictions\": 2240, \"total\": 2304, \"batch_seconds\": 5.754, \"generation_errors\": 0}\n{\"saved_predictions\": 2248, \"total\": 2304, \"batch_seconds\": 6.097, \"generation_errors\": 0}\n{\"saved_predictions\": 2256, \"total\": 2304, \"batch_seconds\": 4.241, \"generation_errors\": 0}\n{\"saved_predictions\": 2264, \"total\": 2304, \"batch_seconds\": 3.171, \"generation_errors\": 0}\n{\"saved_predictions\": 2272, \"total\": 2304, \"batch_seconds\": 5.374, \"generation_errors\": 0}\n{\"saved_predictions\": 2280, \"total\": 2304, \"batch_seconds\": 4.744, \"generation_errors\": 0}\n{\"saved_predictions\": 2288, \"total\": 2304, \"batch_seconds\": 5.026, \"generation_errors\": 0}\n{\"saved_predictions\": 2296, \"total\": 2304, \"batch_seconds\": 5.56, \"generation_errors\": 0}\n{\"saved_predictions\": 2304, \"total\": 2304, \"batch_seconds\": 10.071, \"generation_errors\": 0}\n",
+      "evaluation": {
+        "n": 2304,
+        "databases": 31,
+        "execution_accuracy": 0.6475694444444444,
+        "execution_accuracy_ci95": [
+          0.5867580856681543,
+          0.7052655075187969
+        ],
+        "ci_method": "database_cluster_percentile_bootstrap",
+        "bootstrap_seed": 42,
+        "bootstrap_samples": 2000,
+        "valid_sql_rate": 0.9383680555555556,
+        "timeout_rate": 0.003472222222222222,
+        "gold_errors": 26,
+        "average_output_tokens": 44.53081597222222,
+        "token_counts_complete": true,
+        "total_cost_usd": null,
+        "average_latency_s": 12.014086556303813,
+        "average_generation_latency_s": 11.832127707034727,
+        "by_difficulty": {
+          "unknown": {
+            "n": 2304,
+            "accuracy": 0.6475694444444444,
+            "ci95": [
+              0.5867580856681543,
+              0.7052655075187969
+            ]
+          }
+        }
+      }
+    },
+    "base_few": {
+      "predictions": 1552,
+      "status": null,
+      "log_tail": "edictions\": 1472, \"total\": 2304, \"batch_seconds\": 17.014, \"generation_errors\": 0}\n{\"saved_predictions\": 1480, \"total\": 2304, \"batch_seconds\": 17.927, \"generation_errors\": 0}\n{\"saved_predictions\": 1488, \"total\": 2304, \"batch_seconds\": 17.616, \"generation_errors\": 0}\n{\"saved_predictions\": 1496, \"total\": 2304, \"batch_seconds\": 18.927, \"generation_errors\": 0}\n{\"saved_predictions\": 1504, \"total\": 2304, \"batch_seconds\": 16.03, \"generation_errors\": 0}\n{\"saved_predictions\": 1512, \"total\": 2304, \"batch_seconds\": 20.989, \"generation_errors\": 0}\n{\"saved_predictions\": 1520, \"total\": 2304, \"batch_seconds\": 21.079, \"generation_errors\": 0}\n{\"saved_predictions\": 1528, \"total\": 2304, \"batch_seconds\": 17.311, \"generation_errors\": 0}\n{\"saved_predictions\": 1536, \"total\": 2304, \"batch_seconds\": 21.008, \"generation_errors\": 0}\n{\"saved_predictions\": 1544, \"total\": 2304, \"batch_seconds\": 21.916, \"generation_errors\": 0}\n{\"saved_predictions\": 1552, \"total\": 2304, \"batch_seconds\": 17.22, \"generation_errors\": 0}\n"
+    },
+    "sft": {
+      "predictions": 0,
+      "status": null
+    },
+    "sft_eval": {
+      "predictions": 0,
+      "status": null
+    },
+    "frontier": {
+      "predictions": 0,
+      "status": null
+    }
+  },
+  "controller_status.json": {
+    "status": "waiting_for_verified_train_data",
+    "run_root": "results/free_runs_batch8_v2",
+    "phase3_complete": false
+  },
+  "backup_status.json": {
+    "status": "verified_private_drive_backup",
+    "sha256": "30b3cb3858bf589562603a8709daa0a00cbf72ab4c96ca20024e1fbee462dbc1",
+    "bytes": 10849715,
+    "drive_file": {
+      "id": "1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9",
+      "webViewLink": "https://drive.google.com/file/d/1pXHSfzD3FEYDMns2rZG7PeMlLEE6inE9/view?usp=drivesdk",
+      "md5Checksum": "44ca3517797cf6652c42531fc339d626",
+      "size": "10849715"
+    },
+    "checkpoints": {
+      "results/free_runs/sft/checkpoints": null,
+      "results/free_runs_batch8_v2/sft/checkpoints": null
+    },
+    "phase3_complete": false
+  },
+  "trainer_metrics_tail": null,
+  "checkpoints": [],
+  "gpu": "Tesla T4, 0 MiB, 0 %",
+  "free_scratch_gib": 105.84
+}

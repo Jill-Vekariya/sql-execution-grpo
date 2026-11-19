@@ -107,3 +107,15 @@ that a label is incorrect; inspect the error and original annotation first.
   No commit or push occurred. The screenshot was unstaged and moved to ignored
   scratch. Publication proceeds with code, tests and text result evidence only;
   the image is not disclosed to GitHub.
+
+## Access resolution and resume checks, 20 November 2026
+
+- F025 resolved: the owner's yes was followed by successful standard Google
+  authorization and checksum-verified private-backup restoration. The newest
+  verified prefix is 1,552 answers; no SFT checkpoint was restored.
+- F027: another tab updated the notebook and triggered an automatic-save
+  conflict. The saved remote version was reloaded while preserving the runtime;
+  new cells/results saved normally afterward. Operational source hashes match.
+- Hosted baseline: the public Colab wrapper still lacks the required output
+  controls and usage/version receipts. The existing owner-managed free API
+  credential/billing-disabled gate remains; no hosted inference was performed.

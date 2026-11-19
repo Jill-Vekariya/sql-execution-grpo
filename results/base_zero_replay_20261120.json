@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "questions": 2304,
+  "correct": 1492,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "seed": 42,
+  "data_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "validation_bytes_checked": true,
+  "source_hashes": {
+    "results/free_runs_batch8_v2/base_zero/config.json": "f32cced8b185ac28e3506297996be77ad12b0099105f8a8d8e595c8219c88dc9",
+    "results/free_runs_batch8_v2/base_zero/status.json": "3691df1f91f7b951294eaeafd4069fec417a10181a0f8818c3fff9c2748f53c3",
+    "results/free_runs_batch8_v2/base_zero/predictions.jsonl": "eefe993b296ffc2ea207189ba44cf38777368f6a39979b648cb4f0e68b68741e",
+    "results/free_runs_batch8_v2/base_zero_evaluation/config.json": "ed01f454bebc25155b92d64957c15b112f823c2a7d1557112ffdd6a4b0307f65",
+    "results/free_runs_batch8_v2/base_zero_evaluation/per_question.jsonl": "be4af4ea8599271647068ea0005d7bcd2675f08875986852ad5c9b6ad3adc439",
+    "results/free_runs_batch8_v2/base_zero_evaluation/summary.json": "a4e3c87acd9a69e74ed34ee18805461298cd3933bd1cd0c0eba872445a7a41b7"
+  },
+  "summary_and_bootstrap_reproduced": true,
+  "summary": {
+    "n": 2304,
+    "databases": 31,
+    "execution_accuracy": 0.6475694444444444,
+    "execution_accuracy_ci95": [
+      0.5867580856681543,
+      0.7052655075187969
+    ],
+    "ci_method": "database_cluster_percentile_bootstrap",
+    "bootstrap_seed": 42,
+    "bootstrap_samples": 2000,
+    "valid_sql_rate": 0.9383680555555556,
+    "timeout_rate": 0.003472222222222222,
+    "gold_errors": 26,
+    "average_output_tokens": 44.53081597222222,
+    "token_counts_complete": true,
+    "total_cost_usd": null,
+    "average_latency_s": 12.014086556303813,
+    "average_generation_latency_s": 11.832127707034727,
+    "by_difficulty": {
+      "unknown": {
+        "n": 2304,
+        "accuracy": 0.6475694444444444,
+        "ci95": [
+          0.5867580856681543,
+          0.7052655075187969
+        ]
+      }
+    }
+  },
+  "model_called": false,
+  "sql_executed": false,
+  "final_test_accessed": false,
+  "scope": "Replays saved execution records and their arithmetic; does not re-execute SQL."
+}

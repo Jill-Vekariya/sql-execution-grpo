@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0
+rootdir: /content/sqlrl_temp/sql-execution-grpo
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0
+collected 111 items
+
+tests/test_additional_edges.py .......                                   [  6%]
+tests/test_batched_generation.py ..............                          [ 18%]
+tests/test_colab_restore.py ......                                       [ 24%]
+tests/test_completion.py ........                                        [ 31%]
+tests/test_download.py ....                                              [ 35%]
+tests/test_evaluation.py ....                                            [ 38%]
+tests/test_executor.py ......................................            [ 72%]
+tests/test_free_profile.py ......                                        [ 78%]
+tests/test_protocol.py .............                                     [ 90%]
+tests/test_reward.py ...........                                         [100%]
+
+--- generated xml file: /content/sqlrl_free_run/tests-restored-20261120.xml ----
+============================= 111 passed in 3.01s ==============================

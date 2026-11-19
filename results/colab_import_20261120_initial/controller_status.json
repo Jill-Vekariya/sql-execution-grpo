@@ -1,0 +1,5 @@
+{
+  "status": "waiting_for_verified_train_data",
+  "run_root": "results/free_runs_batch8_v2",
+  "phase3_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "backend": "transformers",
+  "data": "data/processed/val.jsonl",
+  "train_data": "data/processed/train_eligible.jsonl",
+  "seed": 42,
+  "max_prompt_tokens": 4096,
+  "max_new_tokens": 512,
+  "few_shot": 3,
+  "output": "results/free_runs_batch8_v2/base_few",
+  "gpu_price_usd_per_hour": 0,
+  "profile_id": "student_free_nf4_fp16_batch8_v2",
+  "precision": "fp16",
+  "quantization": "nf4",
+  "generation_batch_size": 8,
+  "data_sha256": "37e7187b1e3d8fdd463f1173f822da84fa227874a42b7441b0b169ddbb6a0cef",
+  "train_data_sha256": "0af7954617e81a26b5fda24a2923c68477792043ca2c464e00e17f62c319b290",
+  "generation_script_sha256": "730b466c97c685f39e2efb721b1f3dd2787f9362c6393265285cf5c9d17f421c"
+}

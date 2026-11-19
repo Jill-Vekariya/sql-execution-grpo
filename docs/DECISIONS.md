@@ -216,3 +216,18 @@ Preserve that blocker and the exact scope; do not bypass it through shell,
 Drive API credential extraction or a different upload mechanism. Neither
 historical notebook output nor the user-reported 872-answer count establishes
 the newest backup's current progress. See results/resume_20261119.json.
+
+## D018 — Verified restoration and lossless result storage, 20 November 2026
+
+The owner's yes authorized the exact disclosed private-notebook Drive and
+Google Cloud access. Restore/auth completed; archive and member hashes were
+verified before restarting backups or TRAIN preparation. The restored 1,552
+few-shot answers preserve the previously imported 600-answer prefix byte for
+byte. Operational source hashes and all experiment settings remain fixed.
+
+New dated imports preserve old evidence. Prediction JSONL may be stored as
+lossless gzip to avoid repeatedly committing large prompt text. The import
+manifest records both stored and uncompressed hashes. scripts/verify_saved_run.py
+supports plain/gzip artifacts, requires the complete ordered VAL cohort, checks
+generation/evaluation input hashes, and replays saved database-bootstrap metrics.
+It does not execute SQL or establish new model accuracy from an incomplete run.
