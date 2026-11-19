@@ -85,3 +85,25 @@ that a label is incorrect; inspect the error and original annotation first.
   verified commit successfully. The stalled read-only request was stopped.
   Training/data/results were unaffected. Evidence:
   results/publication_checkpoint_20261118.json.
+
+## Restore blocked again, 19 November 2026
+
+- F025: The existing private Colab notebook connected to a free T4 and completed
+  source/setup cells. Backup restoration then reached the Google credentials
+  Allow prompt for Google Drive and Google Cloud data. Automatic approval
+  review rejected clicking Allow because this sensitive access requires explicit
+  action-time confirmation. The prior resolved handoff remains history.
+  No workaround was attempted. Current backup counts/checkpoints remain
+  unverified; no new inference/SFT completion is claimed.
+  Evidence: results/resume_20261119.json.
+- Gold investigation follow-up: all 720 previously saved failing cases are
+  accounted for in results/gold_failure_analysis_20261119.json. Missing
+  tables/columns and compound SELECT ordering explain the observed SQLite
+  errors; resource failures remain distinct. This is diagnostic classification,
+  not a repair, label-noise proof or new gold execution run.
+
+- F026: Automatic approval review rejected the initial commit/push action
+  because it included the private Google access-prompt screenshot.
+  No commit or push occurred. The screenshot was unstaged and moved to ignored
+  scratch. Publication proceeds with code, tests and text result evidence only;
+  the image is not disclosed to GitHub.

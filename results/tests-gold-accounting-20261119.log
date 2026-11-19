@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0
+rootdir: /mnt/c/Users/jillv/Projects/sql-execution-grpo
+configfile: pyproject.toml
+testpaths: tests
+collected 114 items
+
+tests/test_additional_edges.py .......                                   [  6%]
+tests/test_batched_generation.py ..............                          [ 18%]
+tests/test_colab_restore.py ......                                       [ 23%]
+tests/test_completion.py ........                                        [ 30%]
+tests/test_download.py ....                                              [ 34%]
+tests/test_evaluation.py ....                                            [ 37%]
+tests/test_executor.py ......................................            [ 71%]
+tests/test_free_profile.py ......                                        [ 76%]
+tests/test_gold_failure_accounting.py ...                                [ 78%]
+tests/test_protocol.py .............                                     [ 90%]
+tests/test_reward.py ...........                                         [100%]
+
+- generated xml file: /mnt/c/Users/jillv/Projects/sql-execution-grpo/results/tests-gold-accounting-20261119.xml -
+============================= 114 passed in 23.14s =============================

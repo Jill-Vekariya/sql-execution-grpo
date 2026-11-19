@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "class": "SFTConfig",
+      "url": "https://raw.githubusercontent.com/huggingface/trl/v1.17.1/trl/trainer/sft_config.py",
+      "sha256": "4a18512fbdc83c9d16be09ee68529cd4cc07e4243c9ad733686fd3cb70984d6b",
+      "required_fields_found": {
+        "max_length": true,
+        "completion_only_loss": true,
+        "packing": true
+      },
+      "passed": true,
+      "matches_prior_source_hash": true
+    },
+    {
+      "class": "SFTTrainer",
+      "url": "https://raw.githubusercontent.com/huggingface/trl/v1.17.1/trl/trainer/sft_trainer.py",
+      "sha256": "ab992191b84cdc47e14c0b6baf4e6be724240da4b4d98f26341cdaba072e8e92",
+      "required_fields_found": {
+        "processing_class": true,
+        "peft_config": true,
+        "train_dataset": true
+      },
+      "passed": true,
+      "matches_prior_source_hash": true
+    },
+    {
+      "class": "GRPOConfig",
+      "url": "https://raw.githubusercontent.com/huggingface/trl/v1.17.1/trl/trainer/grpo_config.py",
+      "sha256": "275ec9a9619c820c086ef526fa1f60834334d692c134c20c920175477a303455",
+      "required_fields_found": {
+        "use_vllm": true,
+        "num_generations": true,
+        "beta": true
+      },
+      "passed": true,
+      "matches_prior_source_hash": true
+    },
+    {
+      "class": "LoraConfig",
+      "url": "https://raw.githubusercontent.com/huggingface/peft/v0.21.2/src/peft/tuners/lora/config.py",
+      "sha256": "49042be0a174d515e4459dbb4a084cf934635e47dc29597d70769d0499cae650",
+      "required_fields_found": {
+        "r": true,
+        "lora_alpha": true,
+        "target_modules": true
+      },
+      "passed": true,
+      "matches_prior_source_hash": true
+    }
+  ],
+  "gpu_integration_tested": false,
+  "checked_on": "2026-11-19",
+  "source_hashes_unchanged": true
+}

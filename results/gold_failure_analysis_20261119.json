@@ -1,0 +1,1243 @@
+{
+  "kind": "classification_of_saved_gold_execution_failures",
+  "queries": 16371,
+  "gold_executable": 15651,
+  "gold_execution_rate": 0.9560197910940077,
+  "failures": 720,
+  "all_failures_accounted_for": true,
+  "taxonomy": {
+    "compound_select_ordering": {
+      "count": 2,
+      "ids": [
+        "spider:04513",
+        "spider:04514"
+      ]
+    },
+    "missing_column": {
+      "count": 208,
+      "ids": [
+        "bird:02462",
+        "bird:02464",
+        "bird:02467",
+        "bird:02470",
+        "bird:02512",
+        "bird:02513",
+        "bird:02518",
+        "bird:02525",
+        "bird:02558",
+        "bird:02567",
+        "bird:06297",
+        "bird:06298",
+        "bird:06299",
+        "bird:06300",
+        "bird:06301",
+        "bird:06302",
+        "bird:06303",
+        "bird:06323",
+        "bird:06325",
+        "bird:06326",
+        "bird:06327",
+        "bird:06333",
+        "bird:06341",
+        "bird:06342",
+        "bird:06345",
+        "bird:06346",
+        "bird:06347",
+        "bird:06352",
+        "bird:06353",
+        "bird:06356",
+        "bird:06357",
+        "bird:06358",
+        "bird:06360",
+        "bird:06361",
+        "bird:06362",
+        "bird:06363",
+        "bird:06364",
+        "bird:06365",
+        "bird:06366",
+        "bird:06367",
+        "bird:06368",
+        "bird:06369",
+        "bird:06378",
+        "bird:06381",
+        "bird:06383",
+        "bird:06385",
+        "bird:06386",
+        "bird:06389",
+        "bird:06390",
+        "bird:06392",
+        "bird:06394",
+        "bird:06396",
+        "bird:06398",
+        "bird:06400",
+        "bird:06401",
+        "bird:06402",
+        "bird:06404",
+        "bird:06405",
+        "bird:06406",
+        "bird:06408",
+        "bird:06409",
+        "bird:06419",
+        "bird:06420",
+        "bird:06421",
+        "bird:06422",
+        "bird:06423",
+        "bird:06424",
+        "bird:06426",
+        "bird:06427",
+        "bird:06428",
+        "bird:06431",
+        "bird:06432",
+        "bird:06433",
+        "bird:06435",
+        "bird:06436",
+        "bird:06437",
+        "bird:06438",
+        "bird:06441",
+        "bird:06442",
+        "bird:06444",
+        "bird:06445",
+        "bird:06447",
+        "bird:06449",
+        "bird:06450",
+        "bird:06452",
+        "bird:06454",
+        "bird:06455",
+        "bird:06456",
+        "bird:06457",
+        "bird:06458",
+        "bird:06459",
+        "bird:06460",
+        "bird:06462",
+        "bird:06464",
+        "bird:06465",
+        "bird:06466",
+        "bird:06467",
+        "bird:06468",
+        "bird:06471",
+        "bird:06472",
+        "bird:06473",
+        "bird:06474",
+        "bird:06475",
+        "bird:06476",
+        "bird:06477",
+        "bird:06478",
+        "bird:06483",
+        "bird:06484",
+        "bird:06487",
+        "bird:06488",
+        "bird:06490",
+        "bird:06492",
+        "bird:06496",
+        "bird:06497",
+        "bird:06498",
+        "bird:06503",
+        "bird:06504",
+        "bird:06505",
+        "bird:06507",
+        "bird:06509",
+        "bird:06510",
+        "bird:06511",
+        "bird:06512",
+        "bird:06513",
+        "bird:06515",
+        "bird:06517",
+        "bird:06518",
+        "bird:06520",
+        "bird:06523",
+        "bird:06524",
+        "bird:06526",
+        "bird:06528",
+        "bird:06533",
+        "bird:06537",
+        "bird:06538",
+        "bird:06539",
+        "bird:06540",
+        "bird:06541",
+        "bird:06542",
+        "bird:06543",
+        "bird:06544",
+        "bird:06545",
+        "bird:06546",
+        "bird:06547",
+        "bird:06551",
+        "bird:06555",
+        "bird:06559",
+        "bird:06560",
+        "bird:06563",
+        "bird:06564",
+        "bird:06567",
+        "bird:06568",
+        "bird:06569",
+        "bird:06573",
+        "bird:06575",
+        "bird:06579",
+        "bird:06581",
+        "bird:06582",
+        "bird:06584",
+        "bird:06586",
+        "bird:06587",
+        "bird:06588",
+        "bird:06589",
+        "bird:06590",
+        "bird:06591",
+        "bird:06592",
+        "bird:06593",
+        "bird:06594",
+        "bird:06595",
+        "bird:06596",
+        "bird:06597",
+        "bird:06598",
+        "bird:06599",
+        "bird:06601",
+        "bird:06604",
+        "bird:06605",
+        "bird:06606",
+        "bird:06607",
+        "bird:06609",
+        "bird:06612",
+        "bird:06615",
+        "bird:06616",
+        "bird:06617",
+        "bird:06619",
+        "bird:06623",
+        "bird:06624",
+        "bird:06625",
+        "bird:06626",
+        "bird:06628",
+        "bird:06638",
+        "bird:06639",
+        "bird:06640",
+        "bird:06641",
+        "bird:06648",
+        "bird:06652",
+        "bird:06654",
+        "bird:06657",
+        "bird:06658",
+        "bird:06659",
+        "bird:06660",
+        "bird:06661",
+        "bird:06662",
+        "bird:06663",
+        "bird:06664",
+        "bird:06665",
+        "bird:06667",
+        "bird:06668",
+        "bird:06669"
+      ]
+    },
+    "missing_table": {
+      "count": 142,
+      "ids": [
+        "bird:06304",
+        "bird:06305",
+        "bird:06306",
+        "bird:06307",
+        "bird:06308",
+        "bird:06309",
+        "bird:06310",
+        "bird:06311",
+        "bird:06312",
+        "bird:06313",
+        "bird:06314",
+        "bird:06315",
+        "bird:06316",
+        "bird:06317",
+        "bird:06318",
+        "bird:06319",
+        "bird:06320",
+        "bird:06321",
+        "bird:06322",
+        "bird:06328",
+        "bird:06329",
+        "bird:06330",
+        "bird:06331",
+        "bird:06335",
+        "bird:06336",
+        "bird:06337",
+        "bird:06338",
+        "bird:06339",
+        "bird:06340",
+        "bird:06350",
+        "bird:06351",
+        "bird:06354",
+        "bird:06370",
+        "bird:06372",
+        "bird:06373",
+        "bird:06374",
+        "bird:06375",
+        "bird:06376",
+        "bird:06377",
+        "bird:06380",
+        "bird:06382",
+        "bird:06384",
+        "bird:06387",
+        "bird:06388",
+        "bird:06391",
+        "bird:06393",
+        "bird:06395",
+        "bird:06397",
+        "bird:06399",
+        "bird:06403",
+        "bird:06407",
+        "bird:06410",
+        "bird:06412",
+        "bird:06413",
+        "bird:06414",
+        "bird:06415",
+        "bird:06416",
+        "bird:06417",
+        "bird:06418",
+        "bird:06439",
+        "bird:06440",
+        "bird:06443",
+        "bird:06446",
+        "bird:06448",
+        "bird:06451",
+        "bird:06453",
+        "bird:06479",
+        "bird:06480",
+        "bird:06481",
+        "bird:06482",
+        "bird:06485",
+        "bird:06486",
+        "bird:06489",
+        "bird:06491",
+        "bird:06493",
+        "bird:06494",
+        "bird:06500",
+        "bird:06501",
+        "bird:06519",
+        "bird:06521",
+        "bird:06522",
+        "bird:06525",
+        "bird:06527",
+        "bird:06529",
+        "bird:06530",
+        "bird:06531",
+        "bird:06532",
+        "bird:06535",
+        "bird:06536",
+        "bird:06548",
+        "bird:06550",
+        "bird:06553",
+        "bird:06554",
+        "bird:06556",
+        "bird:06557",
+        "bird:06558",
+        "bird:06561",
+        "bird:06562",
+        "bird:06565",
+        "bird:06566",
+        "bird:06570",
+        "bird:06571",
+        "bird:06572",
+        "bird:06576",
+        "bird:06577",
+        "bird:06578",
+        "bird:06600",
+        "bird:06602",
+        "bird:06603",
+        "bird:06610",
+        "bird:06611",
+        "bird:06618",
+        "bird:06620",
+        "bird:06621",
+        "bird:06627",
+        "bird:06629",
+        "bird:06630",
+        "bird:06631",
+        "bird:06632",
+        "bird:06633",
+        "bird:06634",
+        "bird:06635",
+        "bird:06636",
+        "bird:06642",
+        "bird:06643",
+        "bird:06645",
+        "bird:06646",
+        "bird:06647",
+        "bird:06649",
+        "bird:06650",
+        "bird:06651",
+        "bird:07122",
+        "bird:07129",
+        "bird:07172",
+        "bird:07173",
+        "bird:07178",
+        "bird:07218",
+        "bird:07227",
+        "bird:07325",
+        "bird:07409",
+        "bird:07438",
+        "spider:03153"
+      ]
+    },
+    "resource_memory_limit": {
+      "count": 28,
+      "ids": [
+        "bird:00102",
+        "bird:00121",
+        "bird:02269",
+        "bird:03178",
+        "bird:03186",
+        "bird:03215",
+        "bird:03234",
+        "bird:03237",
+        "bird:03238",
+        "bird:03240",
+        "bird:03245",
+        "bird:03253",
+        "bird:03261",
+        "bird:03292",
+        "bird:03298",
+        "bird:03642",
+        "bird:05407",
+        "bird:05448",
+        "bird:05454",
+        "bird:05460",
+        "bird:05464",
+        "bird:06259",
+        "bird:07926",
+        "bird:07934",
+        "bird:07973",
+        "bird:08151",
+        "bird:08154",
+        "bird:09002"
+      ]
+    },
+    "resource_result_limit": {
+      "count": 5,
+      "ids": [
+        "bird:00777",
+        "bird:00819",
+        "bird:00821",
+        "bird:07928",
+        "bird:07932"
+      ]
+    },
+    "resource_row_limit": {
+      "count": 138,
+      "ids": [
+        "bird:00012",
+        "bird:00120",
+        "bird:00125",
+        "bird:00141",
+        "bird:00142",
+        "bird:00145",
+        "bird:00291",
+        "bird:00530",
+        "bird:00640",
+        "bird:01090",
+        "bird:01146",
+        "bird:01147",
+        "bird:01152",
+        "bird:01203",
+        "bird:01781",
+        "bird:01786",
+        "bird:02145",
+        "bird:02263",
+        "bird:02265",
+        "bird:02304",
+        "bird:02305",
+        "bird:03150",
+        "bird:03152",
+        "bird:03197",
+        "bird:03201",
+        "bird:03255",
+        "bird:03270",
+        "bird:03273",
+        "bird:03274",
+        "bird:03299",
+        "bird:03436",
+        "bird:03463",
+        "bird:03468",
+        "bird:03491",
+        "bird:03534",
+        "bird:03535",
+        "bird:03536",
+        "bird:03538",
+        "bird:03571",
+        "bird:03573",
+        "bird:03574",
+        "bird:03575",
+        "bird:03581",
+        "bird:03600",
+        "bird:03605",
+        "bird:03649",
+        "bird:03808",
+        "bird:03891",
+        "bird:04082",
+        "bird:04086",
+        "bird:04319",
+        "bird:04451",
+        "bird:04457",
+        "bird:05045",
+        "bird:05066",
+        "bird:05075",
+        "bird:05093",
+        "bird:05177",
+        "bird:05217",
+        "bird:05374",
+        "bird:05381",
+        "bird:05386",
+        "bird:05418",
+        "bird:05420",
+        "bird:05422",
+        "bird:05432",
+        "bird:05441",
+        "bird:05518",
+        "bird:05521",
+        "bird:05530",
+        "bird:05532",
+        "bird:05685",
+        "bird:05686",
+        "bird:05697",
+        "bird:05703",
+        "bird:05710",
+        "bird:05722",
+        "bird:05730",
+        "bird:05766",
+        "bird:05814",
+        "bird:05909",
+        "bird:06008",
+        "bird:06200",
+        "bird:06202",
+        "bird:06677",
+        "bird:06679",
+        "bird:06761",
+        "bird:06763",
+        "bird:06764",
+        "bird:06768",
+        "bird:06780",
+        "bird:06783",
+        "bird:06794",
+        "bird:06806",
+        "bird:06820",
+        "bird:06832",
+        "bird:06833",
+        "bird:06843",
+        "bird:06845",
+        "bird:06848",
+        "bird:06849",
+        "bird:06877",
+        "bird:07440",
+        "bird:07518",
+        "bird:07561",
+        "bird:07597",
+        "bird:07638",
+        "bird:07923",
+        "bird:07951",
+        "bird:07957",
+        "bird:07959",
+        "bird:07960",
+        "bird:07970",
+        "bird:08150",
+        "bird:08531",
+        "bird:08540",
+        "bird:08570",
+        "bird:08572",
+        "bird:08576",
+        "bird:08595",
+        "bird:08696",
+        "bird:08764",
+        "bird:08770",
+        "bird:08998",
+        "bird:09001",
+        "bird:09022",
+        "bird:09023",
+        "bird:09025",
+        "bird:09029",
+        "bird:09034",
+        "bird:09052",
+        "bird:09083",
+        "spider:03661",
+        "spider:03662",
+        "spider:03663",
+        "spider:03664",
+        "spider:06877",
+        "spider:06878"
+      ]
+    },
+    "resource_timeout": {
+      "count": 197,
+      "ids": [
+        "bird:00005",
+        "bird:00006",
+        "bird:00007",
+        "bird:00008",
+        "bird:00009",
+        "bird:00010",
+        "bird:00011",
+        "bird:00013",
+        "bird:00014",
+        "bird:00019",
+        "bird:00023",
+        "bird:00025",
+        "bird:00026",
+        "bird:00027",
+        "bird:00029",
+        "bird:00030",
+        "bird:00031",
+        "bird:00032",
+        "bird:00034",
+        "bird:00035",
+        "bird:00037",
+        "bird:00039",
+        "bird:00040",
+        "bird:00041",
+        "bird:00042",
+        "bird:00043",
+        "bird:00044",
+        "bird:00045",
+        "bird:00046",
+        "bird:00047",
+        "bird:00048",
+        "bird:00049",
+        "bird:00066",
+        "bird:00067",
+        "bird:00068",
+        "bird:00069",
+        "bird:00070",
+        "bird:00071",
+        "bird:00072",
+        "bird:00073",
+        "bird:00083",
+        "bird:00115",
+        "bird:00131",
+        "bird:00162",
+        "bird:01048",
+        "bird:01050",
+        "bird:01052",
+        "bird:01103",
+        "bird:01108",
+        "bird:01127",
+        "bird:01128",
+        "bird:01131",
+        "bird:01133",
+        "bird:01134",
+        "bird:01144",
+        "bird:01174",
+        "bird:01183",
+        "bird:01208",
+        "bird:01209",
+        "bird:02104",
+        "bird:02105",
+        "bird:02108",
+        "bird:02111",
+        "bird:02112",
+        "bird:02116",
+        "bird:02118",
+        "bird:02119",
+        "bird:02120",
+        "bird:02124",
+        "bird:02142",
+        "bird:02143",
+        "bird:02224",
+        "bird:02256",
+        "bird:02325",
+        "bird:03147",
+        "bird:03148",
+        "bird:03149",
+        "bird:03151",
+        "bird:03154",
+        "bird:03155",
+        "bird:03156",
+        "bird:03157",
+        "bird:03158",
+        "bird:03161",
+        "bird:03162",
+        "bird:03164",
+        "bird:03166",
+        "bird:03167",
+        "bird:03168",
+        "bird:03169",
+        "bird:03172",
+        "bird:03173",
+        "bird:03174",
+        "bird:03175",
+        "bird:03176",
+        "bird:03177",
+        "bird:03179",
+        "bird:03180",
+        "bird:03181",
+        "bird:03182",
+        "bird:03183",
+        "bird:03188",
+        "bird:03189",
+        "bird:03190",
+        "bird:03191",
+        "bird:03193",
+        "bird:03194",
+        "bird:03195",
+        "bird:03196",
+        "bird:03198",
+        "bird:03199",
+        "bird:03206",
+        "bird:03236",
+        "bird:03244",
+        "bird:03284",
+        "bird:03285",
+        "bird:03294",
+        "bird:03296",
+        "bird:03305",
+        "bird:05474",
+        "bird:05475",
+        "bird:05476",
+        "bird:05477",
+        "bird:05478",
+        "bird:05479",
+        "bird:05480",
+        "bird:05481",
+        "bird:05684",
+        "bird:05690",
+        "bird:05691",
+        "bird:05692",
+        "bird:05694",
+        "bird:05696",
+        "bird:05701",
+        "bird:05713",
+        "bird:05718",
+        "bird:05719",
+        "bird:05731",
+        "bird:05768",
+        "bird:05769",
+        "bird:05780",
+        "bird:05781",
+        "bird:05788",
+        "bird:05798",
+        "bird:05799",
+        "bird:05800",
+        "bird:05807",
+        "bird:05815",
+        "bird:05817",
+        "bird:05819",
+        "bird:06143",
+        "bird:06156",
+        "bird:06249",
+        "bird:06250",
+        "bird:06251",
+        "bird:06252",
+        "bird:06253",
+        "bird:06254",
+        "bird:06255",
+        "bird:06256",
+        "bird:06260",
+        "bird:06720",
+        "bird:06723",
+        "bird:06736",
+        "bird:06755",
+        "bird:06759",
+        "bird:06771",
+        "bird:06775",
+        "bird:06776",
+        "bird:06797",
+        "bird:06836",
+        "bird:06879",
+        "bird:06880",
+        "bird:06881",
+        "bird:06889",
+        "bird:06890",
+        "bird:06891",
+        "bird:06902",
+        "bird:06913",
+        "bird:07739",
+        "bird:08153",
+        "bird:08156",
+        "bird:08175",
+        "bird:08183",
+        "bird:08185",
+        "bird:08190",
+        "bird:08820",
+        "bird:08994",
+        "bird:08997",
+        "bird:09017",
+        "bird:09024",
+        "bird:09035",
+        "bird:09051",
+        "bird:09061",
+        "bird:09067",
+        "bird:09087",
+        "bird:09096"
+      ]
+    }
+  },
+  "by_split": {
+    "train": {
+      "timeout": 190,
+      "row_limit": 128,
+      "memory_limit": 21,
+      "result_limit": 5,
+      "sql_error": 352
+    },
+    "val": {
+      "row_limit": 10,
+      "memory_limit": 7,
+      "timeout": 7
+    }
+  },
+  "by_database": {
+    "bird:address": {
+      "row_limit": 3
+    },
+    "bird:airline": {
+      "row_limit": 1
+    },
+    "bird:app_store": {
+      "sql_error": 6
+    },
+    "bird:authors": {
+      "row_limit": 12,
+      "memory_limit": 1
+    },
+    "bird:bike_share_1": {
+      "timeout": 10,
+      "row_limit": 9,
+      "memory_limit": 1
+    },
+    "bird:books": {
+      "row_limit": 1
+    },
+    "bird:chicago_crime": {
+      "row_limit": 4
+    },
+    "bird:codebase_comments": {
+      "row_limit": 1
+    },
+    "bird:coinmarketcap": {
+      "timeout": 9,
+      "memory_limit": 1
+    },
+    "bird:donor": {
+      "timeout": 45,
+      "row_limit": 9,
+      "memory_limit": 12
+    },
+    "bird:food_inspection": {
+      "timeout": 1
+    },
+    "bird:food_inspection_2": {
+      "timeout": 2,
+      "row_limit": 2
+    },
+    "bird:hockey": {
+      "row_limit": 1,
+      "timeout": 1
+    },
+    "bird:image_and_language": {
+      "row_limit": 3
+    },
+    "bird:language_corpus": {
+      "timeout": 23,
+      "row_limit": 9
+    },
+    "bird:menu": {
+      "timeout": 8,
+      "row_limit": 4
+    },
+    "bird:movie_platform": {
+      "timeout": 44,
+      "row_limit": 6,
+      "memory_limit": 2
+    },
+    "bird:movielens": {
+      "timeout": 2,
+      "row_limit": 4,
+      "memory_limit": 1
+    },
+    "bird:movies_4": {
+      "row_limit": 1
+    },
+    "bird:music_platform_2": {
+      "row_limit": 6,
+      "memory_limit": 3,
+      "result_limit": 2
+    },
+    "bird:olympics": {
+      "row_limit": 3
+    },
+    "bird:public_review_platform": {
+      "row_limit": 4
+    },
+    "bird:restaurant": {
+      "row_limit": 2
+    },
+    "bird:retail_complains": {
+      "row_limit": 1
+    },
+    "bird:retail_world": {
+      "sql_error": 329
+    },
+    "bird:retails": {
+      "row_limit": 18,
+      "timeout": 18
+    },
+    "bird:sales": {
+      "row_limit": 8,
+      "memory_limit": 5
+    },
+    "bird:sales_in_weather": {
+      "row_limit": 1,
+      "memory_limit": 2,
+      "timeout": 6
+    },
+    "bird:shooting": {
+      "sql_error": 4
+    },
+    "bird:simpson_episodes": {
+      "row_limit": 1
+    },
+    "bird:social_media": {
+      "result_limit": 3
+    },
+    "bird:software_company": {
+      "row_limit": 5
+    },
+    "bird:student_loan": {
+      "row_limit": 2
+    },
+    "bird:talkingdata": {
+      "timeout": 15,
+      "row_limit": 5
+    },
+    "bird:video_games": {
+      "row_limit": 4
+    },
+    "bird:works_cycles": {
+      "sql_error": 10,
+      "row_limit": 1
+    },
+    "bird:world_development_indicators": {
+      "timeout": 13,
+      "row_limit": 1
+    },
+    "spider:assets_maintenance": {
+      "sql_error": 1
+    },
+    "spider:baseball_1": {
+      "row_limit": 4
+    },
+    "spider:document_management": {
+      "sql_error": 2
+    },
+    "spider:flight_4": {
+      "row_limit": 2
+    }
+  },
+  "sql_errors": [
+    {
+      "error": "no such table: Order Details",
+      "count": 72
+    },
+    {
+      "error": "no such column: T2.CompanyName",
+      "count": 49
+    },
+    {
+      "error": "no such table: EmployeeTerritories",
+      "count": 35
+    },
+    {
+      "error": "no such table: Territories",
+      "count": 19
+    },
+    {
+      "error": "no such column: CompanyName",
+      "count": 15
+    },
+    {
+      "error": "no such column: T1.CompanyName",
+      "count": 12
+    },
+    {
+      "error": "no such column: Salary",
+      "count": 11
+    },
+    {
+      "error": "no such table: PersonPhone",
+      "count": 10
+    },
+    {
+      "error": "no such column: Title",
+      "count": 9
+    },
+    {
+      "error": "no such column: T1.UnitPrice",
+      "count": 6
+    },
+    {
+      "error": "no such column: ReportsTo",
+      "count": 5
+    },
+    {
+      "error": "no such column: T1.Title",
+      "count": 5
+    },
+    {
+      "error": "no such column: T1.UnitsInStock",
+      "count": 4
+    },
+    {
+      "error": "no such column: T1.Discontinued",
+      "count": 4
+    },
+    {
+      "error": "no such column: Discontinued",
+      "count": 4
+    },
+    {
+      "error": "no such column: UnitsInStock",
+      "count": 4
+    },
+    {
+      "error": "no such column: T2.ShipCountry",
+      "count": 4
+    },
+    {
+      "error": "no such column: TitleOfCourtesy",
+      "count": 3
+    },
+    {
+      "error": "no such column: HomePhone",
+      "count": 3
+    },
+    {
+      "error": "no such column: Country",
+      "count": 3
+    },
+    {
+      "error": "no such column: T1.ReorderLevel",
+      "count": 3
+    },
+    {
+      "error": "no such column: UnitPrice",
+      "count": 3
+    },
+    {
+      "error": "no such column: T2.Discontinued",
+      "count": 3
+    },
+    {
+      "error": "no such column: T2.ReorderLevel",
+      "count": 3
+    },
+    {
+      "error": "no such column: T1.grand_jury_disposition",
+      "count": 2
+    },
+    {
+      "error": "no such column: T1.Last Updated",
+      "count": 2
+    },
+    {
+      "error": "no such column: T1.Current Ver",
+      "count": 2
+    },
+    {
+      "error": "no such column: Region",
+      "count": 2
+    },
+    {
+      "error": "no such column: ReorderLevel",
+      "count": 2
+    },
+    {
+      "error": "no such column: ContactTitle",
+      "count": 2
+    },
+    {
+      "error": "no such column: ShipCountry",
+      "count": 2
+    },
+    {
+      "error": "no such column: T2.UnitPrice",
+      "count": 2
+    },
+    {
+      "error": "no such column: T1.Salary",
+      "count": 2
+    },
+    {
+      "error": "no such column: T2.ContactTitle",
+      "count": 2
+    },
+    {
+      "error": "no such column: T1.UnitsOnOrder",
+      "count": 2
+    },
+    {
+      "error": "no such column: Address",
+      "count": 2
+    },
+    {
+      "error": "no such column: T2.ShippedDate",
+      "count": 2
+    },
+    {
+      "error": "no such column: YEAR",
+      "count": 2
+    },
+    {
+      "error": "no such column: T1.ShipVia",
+      "count": 2
+    },
+    {
+      "error": "ORDER BY clause should come after INTERSECT not before",
+      "count": 2
+    },
+    {
+      "error": "no such column: officer_count",
+      "count": 1
+    },
+    {
+      "error": "no such column: grand_jury_disposition",
+      "count": 1
+    },
+    {
+      "error": "no such column: Last Updated",
+      "count": 1
+    },
+    {
+      "error": "no such column: Android Ver",
+      "count": 1
+    },
+    {
+      "error": "no such table: Region",
+      "count": 1
+    },
+    {
+      "error": "no such column: HireDate",
+      "count": 1
+    },
+    {
+      "error": "no such column: Freight",
+      "count": 1
+    },
+    {
+      "error": "no such table: Customer and Suppliers by City",
+      "count": 1
+    },
+    {
+      "error": "no such table: Invoices",
+      "count": 1
+    },
+    {
+      "error": "no such column: T2.ShipName",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.ShippedDate",
+      "count": 1
+    },
+    {
+      "error": "no such column: T2.Freight",
+      "count": 1
+    },
+    {
+      "error": "no such column: T2.HomePage",
+      "count": 1
+    },
+    {
+      "error": "no such column: T2.ShipCity",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.QuantityPerUnit",
+      "count": 1
+    },
+    {
+      "error": "no such table: Sales Totals by Amount",
+      "count": 1
+    },
+    {
+      "error": "no such table: Sales by Category",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.ContactTitle",
+      "count": 1
+    },
+    {
+      "error": "no such column: Phone",
+      "count": 1
+    },
+    {
+      "error": "no such column: Fax",
+      "count": 1
+    },
+    {
+      "error": "no such column: T2.UnitsInStock",
+      "count": 1
+    },
+    {
+      "error": "no such column: ShipAddress",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.ShipCountry",
+      "count": 1
+    },
+    {
+      "error": "no such column: T3.CompanyName",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.City",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.Country",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.Phone",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.Region",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.HireDate",
+      "count": 1
+    },
+    {
+      "error": "no such column: T1.ReportsTo",
+      "count": 1
+    },
+    {
+      "error": "no such table: Ref_Company_Types",
+      "count": 1
+    }
+  ],
+  "previous_relaxed_probe_statuses": {
+    "timeout": 4,
+    "row_limit": 13,
+    "memory_limit": 5,
+    "ok": 36,
+    "sql_error": 352
+  },
+  "interpretation": [
+    "Missing table/column errors establish incompatibility between saved SQL and the frozen SQLite snapshot; they do not identify which source is at fault.",
+    "Resource-limit failures do not establish annotation errors.",
+    "No label, database, training eligibility, comparator or resource limit was changed.",
+    "The near-100-percent gold-execution target remains unmet.",
+    "Gold-error VAL questions remain in the evaluation denominator."
+  ],
+  "sql_executed": false,
+  "final_test_accessed": false,
+  "sources": {
+    "audit": {
+      "path": "results/gold_audit/summary.json",
+      "sha256": "ff4d21c5c65471c5f130f2b57ec35f1cb0ececfded7debeb79ab265508e900d8"
+    },
+    "queries": {
+      "path": "results/gold_audit/queries.jsonl",
+      "sha256": "2d5bfe7ec3ab5b58513d8d8b7bd63d761615c8a40e2b02b3349f6bdc7a791ea4"
+    },
+    "diagnostics": {
+      "path": "results/gold_investigation.json",
+      "sha256": "b3f59a6af5bef4a2a14fc429d41a9ed2467a36eccfe7b0c277b825a86abef34a"
+    }
+  }
+}

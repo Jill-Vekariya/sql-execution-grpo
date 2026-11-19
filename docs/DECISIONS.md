@@ -196,3 +196,23 @@ generation rather than regenerating the completed zero-shot run. No checkpoint
 selection, training hyperparameter or reward was changed after seeing VAL.
 Costs remain null where unmeasured. A free-GPU price setting alone does not
 justify inventing measured inference cost. Shared batch latency must be labeled.
+
+## D017 — Resume evidence and gold failure accounting, 19 November 2026
+
+Keep the delegated model/revision, NF4/FP16 profile, seed, cohorts and zero cash
+budget fixed. Saved outputs are replayed separately from new benchmark execution.
+The fresh baseline replay also checks the processed VAL bytes; it neither
+executes benchmark SQL nor calls a model. Final-test content stays sealed.
+
+Classify every saved gold failure exactly once before discussing the missed
+near-100-percent execution target. The new diagnostic report preserves every
+case ID and source hash, separates resource limits from SQLite errors, and
+does not infer annotation noise from an error alone. Regression checks reject
+dropped or relabelled failures. No cohort or metric changes follow from it.
+
+The current notebook restore reached the same Drive/Google Cloud prompt,
+but automatic approval review rejected Allow for missing action-time confirmation.
+Preserve that blocker and the exact scope; do not bypass it through shell,
+Drive API credential extraction or a different upload mechanism. Neither
+historical notebook output nor the user-reported 872-answer count establishes
+the newest backup's current progress. See results/resume_20261119.json.

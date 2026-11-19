@@ -7,7 +7,7 @@ Study whether execution rewards improve a small Qwen model beyond prompting and 
 | System | Validation execution accuracy / 95% CI | Measured cost | Status |
 |---|---|---|---|
 | Base zero-shot | **64.76% [58.68, 70.53]** | Unknown | Complete |
-| Base few-shot | Not measured | Unknown | 600/2,304 answers restored; incomplete |
+| Base few-shot | Not measured | Unknown | 600/2,304 saved; newest backup unverified |
 | Hosted / frontier | Not measured | Unknown | Owner-managed free API credential pending |
 | SFT | Not measured | Unknown | No trained checkpoint verified |
 | GRPO | Not measured | Unknown | Future Phase 5 |
@@ -16,7 +16,7 @@ The measured system is pinned Qwen3-4B-Instruct-2507, NF4/FP16, seed 42, generat
 
 Valid-SQL rate is **93.84%**, timeout rate **0.35%**, mean output **44.53 tokens**. All **26** gold-query errors remain in the denominator. Difficulty labels are unavailable for this training-derived VAL cohort. Recorded generation latency is shared batch wall time; it must not be presented as isolated per-query latency. Missing costs remain unknown, so cost per accuracy point is not yet available. [Per-question evidence](results/free_runs_batch8_v2/base_zero_evaluation/per_question.jsonl).
 
-Verifier suite: **111 passed** in the restored Colab environment ([XML](results/colab_import_20261118/tests-resumed-20261118.xml), [GPU/runtime receipt](results/resume_verified_20261118.json)). Train/VAL manifests have zero database/question-hash overlap ([resume audit](results/resume_audit_20261118/summary.json)). The audit records **16,428 source questions**, **57 duplicates removed**, and a shared eligible training pool of **12,908**. Historical gold execution was **15,651/16,371 (95.60%)**, below the near-100% target; failures remain visible. [Data audit](results/data_audit.json), [eligibility](results/training_eligibility.json), [gold audit](results/gold_audit/summary.json).
+Latest CPU verifier suite: **114 passed** ([XML](results/tests-gold-accounting-20261119.xml)); the earlier Colab suite had **111 passed** ([XML](results/colab_import_20261118/tests-resumed-20261118.xml), [GPU/runtime receipt](results/resume_verified_20261118.json)). Train/VAL manifests have zero database/question-hash overlap ([resume audit](results/resume_audit_20261118/summary.json)). The audit records **16,428 source questions**, **57 duplicates removed**, and a shared eligible training pool of **12,908**. Historical gold execution was **15,651/16,371 (95.60%)**, below the near-100% target; all 720 failures are accounted for in the [saved failure analysis](docs/GOLD_QUERY_FAILURE_ANALYSIS.md), with no labels or limits changed. [Data audit](results/data_audit.json), [eligibility](results/training_eligibility.json), [gold audit](results/gold_audit/summary.json).
 
 Planned comparison:
 
@@ -39,7 +39,7 @@ uv run --no-sync pytest
 uv run --no-sync python scripts/verify_saved_baseline.py --output results/reproduction_baseline_check.json
 ```
 
-The third command verifies imported hashes and recomputes saved metrics and intervals; it does not regenerate answers. [Full reproduction](docs/REPRODUCE.md), [free GPU notebook](notebooks/Free_Phase03_Colab_Batch8_Resume.ipynb), [current continuation](docs/STATUS_20261118.md). The zero cash budget is binding. A free hosted Flash model would be a budget baseline, not evidence of beating the strongest frontier model.
+The third command verifies imported hashes and recomputes saved metrics and intervals; it does not regenerate answers. [Full reproduction](docs/REPRODUCE.md), [free GPU notebook](notebooks/Free_Phase03_Colab_Batch8_Resume.ipynb), [current continuation](docs/STATUS_20261119.md). The zero cash budget is binding. A free hosted Flash model would be a budget baseline, not evidence of beating the strongest frontier model.
 
 What failed and what remains: [FAILURES.md](docs/FAILURES.md) records environment, export and data-schema problems; [DECISIONS.md](docs/DECISIONS.md) explains evaluation choices. [Cheating analysis](docs/WHAT_THE_MODEL_LEARNED_TO_CHEAT.md) currently concerns anticipated exploits, not learned RL behavior.
 
